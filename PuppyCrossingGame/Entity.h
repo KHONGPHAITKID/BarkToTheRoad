@@ -5,8 +5,6 @@
 class Entity
 {
 private:
-	//int m_width;
-	//int m_height;
 	int m_velo_x;
 	int m_velo_y;
 
@@ -19,6 +17,5 @@ public:
 	Entity(COORD pos, Shape* s);
 	void render();
 	void move(COORD pos);
-	// virtual bool isImpact(const Entity& obj) const;
-	bool isCollison(const Entity& e);
+	virtual bool checkCollision(const Entity& otherEntity) const;
 };

@@ -15,3 +15,8 @@ GrassObstacle::GrassObstacle(COORD pos)
 	}
 	m_position = pos;
 }
+
+bool GrassObstacle::checkCollision(const Entity& otherEntity) const
+{
+	return false;
+}

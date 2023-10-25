@@ -56,3 +56,12 @@ void Shape::getSize(int& width, int& height)
     width = m_width;
     height = m_height;
 }
+
+int Shape::getWidth() const
+{
+    return m_width;
+}
+int Shape::getHeight() const
+{
+    return m_height;
+}

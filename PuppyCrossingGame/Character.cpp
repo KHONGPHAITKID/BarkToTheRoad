@@ -25,6 +25,12 @@ void Character::move(COORD pos) {
 	m_delta = { static_cast<short>((m_new_position.X - m_position.X) / m_total_state), static_cast<short>((m_new_position.Y - m_position.Y) / m_total_state) };
 }
 
+void Character::setPos(COORD pos)
+{
+	m_position = pos;
+	m_new_position = pos;
+}
+
 void Character::render() {
 	if (m_position.X == m_new_position.X && m_position.Y == m_new_position.Y) {
 		m_is_standing = true;

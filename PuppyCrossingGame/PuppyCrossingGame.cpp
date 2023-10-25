@@ -14,7 +14,16 @@
 #include "framework.h"
 #include "renderer.h"
 
+bool PlaySoundFile(const wchar_t* filePath) {
+    // Build the command string
+    std::wstring command = L"start wmplayer \"" + std::wstring(filePath) + L"\"";
 
+    // Execute the command
+    int result = _wsystem(command.c_str());
+
+    // Return true if the command was executed successfully, false otherwise
+    return result == 0;
+}
 
 bool window_should_close = false;
 
@@ -71,7 +80,6 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine,
 
   Global::drawer.set_render_state(render_state);
   c = new Character{ {90, 90}, staying, moving, 3 };
-
   while (!window_should_close) {
     MSG message;
     while (PeekMessage(&message, window, 0, 0, PM_REMOVE)) {
@@ -87,15 +95,20 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine,
     }
     DWORD currentTime = GetTickCount();  // Get the current time in milliseconds
 
-    m.addObstacle();
-    m.moveObstacle();
-
-    m.render();
-    c->render();
     if (command != nullptr) {
         command->execute(*c);
         command = nullptr;
     }
+
+    m.addObstacle();
+    m.moveObstacle();
+
+    if (m.checkCollision(*c)) {
+        c->setPos({ 90, 90 });
+    }
+
+    m.render();
+    c->render();
 
     StretchDIBits(hdc, 0, 0, render_state.getWidth(), render_state.getHeight(),
                   0, 0, render_state.getWidth(), render_state.getHeight(),

@@ -1,7 +1,5 @@
 #include "Lane.h"
 
-
-
 Lane::Lane(COORD pos) :
 	m_position{ pos }
 {
@@ -27,7 +25,7 @@ void Lane::addObstacle()
 	int x = randomInt(0, 1000);
 	if (x < 600) return;
 	if (m_obs.size() >= 5) return;
-	if (m_obs.size() != 0 && busModel.isCollison(*m_obs[m_obs.size() - 1]) == true) return;
+	if (m_obs.size() != 0 && busModel.checkCollision(*m_obs[m_obs.size() - 1]) == true) return;
 
 	// if there's no Collison with the newest Obstacle
 	Obstacle* newObstacle = m_fact->createObstacle(m_position);
@@ -45,3 +43,12 @@ void Lane::moveObstacle()
 	}
 }
 
+bool Lane::checkCollision(Entity& e)
+{
+	for (auto obstacle : m_obs)
+	{
+		if (obstacle->checkCollision(e)) 
+			return true;
+	}
+	return false;
+}

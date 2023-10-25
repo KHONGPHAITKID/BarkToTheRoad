@@ -29,28 +29,21 @@ void Entity::move(COORD pos) {
 	m_velo_y = (pos.Y - m_position.Y) / 30;
 }
 
-bool Entity::isCollison(const Entity& e)
-{
-	int width, height; // my Entity size
-	int eWidth, eHeight; // others Entity size
+bool Entity::checkCollision(const Entity& otherEntity) const {
+	int thisLeft = m_position.X;
+	int thisRight = m_position.X + m_shape->getWidth();
+	int thisTop = m_position.Y;
+	int thisBottom = m_position.Y + m_shape->getHeight();
 
-	// get size
-	m_shape->getSize(width, height);
-	e.m_shape->getSize(eWidth, eHeight);
+	int otherLeft = otherEntity.m_position.X;
+	int otherRight = otherEntity.m_position.X + otherEntity.m_shape->getWidth();
+	int otherTop = otherEntity.m_position.Y;
+	int otherBottom = otherEntity.m_position.Y + otherEntity.m_shape->getHeight();
 
-	// checking if not collison
+	if (thisRight > otherLeft && thisLeft < otherRight &&
+		thisBottom > otherTop && thisTop < otherBottom) {
+		return true;
+	}
 
-	// Case 1: our Entity on the left 
-	if (m_position.X + width < e.m_position.X)
-		return false;
-	if (m_position.Y + height < e.m_position.Y)
-		return false;
-	// Case 2: other Entity on the left
-	if (e.m_position.X + eWidth < m_position.X)
-		return false;
-	if (e.m_position.Y + eHeight < m_position.Y)
-		return false;
-
-	// otherwise these 2 will have collison
-	return true;
+	return false;
 }
