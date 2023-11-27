@@ -72,10 +72,29 @@ void Shape::render(int offset_x, int offset_y) {
         for (int x = 0; x < m_height; x++)
         {
             for (int y = 0; y < m_width; y++) {
-                if (offset_x + y <= 0 || offset_x + y >= Global::default_render_state.getWidth() || offset_y + m_height - x - 1 <= 0 || offset_y + m_height - x - 1 >= Global::default_render_state.getHeight())
+               /* if (offset_x + y <= 0 || offset_x + y >= Global::default_render_state.getWidth() || offset_y + m_height - x - 1 <= 0 || offset_y + m_height - x - 1 >= Global::default_render_state.getHeight())
 					continue;
 			    if (m_shape[x][y] != 0x00000000)
-				    pixels[(offset_x + y) + (offset_y + m_height - x - 1) * Global::default_render_state.getWidth()] = m_shape[x][y];
+				    pixels[(offset_x + y) + (offset_y + m_height - x - 1) * Global::default_render_state.getWidth()] = m_shape[x][y];*/
+                if (m_shape[x][y] != 0x00000000) {
+                    unsigned int color = m_shape[x][y];
+                    int alpha = (color >> 24) & 0xFF;
+                    int red = (color >> 16) & 0xFF;
+                    int green = (color >> 8) & 0xFF;
+                    int blue = color & 0xFF;
+
+                    COLORREF c = RGB(red, green, blue);
+                    VOID* bits;
+                    HBITMAP hBitMap = CreateDIBSection(Global::hdc, Global::default_render_state.getBitmapPointer(), DIB_RGB_COLORS, &bits, nullptr, 0);
+                    //SetPixel(Global::hdc, offset_x + y, offset_y + m_height - x - 1, c);
+                    //((int*)bits)[0] = 0xFFFFFFFF;
+                    HDC memDC = CreateCompatibleDC(Global::hdc);
+                    SelectObject(memDC, hBitMap);
+                    BitBlt(Global::hdc, 0, 0, Global::default_render_state.getWidth(), Global::default_render_state.getHeight(), memDC, 0, 0, SRCCOPY);
+
+                    DeleteDC(memDC);
+                    DeleteObject(hBitMap);
+                }
 		    }
 	    }
 }

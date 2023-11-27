@@ -85,6 +85,7 @@ void Gameplay::handleEndGame()
     Shape* s = new Shape[2]{ *MyShape[GHOST], *MyShape[GHOST] };
     character->setShape(s);
     m_vehicle = new Entity{ COORD{static_cast<short>(character->getPos().X + 600), character->getPos().Y}, MyShape[AMBULANCE] };
+    m_vehicle->setRate(60);
     m_vehicle->move(character->getPos());
     m_ended = true;
 }
