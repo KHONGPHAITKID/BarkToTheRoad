@@ -1,0 +1,29 @@
+\doxysection{Input\+Handler.\+h}
+\hypertarget{_input_handler_8h_source}{}\label{_input_handler_8h_source}\mbox{\hyperlink{_input_handler_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_command_8h}{Command.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_move_up_command_8h}{MoveUpCommand.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_move_down_command_8h}{MoveDownCommand.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_move_left_command_8h}{MoveLeftCommand.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_move_right_command_8h}{MoveRightCommand.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_mouse_click_command_8h}{MouseClickCommand.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_bark_command_8h}{BarkCommand.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_map_8h}{Map.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_input_handler}{InputHandler}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_input_handler_a698aa4af4f326a9881835fda251ca996}{InputHandler}}();}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_command}{Command}}*\ \mbox{\hyperlink{class_input_handler_ab59c9b72c78142decb6691e8bdbe5cb8}{handleInput}}(WPARAM\ key,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_character}{Character}}\&\ c);}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_move_up_command}{MoveUpCommand}}*\ move\_up;}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_move_down_command}{MoveDownCommand}}*\ move\_down;}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_move_left_command}{MoveLeftCommand}}*\ move\_left;}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_move_right_command}{MoveRightCommand}}*\ move\_right;}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_bark_command}{BarkCommand}}*\ barkCommand;}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+
+\end{DoxyCode}

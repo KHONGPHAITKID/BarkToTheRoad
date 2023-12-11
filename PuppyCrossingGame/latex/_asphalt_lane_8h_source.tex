@@ -1,0 +1,26 @@
+\doxysection{Asphalt\+Lane.\+h}
+\hypertarget{_asphalt_lane_8h_source}{}\label{_asphalt_lane_8h_source}\mbox{\hyperlink{_asphalt_lane_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_lane_8h}{Lane.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_obstacle_factory_8h}{ObstacleFactory.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_asphalt_lane}{AsphaltLane}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_lane}{Lane}}}
+\DoxyCodeLine{00006\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{class_asphalt_lane_afa9f32e03d122c5eedc84b0375c06311}{AsphaltLane}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{class_asphalt_lane_a9d597262b051340b50917984d71ffa2b}{AsphaltLane}}(\textcolor{keyword}{const}\ COORD\ \&pos)\ :\ }
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_lane}{Lane}}(pos)}
+\DoxyCodeLine{00011\ \ \ \ \ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_lane_a86129fe17c047648fc0d5af3a5ada633}{m\_fact}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_asphalt_obstacle_factory}{AsphaltObstacleFactory}}();}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_lane_a22ec3e2576e7fa313fa2cc47162b3510}{m\_shape}}\ =\ *\mbox{\hyperlink{_load_shape_8h_ab3097e70cc062d71c3f6d5a756159fcb}{MyShape}}[\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa57edeeb1dd2c77d5b8afca80b14e9aa}{ROAD}}];}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_lane_a807e37b022f66c920a702c8383c82ba8}{m\_shapeIndex}}\ =\ \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa57edeeb1dd2c77d5b8afca80b14e9aa}{ROAD}};}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_lane_a8a8f034305993711570abc79bd45490e}{m\_factoryIndex}}\ =\ \mbox{\hyperlink{_lane_8h_ae45d94b151f34b47248e51a87c105034a2c78a8c247483af862fa69ba510b0b17}{AsphaltFactory}};}
+\DoxyCodeLine{00016\ \ \ \ \ \}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_lane_a14b94d940ffa7c30684cb0bd2a67db4b}{Lane::render}};}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ }
+
+\end{DoxyCode}

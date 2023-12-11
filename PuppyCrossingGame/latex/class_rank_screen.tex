@@ -1,0 +1,132 @@
+\doxysection{Rank\+Screen Class Reference}
+\hypertarget{class_rank_screen}{}\label{class_rank_screen}\index{RankScreen@{RankScreen}}
+
+
+{\ttfamily \#include $<$Rank\+Screen.\+h$>$}
+
+
+
+Inheritance diagram for Rank\+Screen\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_rank_screen__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rank\+Screen\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_rank_screen__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rank_screen_a07035bcfe2ad09a9fd0e37e0241a7a13}{Rank\+Screen}} ()
+\item 
+\mbox{\hyperlink{class_rank_screen_a159113dd3283eb9d7fd92b542134d160}{Rank\+Screen}} (\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}background)
+\item 
+void \mbox{\hyperlink{class_rank_screen_af275506d20666af55dd1873df1096a83}{render}} () override
+\item 
+void \mbox{\hyperlink{class_rank_screen_a4be62e0f749da4cf5042dfe84e3c0a20}{read\+Score}} ()
+\item 
+void \mbox{\hyperlink{class_rank_screen_a586c56ca6bac54882c71e9983de8fc80}{load\+Texts}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_screen}{Screen}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_screen_a401e1e1331090c468487d1fd100a4b0b}{Screen}} ()=default
+\item 
+\mbox{\hyperlink{class_screen_a2dc6d4bcae29ef3c71dc3e9bb8630dbe}{Screen}} (\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}background)
+\item 
+\mbox{\hyperlink{class_screen_a4243bc17596af96415b09ac48205676d}{\texorpdfstring{$\sim$}{\string~}\+Screen}} ()
+\item 
+void \mbox{\hyperlink{class_screen_a4c5cfa80abfc7e67bbf5e8012b45c393}{add\+Button}} (\mbox{\hyperlink{class_button}{Button}} \texorpdfstring{$\ast$}{*}b)
+\item 
+void \mbox{\hyperlink{class_screen_a5ee24b2d33896fe680159ae8933e649c}{remove\+Button}} (int i)
+\item 
+void \mbox{\hyperlink{class_screen_abc00db4573de9dbe2262b3e299b529a8}{set\+Background}} (\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}background)
+\item 
+void \mbox{\hyperlink{class_screen_ae9058fa8b4ae8e3e2e07f003306946c1}{add\+Text}} (\mbox{\hyperlink{class_text}{Text}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{_puppy_crossing_game_8cpp_a191482ef3e0e75c53cfe1c603c2dbcdf}{s}})
+\item 
+void \mbox{\hyperlink{class_screen_a238d30be206a25432ab8c67e5eddfd89}{clear\+Texts}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_button}{Button}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_screen_a936b5c785c987b5902257eece2cb3baa}{get\+Buttons}} () const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_text}{Text}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_screen_a78b67ecbc0ee2424a65f3ac1c59bdea6}{get\+Texts}} () const
+\item 
+virtual void \mbox{\hyperlink{class_screen_a88e13da2faf283567bd8109057f42fe2}{clean}} ()
+\item 
+void \mbox{\hyperlink{class_screen_a876343cf972d15caba150cd253b1950e}{clear\+Text}} ()
+\item 
+virtual void \mbox{\hyperlink{class_screen_af81a85b23f6609432a836e84324a8656}{render\+Text}} () const
+\item 
+virtual void \mbox{\hyperlink{class_screen_a2739cc939c2ff7a825afbbe287f704c0}{click\+Button}} ()
+\item 
+virtual void \mbox{\hyperlink{class_screen_af6f9adc4ff2a4ae2eb524293a6dd975a}{handle\+Key\+Pressed}} (WPARAM key)
+\item 
+virtual void \mbox{\hyperlink{class_screen_a05fdc4996e4856ac56b5bac6a7ee712f}{update\+Content}} ()
+\item 
+virtual int \mbox{\hyperlink{class_screen_adb58b1a292a1a0e6c3365ab0b608656f}{get\+Size}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_screen}{Screen}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_screen_a808d5f8e0be288fa33c75a2c3b546fce}{m\+\_\+background}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_button}{Button}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_screen_a97f9adeee51e5079696ceb25bf5deaa8}{m\+\_\+buttons}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_text}{Text}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_screen_a5d0548faa658956261259aa14cd7de5d}{m\+\_\+texts}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_rank_screen_a07035bcfe2ad09a9fd0e37e0241a7a13}\label{class_rank_screen_a07035bcfe2ad09a9fd0e37e0241a7a13} 
+\index{RankScreen@{RankScreen}!RankScreen@{RankScreen}}
+\index{RankScreen@{RankScreen}!RankScreen@{RankScreen}}
+\doxysubsubsection{\texorpdfstring{RankScreen()}{RankScreen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Rank\+Screen\+::\+Rank\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_rank_screen_a159113dd3283eb9d7fd92b542134d160}\label{class_rank_screen_a159113dd3283eb9d7fd92b542134d160} 
+\index{RankScreen@{RankScreen}!RankScreen@{RankScreen}}
+\index{RankScreen@{RankScreen}!RankScreen@{RankScreen}}
+\doxysubsubsection{\texorpdfstring{RankScreen()}{RankScreen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Rank\+Screen\+::\+Rank\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}}]{background }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_rank_screen_a586c56ca6bac54882c71e9983de8fc80}\label{class_rank_screen_a586c56ca6bac54882c71e9983de8fc80} 
+\index{RankScreen@{RankScreen}!loadTexts@{loadTexts}}
+\index{loadTexts@{loadTexts}!RankScreen@{RankScreen}}
+\doxysubsubsection{\texorpdfstring{loadTexts()}{loadTexts()}}
+{\footnotesize\ttfamily void Rank\+Screen\+::load\+Texts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_rank_screen_a4be62e0f749da4cf5042dfe84e3c0a20}\label{class_rank_screen_a4be62e0f749da4cf5042dfe84e3c0a20} 
+\index{RankScreen@{RankScreen}!readScore@{readScore}}
+\index{readScore@{readScore}!RankScreen@{RankScreen}}
+\doxysubsubsection{\texorpdfstring{readScore()}{readScore()}}
+{\footnotesize\ttfamily void Rank\+Screen\+::read\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_rank_screen_af275506d20666af55dd1873df1096a83}\label{class_rank_screen_af275506d20666af55dd1873df1096a83} 
+\index{RankScreen@{RankScreen}!render@{render}}
+\index{render@{render}!RankScreen@{RankScreen}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Rank\+Screen\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_screen_a819aa32ece0c9bf2b173e747d8713c0b}{Screen}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_rank_screen_8h}{Rank\+Screen.\+h}}\item 
+\mbox{\hyperlink{_rank_screen_8cpp}{Rank\+Screen.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+<map id="RankScreen" name="RankScreen">
+<area shape="rect" id="Node000001" title=" " alt="" coords="149,728,253,874"/>
+<area shape="rect" id="Node000002" href="$class_screen.html" title=" " alt="" coords="131,274,271,679"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,694,204,729,199,729,199,694"/>
+<area shape="rect" id="Node000003" href="$class_shape.html" title=" " alt="" coords="5,5,117,211"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,210,103,249,127,312,122,314,97,251,85,211"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="141,75,261,141"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="204,141,204,257,199,257,199,141"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="285,75,392,141"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="329,141,280,274,275,272,324,140"/>
+</map>

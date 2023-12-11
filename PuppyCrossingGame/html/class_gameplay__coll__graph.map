@@ -1,0 +1,23 @@
+<map id="Gameplay" name="Gameplay">
+<area shape="rect" id="Node000001" title=" " alt="" coords="353,1072,481,1477"/>
+<area shape="rect" id="Node000002" href="$class_input_handler.html" title=" " alt="" coords="5,753,111,839"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,838,86,920,103,965,126,1007,173,1071,229,1128,287,1178,341,1219,337,1223,284,1182,226,1132,169,1074,121,1010,98,967,81,921,61,839"/>
+<area shape="rect" id="Node000003" href="$class_command.html" title=" " alt="" coords="135,743,237,849"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,848,220,924,251,1008,296,1093,346,1171,341,1174,291,1095,246,1010,215,926,194,849"/>
+<area shape="rect" id="Node000004" href="$class_character.html" title=" " alt="" coords="261,583,393,1009"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="365,1008,372,1047,373,1055,368,1056,367,1048,360,1009"/>
+<area shape="rect" id="Node000005" href="$class_entity.html" title=" " alt="" coords="277,289,377,534"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="330,549,330,583,325,583,325,549"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="233,75,259,141"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="252,140,260,198,274,264,276,272,271,273,268,265,254,199,246,140"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="296,75,359,141"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="330,140,330,272,325,272,325,140"/>
+<area shape="rect" id="Node000008" href="$class_shape.html" title=" " alt="" coords="407,5,519,211"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="454,211,436,266,415,306,390,343,385,340,411,303,432,264,449,210"/>
+<area shape="rect" id="Node000009" href="$class_lane_factory.html" title=" " alt="" coords="418,753,514,839"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="464,839,442,1055,437,1055,459,838"/>
+<area shape="rect" id="Node000010" href="$class_map.html" title=" " alt="" coords="539,626,708,966"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="553,967,490,1111,485,1109,548,965"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="733,763,770,829"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="756,828,756,867,752,913,742,963,723,1010,701,1045,675,1079,617,1139,555,1190,497,1230,494,1225,551,1186,613,1135,671,1075,697,1042,718,1007,737,961,747,913,751,867,751,828"/>
+</map>

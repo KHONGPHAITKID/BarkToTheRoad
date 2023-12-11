@@ -1,0 +1,314 @@
+[
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "",
+    "file": "CMakeFiles/Bark.dir",
+    "output": "cmake_object_order_depends_target_Bark"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/._PuppyCrossingGame.cpp.obj -MF CMakeFiles\\Bark.dir\\._PuppyCrossingGame.cpp.obj.d -o CMakeFiles/Bark.dir/._PuppyCrossingGame.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/._PuppyCrossingGame.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/._PuppyCrossingGame.cpp",
+    "output": "CMakeFiles/Bark.dir/._PuppyCrossingGame.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/AsphaltLane.cpp.obj -MF CMakeFiles\\Bark.dir\\AsphaltLane.cpp.obj.d -o CMakeFiles/Bark.dir/AsphaltLane.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/AsphaltLane.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/AsphaltLane.cpp",
+    "output": "CMakeFiles/Bark.dir/AsphaltLane.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/BarkCommand.cpp.obj -MF CMakeFiles\\Bark.dir\\BarkCommand.cpp.obj.d -o CMakeFiles/Bark.dir/BarkCommand.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/BarkCommand.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/BarkCommand.cpp",
+    "output": "CMakeFiles/Bark.dir/BarkCommand.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/Button.cpp.obj -MF CMakeFiles\\Bark.dir\\Button.cpp.obj.d -o CMakeFiles/Bark.dir/Button.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Button.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Button.cpp",
+    "output": "CMakeFiles/Bark.dir/Button.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/Character.cpp.obj -MF CMakeFiles\\Bark.dir\\Character.cpp.obj.d -o CMakeFiles/Bark.dir/Character.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Character.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Character.cpp",
+    "output": "CMakeFiles/Bark.dir/Character.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/Command.cpp.obj -MF CMakeFiles\\Bark.dir\\Command.cpp.obj.d -o CMakeFiles/Bark.dir/Command.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Command.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Command.cpp",
+    "output": "CMakeFiles/Bark.dir/Command.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/CreditScreen.cpp.obj -MF CMakeFiles\\Bark.dir\\CreditScreen.cpp.obj.d -o CMakeFiles/Bark.dir/CreditScreen.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/CreditScreen.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/CreditScreen.cpp",
+    "output": "CMakeFiles/Bark.dir/CreditScreen.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/Dialog.cpp.obj -MF CMakeFiles\\Bark.dir\\Dialog.cpp.obj.d -o CMakeFiles/Bark.dir/Dialog.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Dialog.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Dialog.cpp",
+    "output": "CMakeFiles/Bark.dir/Dialog.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/EndScreen.cpp.obj -MF CMakeFiles\\Bark.dir\\EndScreen.cpp.obj.d -o CMakeFiles/Bark.dir/EndScreen.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/EndScreen.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/EndScreen.cpp",
+    "output": "CMakeFiles/Bark.dir/EndScreen.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/Entity.cpp.obj -MF CMakeFiles\\Bark.dir\\Entity.cpp.obj.d -o CMakeFiles/Bark.dir/Entity.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Entity.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Entity.cpp",
+    "output": "CMakeFiles/Bark.dir/Entity.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/GameScreen.cpp.obj -MF CMakeFiles\\Bark.dir\\GameScreen.cpp.obj.d -o CMakeFiles/Bark.dir/GameScreen.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/GameScreen.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/GameScreen.cpp",
+    "output": "CMakeFiles/Bark.dir/GameScreen.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/Gameplay.cpp.obj -MF CMakeFiles\\Bark.dir\\Gameplay.cpp.obj.d -o CMakeFiles/Bark.dir/Gameplay.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Gameplay.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Gameplay.cpp",
+    "output": "CMakeFiles/Bark.dir/Gameplay.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/Global.cpp.obj -MF CMakeFiles\\Bark.dir\\Global.cpp.obj.d -o CMakeFiles/Bark.dir/Global.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Global.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Global.cpp",
+    "output": "CMakeFiles/Bark.dir/Global.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/GrassLane.cpp.obj -MF CMakeFiles\\Bark.dir\\GrassLane.cpp.obj.d -o CMakeFiles/Bark.dir/GrassLane.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/GrassLane.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/GrassLane.cpp",
+    "output": "CMakeFiles/Bark.dir/GrassLane.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/InputBox.cpp.obj -MF CMakeFiles\\Bark.dir\\InputBox.cpp.obj.d -o CMakeFiles/Bark.dir/InputBox.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/InputBox.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/InputBox.cpp",
+    "output": "CMakeFiles/Bark.dir/InputBox.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/InputHandler.cpp.obj -MF CMakeFiles\\Bark.dir\\InputHandler.cpp.obj.d -o CMakeFiles/Bark.dir/InputHandler.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/InputHandler.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/InputHandler.cpp",
+    "output": "CMakeFiles/Bark.dir/InputHandler.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/Lane.cpp.obj -MF CMakeFiles\\Bark.dir\\Lane.cpp.obj.d -o CMakeFiles/Bark.dir/Lane.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Lane.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Lane.cpp",
+    "output": "CMakeFiles/Bark.dir/Lane.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/LaneFactory.cpp.obj -MF CMakeFiles\\Bark.dir\\LaneFactory.cpp.obj.d -o CMakeFiles/Bark.dir/LaneFactory.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/LaneFactory.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/LaneFactory.cpp",
+    "output": "CMakeFiles/Bark.dir/LaneFactory.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/LoadScreen.cpp.obj -MF CMakeFiles\\Bark.dir\\LoadScreen.cpp.obj.d -o CMakeFiles/Bark.dir/LoadScreen.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/LoadScreen.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/LoadScreen.cpp",
+    "output": "CMakeFiles/Bark.dir/LoadScreen.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/LoadShape.cpp.obj -MF CMakeFiles\\Bark.dir\\LoadShape.cpp.obj.d -o CMakeFiles/Bark.dir/LoadShape.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/LoadShape.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/LoadShape.cpp",
+    "output": "CMakeFiles/Bark.dir/LoadShape.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/Map.cpp.obj -MF CMakeFiles\\Bark.dir\\Map.cpp.obj.d -o CMakeFiles/Bark.dir/Map.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Map.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Map.cpp",
+    "output": "CMakeFiles/Bark.dir/Map.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/MenuScreen.cpp.obj -MF CMakeFiles\\Bark.dir\\MenuScreen.cpp.obj.d -o CMakeFiles/Bark.dir/MenuScreen.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/MenuScreen.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/MenuScreen.cpp",
+    "output": "CMakeFiles/Bark.dir/MenuScreen.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/MouseClickCommand.cpp.obj -MF CMakeFiles\\Bark.dir\\MouseClickCommand.cpp.obj.d -o CMakeFiles/Bark.dir/MouseClickCommand.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/MouseClickCommand.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/MouseClickCommand.cpp",
+    "output": "CMakeFiles/Bark.dir/MouseClickCommand.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/MoveDownCommand.cpp.obj -MF CMakeFiles\\Bark.dir\\MoveDownCommand.cpp.obj.d -o CMakeFiles/Bark.dir/MoveDownCommand.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/MoveDownCommand.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/MoveDownCommand.cpp",
+    "output": "CMakeFiles/Bark.dir/MoveDownCommand.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/MoveLeftCommand.cpp.obj -MF CMakeFiles\\Bark.dir\\MoveLeftCommand.cpp.obj.d -o CMakeFiles/Bark.dir/MoveLeftCommand.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/MoveLeftCommand.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/MoveLeftCommand.cpp",
+    "output": "CMakeFiles/Bark.dir/MoveLeftCommand.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/MoveRightCommand.cpp.obj -MF CMakeFiles\\Bark.dir\\MoveRightCommand.cpp.obj.d -o CMakeFiles/Bark.dir/MoveRightCommand.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/MoveRightCommand.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/MoveRightCommand.cpp",
+    "output": "CMakeFiles/Bark.dir/MoveRightCommand.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/MoveUpCommand.cpp.obj -MF CMakeFiles\\Bark.dir\\MoveUpCommand.cpp.obj.d -o CMakeFiles/Bark.dir/MoveUpCommand.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/MoveUpCommand.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/MoveUpCommand.cpp",
+    "output": "CMakeFiles/Bark.dir/MoveUpCommand.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/Obstacle.cpp.obj -MF CMakeFiles\\Bark.dir\\Obstacle.cpp.obj.d -o CMakeFiles/Bark.dir/Obstacle.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Obstacle.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Obstacle.cpp",
+    "output": "CMakeFiles/Bark.dir/Obstacle.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/ObstacleFactory.cpp.obj -MF CMakeFiles\\Bark.dir\\ObstacleFactory.cpp.obj.d -o CMakeFiles/Bark.dir/ObstacleFactory.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/ObstacleFactory.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/ObstacleFactory.cpp",
+    "output": "CMakeFiles/Bark.dir/ObstacleFactory.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/PuppyCrossingGame.cpp.obj -MF CMakeFiles\\Bark.dir\\PuppyCrossingGame.cpp.obj.d -o CMakeFiles/Bark.dir/PuppyCrossingGame.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/PuppyCrossingGame.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/PuppyCrossingGame.cpp",
+    "output": "CMakeFiles/Bark.dir/PuppyCrossingGame.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/RailLane.cpp.obj -MF CMakeFiles\\Bark.dir\\RailLane.cpp.obj.d -o CMakeFiles/Bark.dir/RailLane.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/RailLane.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/RailLane.cpp",
+    "output": "CMakeFiles/Bark.dir/RailLane.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/RankScreen.cpp.obj -MF CMakeFiles\\Bark.dir\\RankScreen.cpp.obj.d -o CMakeFiles/Bark.dir/RankScreen.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/RankScreen.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/RankScreen.cpp",
+    "output": "CMakeFiles/Bark.dir/RankScreen.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/RenderState.cpp.obj -MF CMakeFiles\\Bark.dir\\RenderState.cpp.obj.d -o CMakeFiles/Bark.dir/RenderState.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/RenderState.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/RenderState.cpp",
+    "output": "CMakeFiles/Bark.dir/RenderState.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/RiverLane.cpp.obj -MF CMakeFiles\\Bark.dir\\RiverLane.cpp.obj.d -o CMakeFiles/Bark.dir/RiverLane.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/RiverLane.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/RiverLane.cpp",
+    "output": "CMakeFiles/Bark.dir/RiverLane.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/SaveScreen.cpp.obj -MF CMakeFiles\\Bark.dir\\SaveScreen.cpp.obj.d -o CMakeFiles/Bark.dir/SaveScreen.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/SaveScreen.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/SaveScreen.cpp",
+    "output": "CMakeFiles/Bark.dir/SaveScreen.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/Screen.cpp.obj -MF CMakeFiles\\Bark.dir\\Screen.cpp.obj.d -o CMakeFiles/Bark.dir/Screen.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Screen.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Screen.cpp",
+    "output": "CMakeFiles/Bark.dir/Screen.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/ScreenRegistry.cpp.obj -MF CMakeFiles\\Bark.dir\\ScreenRegistry.cpp.obj.d -o CMakeFiles/Bark.dir/ScreenRegistry.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/ScreenRegistry.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/ScreenRegistry.cpp",
+    "output": "CMakeFiles/Bark.dir/ScreenRegistry.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/SettingScreen.cpp.obj -MF CMakeFiles\\Bark.dir\\SettingScreen.cpp.obj.d -o CMakeFiles/Bark.dir/SettingScreen.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/SettingScreen.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/SettingScreen.cpp",
+    "output": "CMakeFiles/Bark.dir/SettingScreen.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/Shape.cpp.obj -MF CMakeFiles\\Bark.dir\\Shape.cpp.obj.d -o CMakeFiles/Bark.dir/Shape.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Shape.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Shape.cpp",
+    "output": "CMakeFiles/Bark.dir/Shape.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/Sound.cpp.obj -MF CMakeFiles\\Bark.dir\\Sound.cpp.obj.d -o CMakeFiles/Bark.dir/Sound.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Sound.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Sound.cpp",
+    "output": "CMakeFiles/Bark.dir/Sound.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/SpringMap.cpp.obj -MF CMakeFiles\\Bark.dir\\SpringMap.cpp.obj.d -o CMakeFiles/Bark.dir/SpringMap.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/SpringMap.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/SpringMap.cpp",
+    "output": "CMakeFiles/Bark.dir/SpringMap.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/SummerLane.cpp.obj -MF CMakeFiles\\Bark.dir\\SummerLane.cpp.obj.d -o CMakeFiles/Bark.dir/SummerLane.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/SummerLane.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/SummerLane.cpp",
+    "output": "CMakeFiles/Bark.dir/SummerLane.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/Text.cpp.obj -MF CMakeFiles\\Bark.dir\\Text.cpp.obj.d -o CMakeFiles/Bark.dir/Text.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Text.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/Text.cpp",
+    "output": "CMakeFiles/Bark.dir/Text.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/TrafficLight.cpp.obj -MF CMakeFiles\\Bark.dir\\TrafficLight.cpp.obj.d -o CMakeFiles/Bark.dir/TrafficLight.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/TrafficLight.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/TrafficLight.cpp",
+    "output": "CMakeFiles/Bark.dir/TrafficLight.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\MinGW\\bin\\c++.exe   -std=gnu++14 -MD -MT CMakeFiles/Bark.dir/renderer.cpp.obj -MF CMakeFiles\\Bark.dir\\renderer.cpp.obj.d -o CMakeFiles/Bark.dir/renderer.cpp.obj -c C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/renderer.cpp",
+    "file": "C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/renderer.cpp",
+    "output": "CMakeFiles/Bark.dir/renderer.cpp.obj"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "C:\\Windows\\system32\\cmd.exe /C \"cd . && C:\\MinGW\\bin\\c++.exe   CMakeFiles/Bark.dir/._PuppyCrossingGame.cpp.obj CMakeFiles/Bark.dir/AsphaltLane.cpp.obj CMakeFiles/Bark.dir/BarkCommand.cpp.obj CMakeFiles/Bark.dir/Button.cpp.obj CMakeFiles/Bark.dir/Character.cpp.obj CMakeFiles/Bark.dir/Command.cpp.obj CMakeFiles/Bark.dir/CreditScreen.cpp.obj CMakeFiles/Bark.dir/Dialog.cpp.obj CMakeFiles/Bark.dir/EndScreen.cpp.obj CMakeFiles/Bark.dir/Entity.cpp.obj CMakeFiles/Bark.dir/GameScreen.cpp.obj CMakeFiles/Bark.dir/Gameplay.cpp.obj CMakeFiles/Bark.dir/Global.cpp.obj CMakeFiles/Bark.dir/GrassLane.cpp.obj CMakeFiles/Bark.dir/InputBox.cpp.obj CMakeFiles/Bark.dir/InputHandler.cpp.obj CMakeFiles/Bark.dir/Lane.cpp.obj CMakeFiles/Bark.dir/LaneFactory.cpp.obj CMakeFiles/Bark.dir/LoadScreen.cpp.obj CMakeFiles/Bark.dir/LoadShape.cpp.obj CMakeFiles/Bark.dir/Map.cpp.obj CMakeFiles/Bark.dir/MenuScreen.cpp.obj CMakeFiles/Bark.dir/MouseClickCommand.cpp.obj CMakeFiles/Bark.dir/MoveDownCommand.cpp.obj CMakeFiles/Bark.dir/MoveLeftCommand.cpp.obj CMakeFiles/Bark.dir/MoveRightCommand.cpp.obj CMakeFiles/Bark.dir/MoveUpCommand.cpp.obj CMakeFiles/Bark.dir/Obstacle.cpp.obj CMakeFiles/Bark.dir/ObstacleFactory.cpp.obj CMakeFiles/Bark.dir/PuppyCrossingGame.cpp.obj CMakeFiles/Bark.dir/RailLane.cpp.obj CMakeFiles/Bark.dir/RankScreen.cpp.obj CMakeFiles/Bark.dir/RenderState.cpp.obj CMakeFiles/Bark.dir/RiverLane.cpp.obj CMakeFiles/Bark.dir/SaveScreen.cpp.obj CMakeFiles/Bark.dir/Screen.cpp.obj CMakeFiles/Bark.dir/ScreenRegistry.cpp.obj CMakeFiles/Bark.dir/SettingScreen.cpp.obj CMakeFiles/Bark.dir/Shape.cpp.obj CMakeFiles/Bark.dir/Sound.cpp.obj CMakeFiles/Bark.dir/SpringMap.cpp.obj CMakeFiles/Bark.dir/SummerLane.cpp.obj CMakeFiles/Bark.dir/Text.cpp.obj CMakeFiles/Bark.dir/TrafficLight.cpp.obj CMakeFiles/Bark.dir/renderer.cpp.obj -o Bark.exe -Wl,--out-implib,libBark.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd .\"",
+    "file": "CMakeFiles/Bark.dir/._PuppyCrossingGame.cpp.obj",
+    "output": "Bark.exe"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "",
+    "file": "CMakeFiles/edit_cache.util",
+    "output": "edit_cache"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "",
+    "file": "CMakeFiles/rebuild_cache.util",
+    "output": "rebuild_cache"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "",
+    "file": "Bark.exe",
+    "output": "Bark"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "",
+    "file": "Bark.exe",
+    "output": "all"
+  },
+  {
+    "directory": "C:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "command": "\"C:\\Program Files\\CMake\\bin\\cmake.exe\" --regenerate-during-build -SC:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame -BC:\\Users\\winprn\\source\\repos\\BarkToTheRoad\\PuppyCrossingGame\\build",
+    "file": "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake",
+    "output": "build.ninja"
+  }
+]

@@ -1,0 +1,45 @@
+\doxysection{Traffic\+Light.\+h}
+\hypertarget{_traffic_light_8h_source}{}\label{_traffic_light_8h_source}\mbox{\hyperlink{_traffic_light_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_shape_8h}{Shape.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_load_shape_8h}{LoadShape.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{_traffic_light_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}}\ \{\mbox{\hyperlink{_traffic_light_8h_ab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88}{RED}},\ \mbox{\hyperlink{_traffic_light_8h_ab87bacfdad76e61b9412d7124be44c1caa60bd322f93178d68184e30e162571ca}{GREEN}}\};}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_traffic_light}{TrafficLight}}}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00009\ \ \ \ \ COORD\ m\_position;;}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_shape}{Shape}}*\ m\_shape[2];}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_lastTime;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_greenDuration,\ m\_redDuration;}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{_traffic_light_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}}\ m\_color;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_traffic_light_a28e72db41dcbd224a0a811d08ae20c3f}{TrafficLight}}();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_traffic_light_a1c23af352e2d90ec1074aa7d62e38179}{TrafficLight}}(\textcolor{keywordtype}{int}\ greenDuration,\ \textcolor{keywordtype}{int}\ redDuration):\ m\_color\{\ \mbox{\hyperlink{_traffic_light_8h_ab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88}{RED}}\ \},\ m\_lastTime\{0\},\ m\_greenDuration\{greenDuration\},\ m\_redDuration\{redDuration\}\ \{\}}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_traffic_light_ac8579acbe1322fade26f2d0d24726550}{TrafficLight}}(COORD\ pos,\ \textcolor{keywordtype}{int}\ greenDuration,\ \textcolor{keywordtype}{int}\ redDuration):\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ m\_position\{pos\},\ m\_color\{\ \mbox{\hyperlink{_traffic_light_8h_ab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88}{RED}}\ \},\ m\_lastTime\{0\},\ m\_greenDuration\{greenDuration\},\ m\_redDuration\{redDuration\}\ \{\}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_traffic_light_a639c01dcf03b93fa26a56da09c1cfb22}{setGreenDuration}}(\textcolor{keywordtype}{int}\ greenDuration)\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ m\_greenDuration\ =\ greenDuration;}
+\DoxyCodeLine{00023\ \ \ \ \ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_traffic_light_a798d5580560b7c54916d6bc65d09241d}{setRedDuration}}(\textcolor{keywordtype}{int}\ redDuration)\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ m\_redDuration\ =\ redDuration;}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_traffic_light_abee6a44cb3ee07a43bd4e882c61dfc71}{setPos}}(\textcolor{keyword}{const}\ COORD\ \&pos);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_traffic_light_afe99462350f9985b7625c5baeb5f6220}{render}}(\textcolor{keywordtype}{int}\ offset\ =\ 0);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_traffic_light_a61ee0aee894b9351a4b57bbcff49ff6b}{update}}();}
+\DoxyCodeLine{00032\ \ \ \ \ COORD\ \mbox{\hyperlink{class_traffic_light_ad9d9c1c1ab46665fc941c22e422a1e9d}{getPos}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_traffic_light_a8536824dc325318eae71f8c7f2eefc4d}{isRed}}();}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_traffic_light_a5ba7a1fac14da37e239321302bc3f3e7}{setRedLight}}();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_traffic_light_a86793459bcee55cb308f722386d8ceb5}{setGreenLight}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{friend}\ std::istream\&\ \mbox{\hyperlink{class_traffic_light_a9aa63e0a60a5c0a833c3596192f96399}{operator>>}}(std::istream\&\ in,\ \mbox{\hyperlink{class_traffic_light}{TrafficLight}}\ \&light);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{class_traffic_light_aa561fa9aae872fcb73663457d0d00893}{operator<<}}(std::ostream\&\ out,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_traffic_light}{TrafficLight}}\ \&light);}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+
+\end{DoxyCode}

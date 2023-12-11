@@ -1,0 +1,179 @@
+\doxysection{Grass\+Lane Class Reference}
+\hypertarget{class_grass_lane}{}\label{class_grass_lane}\index{GrassLane@{GrassLane}}
+
+
+{\ttfamily \#include $<$Grass\+Lane.\+h$>$}
+
+
+
+Inheritance diagram for Grass\+Lane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_grass_lane__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Grass\+Lane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_grass_lane__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_grass_lane_ac06eee7bad323263fe1adc65b9111c23}{Grass\+Lane}} ()
+\item 
+\mbox{\hyperlink{class_grass_lane_a24a5709c13c21a880f41f31a6c2449a6}{Grass\+Lane}} (const COORD \&pos)
+\item 
+void \mbox{\hyperlink{class_grass_lane_aac698d98ea0823ffd8ccd2be72adcccb}{add\+Obstacle}} () override
+\item 
+void \mbox{\hyperlink{class_grass_lane_a3a27140e297ce7ec9fc30d136a8ee3b3}{move\+Obstacle}} () override
+\item 
+void \mbox{\hyperlink{class_grass_lane_a32038762726f81222a69e28187b8ccb8}{spawn\+Obstacle}} ()
+\item 
+void \mbox{\hyperlink{class_grass_lane_acfddc7b87e070537d59e0335af73a0d2}{render}} (int offset=0) override
+\item 
+bool \mbox{\hyperlink{class_grass_lane_ae91bd2995205e8721c577ced8ffe3f47}{is\+Static\+Lane}} () override
+\item 
+bool \mbox{\hyperlink{class_grass_lane_ae3c39e3760211388b5f0e3ce8f7cd5f1}{check\+Collision}} (\mbox{\hyperlink{class_character}{Character}} \&e) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_lane}{Lane}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lane_a654d27784d6b4206507cc1eaaf302fd1}{Lane}} ()=default
+\item 
+\mbox{\hyperlink{class_lane_a1c023c4eca02fb9a52365b7f6c04d7d4}{\texorpdfstring{$\sim$}{\string~}\+Lane}} ()
+\item 
+\mbox{\hyperlink{class_lane}{Lane}} \& \mbox{\hyperlink{class_lane_a2c135b985e56386402244062be677264}{operator=}} (const \mbox{\hyperlink{class_lane}{Lane}} \&lane)
+\item 
+\mbox{\hyperlink{class_lane_a61dea1fe03c70e22e663a7acb8d76487}{Lane}} (const COORD \&pos)
+\item 
+\mbox{\hyperlink{class_lane_a098288b771b281e0adac903360744246}{Lane}} (const \mbox{\hyperlink{class_lane}{Lane}} \&lane)
+\item 
+virtual bool \mbox{\hyperlink{class_lane_a6656c02f13516ce7665b220c6a84adf3}{spawn\+Rate}} ()
+\item 
+virtual void \mbox{\hyperlink{class_lane_a704e5f5bbaccd93576f3f6be8c61593f}{remove\+Obstacle}} ()
+\item 
+virtual void \mbox{\hyperlink{class_lane_af76fda81389894e5d1d6d3a07f1b6df1}{set\+Pos}} (const COORD \&pos)
+\item 
+COORD \mbox{\hyperlink{class_lane_aec751060d9aaa7ea5ac696f894d3c009}{get\+Collision}} (\mbox{\hyperlink{class_character}{Character}} \&c)
+\item 
+virtual void \mbox{\hyperlink{class_lane_a1e26cd57b24664b136bcd5675305eecf}{move\+Obstacle}} (\mbox{\hyperlink{class_character}{Character}} \&c)
+\item 
+virtual bool \mbox{\hyperlink{class_lane_a192c304102dbfad108ca42526cfb1717}{is\+River\+Lane}} ()
+\item 
+void \mbox{\hyperlink{class_lane_af1ca534908e0a65b485498ae1fb41dfa}{reverse\+Direction}} ()
+\item 
+void \mbox{\hyperlink{class_lane_af15c012f4a9b59fa220b78c5d96404d5}{set\+Factory\+Index}} (int index)
+\item 
+int \mbox{\hyperlink{class_lane_ae32ae28ac8532d23c3905cfb14257b2a}{get\+Factory\+Index}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_lane}{Lane}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_obstacle_factory}{Obstacle\+Factory}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_lane_a86129fe17c047648fc0d5af3a5ada633}{m\+\_\+fact}}
+\item 
+\mbox{\hyperlink{class_shape}{Shape}} \mbox{\hyperlink{class_lane_a22ec3e2576e7fa313fa2cc47162b3510}{m\+\_\+shape}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_lane}{Lane}}}
+\begin{DoxyCompactItemize}
+\item 
+COORD \mbox{\hyperlink{class_lane_a3e6afa2077f305c1698ee9a0c1d50d58}{m\+\_\+position}} \{\}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_obstacle}{Obstacle}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_lane_af4e206d281c2a33cd0a104dc390306eb}{m\+\_\+obs}}
+\item 
+\mbox{\hyperlink{class_traffic_light}{Traffic\+Light}} \mbox{\hyperlink{class_lane_a01d845dc63e378f35e598cb178fc58d3}{m\+\_\+light}}
+\item 
+short \mbox{\hyperlink{class_lane_ae7c9ebee139b397a24fa2cd426f56e81}{direction}} \{1\}
+\item 
+int \mbox{\hyperlink{class_lane_a807e37b022f66c920a702c8383c82ba8}{m\+\_\+shape\+Index}}
+\item 
+int \mbox{\hyperlink{class_lane_a8a8f034305993711570abc79bd45490e}{m\+\_\+factory\+Index}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_grass_lane_ac06eee7bad323263fe1adc65b9111c23}\label{class_grass_lane_ac06eee7bad323263fe1adc65b9111c23} 
+\index{GrassLane@{GrassLane}!GrassLane@{GrassLane}}
+\index{GrassLane@{GrassLane}!GrassLane@{GrassLane}}
+\doxysubsubsection{\texorpdfstring{GrassLane()}{GrassLane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Grass\+Lane\+::\+Grass\+Lane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_grass_lane_a24a5709c13c21a880f41f31a6c2449a6}\label{class_grass_lane_a24a5709c13c21a880f41f31a6c2449a6} 
+\index{GrassLane@{GrassLane}!GrassLane@{GrassLane}}
+\index{GrassLane@{GrassLane}!GrassLane@{GrassLane}}
+\doxysubsubsection{\texorpdfstring{GrassLane()}{GrassLane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Grass\+Lane\+::\+Grass\+Lane (\begin{DoxyParamCaption}\item[{const COORD \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_grass_lane_aac698d98ea0823ffd8ccd2be72adcccb}\label{class_grass_lane_aac698d98ea0823ffd8ccd2be72adcccb} 
+\index{GrassLane@{GrassLane}!addObstacle@{addObstacle}}
+\index{addObstacle@{addObstacle}!GrassLane@{GrassLane}}
+\doxysubsubsection{\texorpdfstring{addObstacle()}{addObstacle()}}
+{\footnotesize\ttfamily void Grass\+Lane\+::add\+Obstacle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_lane_ad2c17f9e736875d074004fe2e06d916c}{Lane}}.
+
+\Hypertarget{class_grass_lane_ae3c39e3760211388b5f0e3ce8f7cd5f1}\label{class_grass_lane_ae3c39e3760211388b5f0e3ce8f7cd5f1} 
+\index{GrassLane@{GrassLane}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!GrassLane@{GrassLane}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
+{\footnotesize\ttfamily bool Grass\+Lane\+::check\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_lane_aca63c5e636175c1e27e274819005a2d2}{Lane}}.
+
+\Hypertarget{class_grass_lane_ae91bd2995205e8721c577ced8ffe3f47}\label{class_grass_lane_ae91bd2995205e8721c577ced8ffe3f47} 
+\index{GrassLane@{GrassLane}!isStaticLane@{isStaticLane}}
+\index{isStaticLane@{isStaticLane}!GrassLane@{GrassLane}}
+\doxysubsubsection{\texorpdfstring{isStaticLane()}{isStaticLane()}}
+{\footnotesize\ttfamily bool Grass\+Lane\+::is\+Static\+Lane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_lane_ab51137e3378ab3ddcee770e89ea835ad}{Lane}}.
+
+\Hypertarget{class_grass_lane_a3a27140e297ce7ec9fc30d136a8ee3b3}\label{class_grass_lane_a3a27140e297ce7ec9fc30d136a8ee3b3} 
+\index{GrassLane@{GrassLane}!moveObstacle@{moveObstacle}}
+\index{moveObstacle@{moveObstacle}!GrassLane@{GrassLane}}
+\doxysubsubsection{\texorpdfstring{moveObstacle()}{moveObstacle()}}
+{\footnotesize\ttfamily void Grass\+Lane\+::move\+Obstacle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_lane_acabeb6e12977c1e3c82284c06d8f1794}{Lane}}.
+
+\Hypertarget{class_grass_lane_acfddc7b87e070537d59e0335af73a0d2}\label{class_grass_lane_acfddc7b87e070537d59e0335af73a0d2} 
+\index{GrassLane@{GrassLane}!render@{render}}
+\index{render@{render}!GrassLane@{GrassLane}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Grass\+Lane\+::render (\begin{DoxyParamCaption}\item[{int}]{offset = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_lane_a14b94d940ffa7c30684cb0bd2a67db4b}{Lane}}.
+
+\Hypertarget{class_grass_lane_a32038762726f81222a69e28187b8ccb8}\label{class_grass_lane_a32038762726f81222a69e28187b8ccb8} 
+\index{GrassLane@{GrassLane}!spawnObstacle@{spawnObstacle}}
+\index{spawnObstacle@{spawnObstacle}!GrassLane@{GrassLane}}
+\doxysubsubsection{\texorpdfstring{spawnObstacle()}{spawnObstacle()}}
+{\footnotesize\ttfamily void Grass\+Lane\+::spawn\+Obstacle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_grass_lane_8h}{Grass\+Lane.\+h}}\item 
+\mbox{\hyperlink{_grass_lane_8cpp}{Grass\+Lane.\+cpp}}\end{DoxyCompactItemize}

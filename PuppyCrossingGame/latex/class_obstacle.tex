@@ -1,0 +1,180 @@
+\doxysection{Obstacle Class Reference}
+\hypertarget{class_obstacle}{}\label{class_obstacle}\index{Obstacle@{Obstacle}}
+
+
+{\ttfamily \#include $<$Obstacle.\+h$>$}
+
+
+
+Inheritance diagram for Obstacle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_obstacle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Obstacle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_obstacle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebda}{Obstacle\+Type}} \{ \mbox{\hyperlink{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebdaaed0492e5e2e4e7dff987a117b29f2b53}{MOVING}}
+, \mbox{\hyperlink{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebdaa0f8d5bd4d4b4d563581a499c5cbc21fd}{STANDING}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_obstacle_a2ca1c426c77a3e2763250434ab51dae4}{Obstacle}} ()=default
+\item 
+\mbox{\hyperlink{class_obstacle_a9f75b0660261e0445c144e2493b8c361}{Obstacle}} (const COORD \&pos, int type, int is\+Standing, int speed)
+\item 
+COORD \mbox{\hyperlink{class_obstacle_a32dd261239c925b6c2027ea2dac60c1a}{get\+Pos}} ()
+\item 
+void \mbox{\hyperlink{class_obstacle_a58f4a15ef400b5006ebf7fc28e6e8afe}{set\+Rate}} (int rate)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_entity}{Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_entity_aa28e3afd0766aae4d570ee9ee3c4ae3b}{Entity}} ()=default
+\item 
+\mbox{\hyperlink{class_entity_af534c6e4269ecc09a079005133915af9}{Entity}} (const COORD \&pos, \mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{_puppy_crossing_game_8cpp_a191482ef3e0e75c53cfe1c603c2dbcdf}{s}})
+\item 
+virtual void \mbox{\hyperlink{class_entity_aed9a4abb8956b3e3ec894bf8b66cedaf}{render}} (int offset=0)
+\item 
+void \mbox{\hyperlink{class_entity_a9b0585312b39ee193b8f30763d59dcaf}{move}} (const COORD \&pos)
+\item 
+void \mbox{\hyperlink{class_entity_a58f4a15ef400b5006ebf7fc28e6e8afe}{set\+Rate}} (int rate)
+\item 
+void \mbox{\hyperlink{class_entity_a68264600f7d111f88be5f7c960f8a6fc}{set\+Pos}} (COORD pos)
+\item 
+COORD \mbox{\hyperlink{class_entity_a15adb8c361741c457bb0ee5603c1ddec}{get\+Pos}} () const
+\item 
+COORD \mbox{\hyperlink{class_entity_ad3d7540a8d9e7c33d033562a08d722fc}{get\+New\+Pos}} () const
+\item 
+void \mbox{\hyperlink{class_entity_a7c921a26a91394a2cb6aca2aae78bbbe}{stop\+Moving}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_entity_ad2e9dd7fb32dc50bdb5cb2101bdc329a}{is\+Collison}} (const \mbox{\hyperlink{class_entity}{Entity}} \&e)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebda}{Obstacle\+Type}} \mbox{\hyperlink{class_obstacle_a87926b61e249731985cfbdfb61fbb9f4}{m\+\_\+type}} \{ \mbox{\hyperlink{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebdaaed0492e5e2e4e7dff987a117b29f2b53}{MOVING}} \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_obstacle_a8d442f6c83a8078c16e7329cf4e816f0}{m\+\_\+shape\+Index}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_entity}{Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_entity_a48d6a1f6876a9f891663ba52a40915ec}{m\+\_\+rate}} \{ 30 \}
+\item 
+COORD \mbox{\hyperlink{class_entity_a5e6962418009eb0b31147f876dbda42d}{m\+\_\+position}}
+\item 
+COORD \mbox{\hyperlink{class_entity_a4821d9224aaa22bb015c6441966e7daf}{m\+\_\+new\+\_\+position}}
+\item 
+\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_entity_a3c031e4c84dc6b14769528d28f3a52ca}{m\+\_\+shape}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream \& \mbox{\hyperlink{class_obstacle_a79320c738fc3177f09f772e3e5c81019}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_obstacle}{Obstacle}} \&obs)
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_obstacle_a35e79916386c92a058859a6adabcdabf}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_obstacle}{Obstacle}} \&obs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebda}\label{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebda} 
+\index{Obstacle@{Obstacle}!ObstacleType@{ObstacleType}}
+\index{ObstacleType@{ObstacleType}!Obstacle@{Obstacle}}
+\doxysubsubsection{\texorpdfstring{ObstacleType}{ObstacleType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebda}{Obstacle\+::\+Obstacle\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOVING@{MOVING}!Obstacle@{Obstacle}}\index{Obstacle@{Obstacle}!MOVING@{MOVING}}}\Hypertarget{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebdaaed0492e5e2e4e7dff987a117b29f2b53}\label{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebdaaed0492e5e2e4e7dff987a117b29f2b53} 
+MOVING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STANDING@{STANDING}!Obstacle@{Obstacle}}\index{Obstacle@{Obstacle}!STANDING@{STANDING}}}\Hypertarget{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebdaa0f8d5bd4d4b4d563581a499c5cbc21fd}\label{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebdaa0f8d5bd4d4b4d563581a499c5cbc21fd} 
+STANDING&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_obstacle_a2ca1c426c77a3e2763250434ab51dae4}\label{class_obstacle_a2ca1c426c77a3e2763250434ab51dae4} 
+\index{Obstacle@{Obstacle}!Obstacle@{Obstacle}}
+\index{Obstacle@{Obstacle}!Obstacle@{Obstacle}}
+\doxysubsubsection{\texorpdfstring{Obstacle()}{Obstacle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Obstacle\+::\+Obstacle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_obstacle_a9f75b0660261e0445c144e2493b8c361}\label{class_obstacle_a9f75b0660261e0445c144e2493b8c361} 
+\index{Obstacle@{Obstacle}!Obstacle@{Obstacle}}
+\index{Obstacle@{Obstacle}!Obstacle@{Obstacle}}
+\doxysubsubsection{\texorpdfstring{Obstacle()}{Obstacle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Obstacle\+::\+Obstacle (\begin{DoxyParamCaption}\item[{const COORD \&}]{pos,  }\item[{int}]{type,  }\item[{int}]{is\+Standing,  }\item[{int}]{speed }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_obstacle_a32dd261239c925b6c2027ea2dac60c1a}\label{class_obstacle_a32dd261239c925b6c2027ea2dac60c1a} 
+\index{Obstacle@{Obstacle}!getPos@{getPos}}
+\index{getPos@{getPos}!Obstacle@{Obstacle}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily COORD Obstacle\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_obstacle_a58f4a15ef400b5006ebf7fc28e6e8afe}\label{class_obstacle_a58f4a15ef400b5006ebf7fc28e6e8afe} 
+\index{Obstacle@{Obstacle}!setRate@{setRate}}
+\index{setRate@{setRate}!Obstacle@{Obstacle}}
+\doxysubsubsection{\texorpdfstring{setRate()}{setRate()}}
+{\footnotesize\ttfamily void Entity\+::set\+Rate (\begin{DoxyParamCaption}\item[{int}]{rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_obstacle_a35e79916386c92a058859a6adabcdabf}\label{class_obstacle_a35e79916386c92a058859a6adabcdabf} 
+\index{Obstacle@{Obstacle}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Obstacle@{Obstacle}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_obstacle}{Obstacle}} \&}]{obs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\Hypertarget{class_obstacle_a79320c738fc3177f09f772e3e5c81019}\label{class_obstacle_a79320c738fc3177f09f772e3e5c81019} 
+\index{Obstacle@{Obstacle}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Obstacle@{Obstacle}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{class_obstacle}{Obstacle}} \&}]{obs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_obstacle_a8d442f6c83a8078c16e7329cf4e816f0}\label{class_obstacle_a8d442f6c83a8078c16e7329cf4e816f0} 
+\index{Obstacle@{Obstacle}!m\_shapeIndex@{m\_shapeIndex}}
+\index{m\_shapeIndex@{m\_shapeIndex}!Obstacle@{Obstacle}}
+\doxysubsubsection{\texorpdfstring{m\_shapeIndex}{m\_shapeIndex}}
+{\footnotesize\ttfamily int Obstacle\+::m\+\_\+shape\+Index\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_obstacle_a87926b61e249731985cfbdfb61fbb9f4}\label{class_obstacle_a87926b61e249731985cfbdfb61fbb9f4} 
+\index{Obstacle@{Obstacle}!m\_type@{m\_type}}
+\index{m\_type@{m\_type}!Obstacle@{Obstacle}}
+\doxysubsubsection{\texorpdfstring{m\_type}{m\_type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebda}{Obstacle\+Type}} Obstacle\+::m\+\_\+type \{ \mbox{\hyperlink{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebdaaed0492e5e2e4e7dff987a117b29f2b53}{MOVING}} \}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_obstacle_8h}{Obstacle.\+h}}\item 
+\mbox{\hyperlink{_obstacle_8cpp}{Obstacle.\+cpp}}\end{DoxyCompactItemize}

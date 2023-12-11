@@ -1,0 +1,19 @@
+\doxysection{Bark\+Command.\+h}
+\hypertarget{_bark_command_8h_source}{}\label{_bark_command_8h_source}\mbox{\hyperlink{_bark_command_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_command_8h}{Command.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sound_8h}{Sound.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_bark_command}{BarkCommand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_command}{Command}}}
+\DoxyCodeLine{00005\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00007\ \ \ \ \ \mbox{\hyperlink{class_sound_track}{SoundTrack}}\ m\_sound\{L\textcolor{stringliteral}{"{}"{}},\ L\textcolor{stringliteral}{"{}"{}}\ \};}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{class_bark_command_a58db9f3f7931c98405c83c09f3ddb1aa}{BarkCommand}}();}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bark_command_acec51ba5034adcbd7d510467e2659cb8}{execute}}(\mbox{\hyperlink{class_character}{Character}}\&\ c,\ \mbox{\hyperlink{class_map}{Map}}\&\ m)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bark_command_ae379d142aee656c7d2372a90be3de1d7}{isValidMove}}(\mbox{\hyperlink{class_character}{Character}}\&\ c,\ \mbox{\hyperlink{class_map}{Map}}\&\ m)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00012\ \ \ \ \ std::string\ \mbox{\hyperlink{class_bark_command_a98192a76e5df35e29a73e31ece2e0f49}{getType}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00013\ \};}
+\DoxyCodeLine{00014\ }
+
+\end{DoxyCode}

@@ -1,0 +1,239 @@
+\doxysection{Screen Class Reference}
+\hypertarget{class_screen}{}\label{class_screen}\index{Screen@{Screen}}
+
+
+{\ttfamily \#include $<$Screen.\+h$>$}
+
+
+
+Inheritance diagram for Screen\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_screen__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Screen\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_screen__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_screen_a401e1e1331090c468487d1fd100a4b0b}{Screen}} ()=default
+\item 
+\mbox{\hyperlink{class_screen_a2dc6d4bcae29ef3c71dc3e9bb8630dbe}{Screen}} (\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}background)
+\item 
+\mbox{\hyperlink{class_screen_a4243bc17596af96415b09ac48205676d}{\texorpdfstring{$\sim$}{\string~}\+Screen}} ()
+\item 
+void \mbox{\hyperlink{class_screen_a4c5cfa80abfc7e67bbf5e8012b45c393}{add\+Button}} (\mbox{\hyperlink{class_button}{Button}} \texorpdfstring{$\ast$}{*}b)
+\item 
+void \mbox{\hyperlink{class_screen_a5ee24b2d33896fe680159ae8933e649c}{remove\+Button}} (int i)
+\item 
+void \mbox{\hyperlink{class_screen_abc00db4573de9dbe2262b3e299b529a8}{set\+Background}} (\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}background)
+\item 
+void \mbox{\hyperlink{class_screen_ae9058fa8b4ae8e3e2e07f003306946c1}{add\+Text}} (\mbox{\hyperlink{class_text}{Text}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{_puppy_crossing_game_8cpp_a191482ef3e0e75c53cfe1c603c2dbcdf}{s}})
+\item 
+void \mbox{\hyperlink{class_screen_a238d30be206a25432ab8c67e5eddfd89}{clear\+Texts}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_button}{Button}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_screen_a936b5c785c987b5902257eece2cb3baa}{get\+Buttons}} () const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_text}{Text}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_screen_a78b67ecbc0ee2424a65f3ac1c59bdea6}{get\+Texts}} () const
+\item 
+virtual void \mbox{\hyperlink{class_screen_a819aa32ece0c9bf2b173e747d8713c0b}{render}} ()
+\item 
+virtual void \mbox{\hyperlink{class_screen_a88e13da2faf283567bd8109057f42fe2}{clean}} ()
+\item 
+void \mbox{\hyperlink{class_screen_a876343cf972d15caba150cd253b1950e}{clear\+Text}} ()
+\item 
+virtual void \mbox{\hyperlink{class_screen_af81a85b23f6609432a836e84324a8656}{render\+Text}} () const
+\item 
+virtual void \mbox{\hyperlink{class_screen_a2739cc939c2ff7a825afbbe287f704c0}{click\+Button}} ()
+\item 
+virtual void \mbox{\hyperlink{class_screen_af6f9adc4ff2a4ae2eb524293a6dd975a}{handle\+Key\+Pressed}} (WPARAM key)
+\item 
+virtual void \mbox{\hyperlink{class_screen_a05fdc4996e4856ac56b5bac6a7ee712f}{update\+Content}} ()
+\item 
+virtual int \mbox{\hyperlink{class_screen_adb58b1a292a1a0e6c3365ab0b608656f}{get\+Size}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_screen_a808d5f8e0be288fa33c75a2c3b546fce}{m\+\_\+background}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_button}{Button}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_screen_a97f9adeee51e5079696ceb25bf5deaa8}{m\+\_\+buttons}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_text}{Text}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_screen_a5d0548faa658956261259aa14cd7de5d}{m\+\_\+texts}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_screen_a401e1e1331090c468487d1fd100a4b0b}\label{class_screen_a401e1e1331090c468487d1fd100a4b0b} 
+\index{Screen@{Screen}!Screen@{Screen}}
+\index{Screen@{Screen}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{Screen()}{Screen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Screen\+::\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_screen_a2dc6d4bcae29ef3c71dc3e9bb8630dbe}\label{class_screen_a2dc6d4bcae29ef3c71dc3e9bb8630dbe} 
+\index{Screen@{Screen}!Screen@{Screen}}
+\index{Screen@{Screen}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{Screen()}{Screen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Screen\+::\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}}]{background }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_screen_a4243bc17596af96415b09ac48205676d}\label{class_screen_a4243bc17596af96415b09ac48205676d} 
+\index{Screen@{Screen}!````~Screen@{\texorpdfstring{$\sim$}{\string~}Screen}}
+\index{````~Screen@{\texorpdfstring{$\sim$}{\string~}Screen}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Screen()}{\string~Screen()}}
+{\footnotesize\ttfamily Screen\+::\texorpdfstring{$\sim$}{\string~}\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_screen_a4c5cfa80abfc7e67bbf5e8012b45c393}\label{class_screen_a4c5cfa80abfc7e67bbf5e8012b45c393} 
+\index{Screen@{Screen}!addButton@{addButton}}
+\index{addButton@{addButton}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{addButton()}{addButton()}}
+{\footnotesize\ttfamily void Screen\+::add\+Button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_button}{Button}} \texorpdfstring{$\ast$}{*}}]{b }\end{DoxyParamCaption})}
+
+\Hypertarget{class_screen_ae9058fa8b4ae8e3e2e07f003306946c1}\label{class_screen_ae9058fa8b4ae8e3e2e07f003306946c1} 
+\index{Screen@{Screen}!addText@{addText}}
+\index{addText@{addText}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{addText()}{addText()}}
+{\footnotesize\ttfamily void Screen\+::add\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}} \texorpdfstring{$\ast$}{*}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_screen_a88e13da2faf283567bd8109057f42fe2}\label{class_screen_a88e13da2faf283567bd8109057f42fe2} 
+\index{Screen@{Screen}!clean@{clean}}
+\index{clean@{clean}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily void Screen\+::clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_screen_ab1b3c4bac5a319b4271f93b48b960e5d}{Game\+Screen}}.
+
+\Hypertarget{class_screen_a876343cf972d15caba150cd253b1950e}\label{class_screen_a876343cf972d15caba150cd253b1950e} 
+\index{Screen@{Screen}!clearText@{clearText}}
+\index{clearText@{clearText}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{clearText()}{clearText()}}
+{\footnotesize\ttfamily void Screen\+::clear\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_screen_a238d30be206a25432ab8c67e5eddfd89}\label{class_screen_a238d30be206a25432ab8c67e5eddfd89} 
+\index{Screen@{Screen}!clearTexts@{clearTexts}}
+\index{clearTexts@{clearTexts}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{clearTexts()}{clearTexts()}}
+{\footnotesize\ttfamily void Screen\+::clear\+Texts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_screen_a2739cc939c2ff7a825afbbe287f704c0}\label{class_screen_a2739cc939c2ff7a825afbbe287f704c0} 
+\index{Screen@{Screen}!clickButton@{clickButton}}
+\index{clickButton@{clickButton}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{clickButton()}{clickButton()}}
+{\footnotesize\ttfamily void Screen\+::click\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_screen_ade4e1674bcca7113728fd88a0e8fb587}{Game\+Screen}}.
+
+\Hypertarget{class_screen_a936b5c785c987b5902257eece2cb3baa}\label{class_screen_a936b5c785c987b5902257eece2cb3baa} 
+\index{Screen@{Screen}!getButtons@{getButtons}}
+\index{getButtons@{getButtons}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{getButtons()}{getButtons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_button}{Button}} \texorpdfstring{$\ast$}{*} $>$ Screen\+::get\+Buttons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_screen_adb58b1a292a1a0e6c3365ab0b608656f}\label{class_screen_adb58b1a292a1a0e6c3365ab0b608656f} 
+\index{Screen@{Screen}!getSize@{getSize}}
+\index{getSize@{getSize}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily virtual int Screen\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_screen_a78b67ecbc0ee2424a65f3ac1c59bdea6}\label{class_screen_a78b67ecbc0ee2424a65f3ac1c59bdea6} 
+\index{Screen@{Screen}!getTexts@{getTexts}}
+\index{getTexts@{getTexts}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{getTexts()}{getTexts()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_text}{Text}} \texorpdfstring{$\ast$}{*} $>$ Screen\+::get\+Texts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_screen_af6f9adc4ff2a4ae2eb524293a6dd975a}\label{class_screen_af6f9adc4ff2a4ae2eb524293a6dd975a} 
+\index{Screen@{Screen}!handleKeyPressed@{handleKeyPressed}}
+\index{handleKeyPressed@{handleKeyPressed}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{handleKeyPressed()}{handleKeyPressed()}}
+{\footnotesize\ttfamily virtual void Screen\+::handle\+Key\+Pressed (\begin{DoxyParamCaption}\item[{WPARAM}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_screen_a7a825f322461e097ace893df425f8545}{Game\+Screen}}.
+
+\Hypertarget{class_screen_a5ee24b2d33896fe680159ae8933e649c}\label{class_screen_a5ee24b2d33896fe680159ae8933e649c} 
+\index{Screen@{Screen}!removeButton@{removeButton}}
+\index{removeButton@{removeButton}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{removeButton()}{removeButton()}}
+{\footnotesize\ttfamily void Screen\+::remove\+Button (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+\Hypertarget{class_screen_a819aa32ece0c9bf2b173e747d8713c0b}\label{class_screen_a819aa32ece0c9bf2b173e747d8713c0b} 
+\index{Screen@{Screen}!render@{render}}
+\index{render@{render}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Screen\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_setting_screen_a2b1b039af0e3ca648c178219ebf5daad}{Setting\+Screen}}, \mbox{\hyperlink{class_credit_screen_a957bb14c3bd2a151c35804873609fc3d}{Credit\+Screen}}, \mbox{\hyperlink{class_end_screen_a9b6f71c449679eca33f689dc6cdc5901}{End\+Screen}}, \mbox{\hyperlink{class_game_screen_a825bfaea0d0749334aca935383ef80c0}{Game\+Screen}}, and \mbox{\hyperlink{class_rank_screen_af275506d20666af55dd1873df1096a83}{Rank\+Screen}}.
+
+\Hypertarget{class_screen_af81a85b23f6609432a836e84324a8656}\label{class_screen_af81a85b23f6609432a836e84324a8656} 
+\index{Screen@{Screen}!renderText@{renderText}}
+\index{renderText@{renderText}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{renderText()}{renderText()}}
+{\footnotesize\ttfamily void Screen\+::render\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_screen_a2b27209909dc24288c4af49b4b1757e1}{Game\+Screen}}.
+
+\Hypertarget{class_screen_abc00db4573de9dbe2262b3e299b529a8}\label{class_screen_abc00db4573de9dbe2262b3e299b529a8} 
+\index{Screen@{Screen}!setBackground@{setBackground}}
+\index{setBackground@{setBackground}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{setBackground()}{setBackground()}}
+{\footnotesize\ttfamily void Screen\+::set\+Background (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}}]{background }\end{DoxyParamCaption})}
+
+\Hypertarget{class_screen_a05fdc4996e4856ac56b5bac6a7ee712f}\label{class_screen_a05fdc4996e4856ac56b5bac6a7ee712f} 
+\index{Screen@{Screen}!updateContent@{updateContent}}
+\index{updateContent@{updateContent}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{updateContent()}{updateContent()}}
+{\footnotesize\ttfamily virtual void Screen\+::update\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_load_screen_a7b472bb042387d8509bca89e8d3516c1}{Load\+Screen}}, and \mbox{\hyperlink{class_save_screen_a498ba72d94634d949611e11a3d1c56b9}{Save\+Screen}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_screen_a808d5f8e0be288fa33c75a2c3b546fce}\label{class_screen_a808d5f8e0be288fa33c75a2c3b546fce} 
+\index{Screen@{Screen}!m\_background@{m\_background}}
+\index{m\_background@{m\_background}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{m\_background}{m\_background}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shape}{Shape}}\texorpdfstring{$\ast$}{*} Screen\+::m\+\_\+background\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_screen_a97f9adeee51e5079696ceb25bf5deaa8}\label{class_screen_a97f9adeee51e5079696ceb25bf5deaa8} 
+\index{Screen@{Screen}!m\_buttons@{m\_buttons}}
+\index{m\_buttons@{m\_buttons}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{m\_buttons}{m\_buttons}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_button}{Button}}\texorpdfstring{$\ast$}{*}$>$ Screen\+::m\+\_\+buttons\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_screen_a5d0548faa658956261259aa14cd7de5d}\label{class_screen_a5d0548faa658956261259aa14cd7de5d} 
+\index{Screen@{Screen}!m\_texts@{m\_texts}}
+\index{m\_texts@{m\_texts}!Screen@{Screen}}
+\doxysubsubsection{\texorpdfstring{m\_texts}{m\_texts}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_text}{Text}}\texorpdfstring{$\ast$}{*}$>$ Screen\+::m\+\_\+texts \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_screen_8h}{Screen.\+h}}\item 
+\mbox{\hyperlink{_screen_8cpp}{Screen.\+cpp}}\end{DoxyCompactItemize}

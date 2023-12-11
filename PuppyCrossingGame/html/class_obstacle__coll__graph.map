@@ -1,0 +1,14 @@
+<map id="Obstacle" name="Obstacle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="152,597,236,722"/>
+<area shape="rect" id="Node000002" href="$class_entity.html" title=" " alt="" coords="144,289,244,534"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,549,197,597,191,597,191,549"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="55,75,82,141"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="59,141,35,215,14,315,9,370,10,426,19,481,38,533,57,563,82,589,111,611,139,629,136,633,108,615,79,593,53,566,33,535,14,482,5,427,3,370,8,314,29,213,54,140"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="82,140,130,264,140,287,135,290,125,266,77,141"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="151,75,213,141"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="185,140,186,265,187,271,181,271,181,265,179,140"/>
+<area shape="rect" id="Node000005" href="$class_shape.html" title=" " alt="" coords="262,5,374,211"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="313,211,304,240,291,266,283,275,275,280,259,291,256,293,252,290,255,287,272,275,280,271,287,263,299,238,308,210"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="269,379,362,444"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="303,445,259,535,235,583,231,580,254,533,298,442"/>
+</map>

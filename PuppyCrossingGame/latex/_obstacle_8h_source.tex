@@ -1,0 +1,71 @@
+\doxysection{Obstacle.\+h}
+\hypertarget{_obstacle_8h_source}{}\label{_obstacle_8h_source}\mbox{\hyperlink{_obstacle_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_entity_8h}{Entity.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_obstacle}{Obstacle}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_entity}{Entity}}}
+\DoxyCodeLine{00005\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00007\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_obstacle_a8d442f6c83a8078c16e7329cf4e816f0}{m\_shapeIndex}};}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebda}{ObstacleType}}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebdaaed0492e5e2e4e7dff987a117b29f2b53}{MOVING}},\ \mbox{\hyperlink{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebdaa0f8d5bd4d4b4d563581a499c5cbc21fd}{STANDING}}}
+\DoxyCodeLine{00012\ \ \ \ \ \};}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebda}{ObstacleType}}\ \mbox{\hyperlink{class_obstacle_a87926b61e249731985cfbdfb61fbb9f4}{m\_type}}\{\ \mbox{\hyperlink{class_obstacle_aa5327a6a717468b71fc3c7b95ee7ebdaaed0492e5e2e4e7dff987a117b29f2b53}{MOVING}}\ \};}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_obstacle_a2ca1c426c77a3e2763250434ab51dae4}{Obstacle}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_obstacle_a2ca1c426c77a3e2763250434ab51dae4}{Obstacle}}(\textcolor{keyword}{const}\ COORD\ \&pos,\ \textcolor{keywordtype}{int}\ type,\ \textcolor{keywordtype}{int}\ isStanding,\ \textcolor{keywordtype}{int}\ speed);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ COORD\ \mbox{\hyperlink{class_obstacle_a32dd261239c925b6c2027ea2dac60c1a}{getPos}}()}
+\DoxyCodeLine{00018\ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_entity_a5e6962418009eb0b31147f876dbda42d}{m\_position}};}
+\DoxyCodeLine{00020\ \ \ \ \ \}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_entity_a58f4a15ef400b5006ebf7fc28e6e8afe}{Entity::setRate}};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{friend}\ std::istream\&\ \mbox{\hyperlink{class_obstacle_a79320c738fc3177f09f772e3e5c81019}{operator>>}}(std::istream\&\ in,\ \mbox{\hyperlink{class_obstacle}{Obstacle}}\ \&obs);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{class_obstacle_a35e79916386c92a058859a6adabcdabf}{operator<<}}(std::ostream\&\ out,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_obstacle}{Obstacle}}\ \&obs);}
+\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_bus_obstacle}{BusObstacle}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_obstacle}{Obstacle}}}
+\DoxyCodeLine{00027\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_bus_obstacle}{BusObstacle}}(\textcolor{keyword}{const}\ COORD\ \&pos);}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_bus_obstacle}{BusObstacle}}(\textcolor{keyword}{const}\ COORD\&\ pos,\ \textcolor{keywordtype}{bool}\ flag);}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_car_obstacle}{CarObstacle}}\ :\textcolor{keyword}{public}\ \mbox{\hyperlink{class_obstacle}{Obstacle}}}
+\DoxyCodeLine{00034\ \{}
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_car_obstacle}{CarObstacle}}(\textcolor{keyword}{const}\ COORD\ \&pos\ =\ \{\ 0,\ 0\ \});}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_car_obstacle}{CarObstacle}}(\textcolor{keyword}{const}\ COORD\&\ pos,\ \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48}{ShapeIndex}}\ index);}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_car_obstacle}{CarObstacle}}(\textcolor{keyword}{const}\ COORD\&\ pos,\ \textcolor{keywordtype}{bool}\ flag);}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_grass_obstacle}{GrassObstacle}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_obstacle}{Obstacle}}}
+\DoxyCodeLine{00042\ \{}
+\DoxyCodeLine{00043\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_grass_obstacle_a4b088949655585fcceae0486abfda2a7}{GrassObstacle}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_grass_obstacle_a4b088949655585fcceae0486abfda2a7}{GrassObstacle}}(\textcolor{keyword}{const}\ COORD\ \&pos);}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_grass_obstacle_a4b088949655585fcceae0486abfda2a7}{GrassObstacle}}(\textcolor{keyword}{const}\ COORD\&\ pos,\ \textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00047\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_train_obstacle}{TrainObstacle}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_obstacle}{Obstacle}}}
+\DoxyCodeLine{00051\ \{}
+\DoxyCodeLine{00052\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_train_obstacle_a8406d8acf4f5d1d9811d1387f5b17cac}{TrainObstacle}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_train_obstacle_a8406d8acf4f5d1d9811d1387f5b17cac}{TrainObstacle}}(\textcolor{keyword}{const}\ COORD\&\ pos);}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{class_train_obstacle_a8406d8acf4f5d1d9811d1387f5b17cac}{TrainObstacle}}(\textcolor{keyword}{const}\ COORD\ \&pos,\ \textcolor{keywordtype}{bool}\ flag);}
+\DoxyCodeLine{00056\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00057\ \};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_raft_obstacle}{RaftObstacle}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_obstacle}{Obstacle}}}
+\DoxyCodeLine{00060\ \{}
+\DoxyCodeLine{00061\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{class_raft_obstacle_a7126b2d0b786883091ad8633f731beb2}{RaftObstacle}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{class_raft_obstacle_a7126b2d0b786883091ad8633f731beb2}{RaftObstacle}}(\textcolor{keyword}{const}\ COORD\ \&pos);}
+\DoxyCodeLine{00064\ \};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ }
+
+\end{DoxyCode}

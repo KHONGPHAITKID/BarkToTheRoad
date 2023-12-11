@@ -1,0 +1,5 @@
+<map id="MoveLeftCommand" name="MoveLeftCommand">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,159,132,244"/>
+<area shape="rect" id="Node000002" href="$class_command.html" title=" " alt="" coords="18,5,119,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,126,71,159,66,159,66,126"/>
+</map>

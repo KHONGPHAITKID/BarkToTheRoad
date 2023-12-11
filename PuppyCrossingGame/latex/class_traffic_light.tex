@@ -1,0 +1,149 @@
+\doxysection{Traffic\+Light Class Reference}
+\hypertarget{class_traffic_light}{}\label{class_traffic_light}\index{TrafficLight@{TrafficLight}}
+
+
+{\ttfamily \#include $<$Traffic\+Light.\+h$>$}
+
+
+
+Collaboration diagram for Traffic\+Light\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_traffic_light__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_traffic_light_a28e72db41dcbd224a0a811d08ae20c3f}{Traffic\+Light}} ()
+\item 
+\mbox{\hyperlink{class_traffic_light_a1c23af352e2d90ec1074aa7d62e38179}{Traffic\+Light}} (int green\+Duration, int red\+Duration)
+\item 
+\mbox{\hyperlink{class_traffic_light_ac8579acbe1322fade26f2d0d24726550}{Traffic\+Light}} (COORD pos, int green\+Duration, int red\+Duration)
+\item 
+void \mbox{\hyperlink{class_traffic_light_a639c01dcf03b93fa26a56da09c1cfb22}{set\+Green\+Duration}} (int green\+Duration)
+\item 
+void \mbox{\hyperlink{class_traffic_light_a798d5580560b7c54916d6bc65d09241d}{set\+Red\+Duration}} (int red\+Duration)
+\item 
+void \mbox{\hyperlink{class_traffic_light_abee6a44cb3ee07a43bd4e882c61dfc71}{set\+Pos}} (const COORD \&pos)
+\item 
+void \mbox{\hyperlink{class_traffic_light_afe99462350f9985b7625c5baeb5f6220}{render}} (int offset=0)
+\item 
+void \mbox{\hyperlink{class_traffic_light_a61ee0aee894b9351a4b57bbcff49ff6b}{update}} ()
+\item 
+COORD \mbox{\hyperlink{class_traffic_light_ad9d9c1c1ab46665fc941c22e422a1e9d}{get\+Pos}} ()
+\item 
+bool \mbox{\hyperlink{class_traffic_light_a8536824dc325318eae71f8c7f2eefc4d}{is\+Red}} ()
+\item 
+void \mbox{\hyperlink{class_traffic_light_a5ba7a1fac14da37e239321302bc3f3e7}{set\+Red\+Light}} ()
+\item 
+void \mbox{\hyperlink{class_traffic_light_a86793459bcee55cb308f722386d8ceb5}{set\+Green\+Light}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream \& \mbox{\hyperlink{class_traffic_light_a9aa63e0a60a5c0a833c3596192f96399}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_traffic_light}{Traffic\+Light}} \&light)
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_traffic_light_aa561fa9aae872fcb73663457d0d00893}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_traffic_light}{Traffic\+Light}} \&light)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_traffic_light_a28e72db41dcbd224a0a811d08ae20c3f}\label{class_traffic_light_a28e72db41dcbd224a0a811d08ae20c3f} 
+\index{TrafficLight@{TrafficLight}!TrafficLight@{TrafficLight}}
+\index{TrafficLight@{TrafficLight}!TrafficLight@{TrafficLight}}
+\doxysubsubsection{\texorpdfstring{TrafficLight()}{TrafficLight()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Traffic\+Light\+::\+Traffic\+Light (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_traffic_light_a1c23af352e2d90ec1074aa7d62e38179}\label{class_traffic_light_a1c23af352e2d90ec1074aa7d62e38179} 
+\index{TrafficLight@{TrafficLight}!TrafficLight@{TrafficLight}}
+\index{TrafficLight@{TrafficLight}!TrafficLight@{TrafficLight}}
+\doxysubsubsection{\texorpdfstring{TrafficLight()}{TrafficLight()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Traffic\+Light\+::\+Traffic\+Light (\begin{DoxyParamCaption}\item[{int}]{green\+Duration,  }\item[{int}]{red\+Duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_traffic_light_ac8579acbe1322fade26f2d0d24726550}\label{class_traffic_light_ac8579acbe1322fade26f2d0d24726550} 
+\index{TrafficLight@{TrafficLight}!TrafficLight@{TrafficLight}}
+\index{TrafficLight@{TrafficLight}!TrafficLight@{TrafficLight}}
+\doxysubsubsection{\texorpdfstring{TrafficLight()}{TrafficLight()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Traffic\+Light\+::\+Traffic\+Light (\begin{DoxyParamCaption}\item[{COORD}]{pos,  }\item[{int}]{green\+Duration,  }\item[{int}]{red\+Duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_traffic_light_ad9d9c1c1ab46665fc941c22e422a1e9d}\label{class_traffic_light_ad9d9c1c1ab46665fc941c22e422a1e9d} 
+\index{TrafficLight@{TrafficLight}!getPos@{getPos}}
+\index{getPos@{getPos}!TrafficLight@{TrafficLight}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily COORD Traffic\+Light\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_traffic_light_a8536824dc325318eae71f8c7f2eefc4d}\label{class_traffic_light_a8536824dc325318eae71f8c7f2eefc4d} 
+\index{TrafficLight@{TrafficLight}!isRed@{isRed}}
+\index{isRed@{isRed}!TrafficLight@{TrafficLight}}
+\doxysubsubsection{\texorpdfstring{isRed()}{isRed()}}
+{\footnotesize\ttfamily bool Traffic\+Light\+::is\+Red (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_traffic_light_afe99462350f9985b7625c5baeb5f6220}\label{class_traffic_light_afe99462350f9985b7625c5baeb5f6220} 
+\index{TrafficLight@{TrafficLight}!render@{render}}
+\index{render@{render}!TrafficLight@{TrafficLight}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Traffic\+Light\+::render (\begin{DoxyParamCaption}\item[{int}]{offset = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\Hypertarget{class_traffic_light_a639c01dcf03b93fa26a56da09c1cfb22}\label{class_traffic_light_a639c01dcf03b93fa26a56da09c1cfb22} 
+\index{TrafficLight@{TrafficLight}!setGreenDuration@{setGreenDuration}}
+\index{setGreenDuration@{setGreenDuration}!TrafficLight@{TrafficLight}}
+\doxysubsubsection{\texorpdfstring{setGreenDuration()}{setGreenDuration()}}
+{\footnotesize\ttfamily void Traffic\+Light\+::set\+Green\+Duration (\begin{DoxyParamCaption}\item[{int}]{green\+Duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_traffic_light_a86793459bcee55cb308f722386d8ceb5}\label{class_traffic_light_a86793459bcee55cb308f722386d8ceb5} 
+\index{TrafficLight@{TrafficLight}!setGreenLight@{setGreenLight}}
+\index{setGreenLight@{setGreenLight}!TrafficLight@{TrafficLight}}
+\doxysubsubsection{\texorpdfstring{setGreenLight()}{setGreenLight()}}
+{\footnotesize\ttfamily void Traffic\+Light\+::set\+Green\+Light (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_traffic_light_abee6a44cb3ee07a43bd4e882c61dfc71}\label{class_traffic_light_abee6a44cb3ee07a43bd4e882c61dfc71} 
+\index{TrafficLight@{TrafficLight}!setPos@{setPos}}
+\index{setPos@{setPos}!TrafficLight@{TrafficLight}}
+\doxysubsubsection{\texorpdfstring{setPos()}{setPos()}}
+{\footnotesize\ttfamily void Traffic\+Light\+::set\+Pos (\begin{DoxyParamCaption}\item[{const COORD \&}]{pos }\end{DoxyParamCaption})}
+
+\Hypertarget{class_traffic_light_a798d5580560b7c54916d6bc65d09241d}\label{class_traffic_light_a798d5580560b7c54916d6bc65d09241d} 
+\index{TrafficLight@{TrafficLight}!setRedDuration@{setRedDuration}}
+\index{setRedDuration@{setRedDuration}!TrafficLight@{TrafficLight}}
+\doxysubsubsection{\texorpdfstring{setRedDuration()}{setRedDuration()}}
+{\footnotesize\ttfamily void Traffic\+Light\+::set\+Red\+Duration (\begin{DoxyParamCaption}\item[{int}]{red\+Duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_traffic_light_a5ba7a1fac14da37e239321302bc3f3e7}\label{class_traffic_light_a5ba7a1fac14da37e239321302bc3f3e7} 
+\index{TrafficLight@{TrafficLight}!setRedLight@{setRedLight}}
+\index{setRedLight@{setRedLight}!TrafficLight@{TrafficLight}}
+\doxysubsubsection{\texorpdfstring{setRedLight()}{setRedLight()}}
+{\footnotesize\ttfamily void Traffic\+Light\+::set\+Red\+Light (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_traffic_light_a61ee0aee894b9351a4b57bbcff49ff6b}\label{class_traffic_light_a61ee0aee894b9351a4b57bbcff49ff6b} 
+\index{TrafficLight@{TrafficLight}!update@{update}}
+\index{update@{update}!TrafficLight@{TrafficLight}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Traffic\+Light\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_traffic_light_aa561fa9aae872fcb73663457d0d00893}\label{class_traffic_light_aa561fa9aae872fcb73663457d0d00893} 
+\index{TrafficLight@{TrafficLight}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!TrafficLight@{TrafficLight}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_traffic_light}{Traffic\+Light}} \&}]{light }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\Hypertarget{class_traffic_light_a9aa63e0a60a5c0a833c3596192f96399}\label{class_traffic_light_a9aa63e0a60a5c0a833c3596192f96399} 
+\index{TrafficLight@{TrafficLight}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!TrafficLight@{TrafficLight}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{class_traffic_light}{Traffic\+Light}} \&}]{light }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_traffic_light_8h}{Traffic\+Light.\+h}}\item 
+\mbox{\hyperlink{_traffic_light_8cpp}{Traffic\+Light.\+cpp}}\end{DoxyCompactItemize}

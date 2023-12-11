@@ -1,0 +1,229 @@
+\doxysection{Gameplay Class Reference}
+\hypertarget{class_gameplay}{}\label{class_gameplay}\index{Gameplay@{Gameplay}}
+
+
+{\ttfamily \#include $<$Gameplay.\+h$>$}
+
+
+
+Collaboration diagram for Gameplay\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_gameplay__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gameplay_a04898da34fb7c6a290a193f9e7ec1219}{Gameplay}} ()
+\item 
+\mbox{\hyperlink{class_gameplay_aa18a2cc09f9c30d9a6bd7c8f1bc55980}{\texorpdfstring{$\sim$}{\string~}\+Gameplay}} ()
+\item 
+void \mbox{\hyperlink{class_gameplay_aefdc429db262122a31f54717d315cf3e}{render}} ()
+\item 
+void \mbox{\hyperlink{class_gameplay_a910ee230f9f93d4094c0f99175b56f40}{new\+Game}} ()
+\item 
+void \mbox{\hyperlink{class_gameplay_a0f98f7a80d37a85948873478ffc09739}{game\+Logic}} ()
+\item 
+void \mbox{\hyperlink{class_gameplay_ae1e62cf96572920813746b1769b9687f}{set\+Pause}} (bool pause)
+\item 
+bool \mbox{\hyperlink{class_gameplay_a1057cca6e400cc799a8ab6146b235d34}{is\+Start}} ()
+\item 
+bool \mbox{\hyperlink{class_gameplay_afad53f33f3e3e3996ac4841c4b34b852}{is\+End}} ()
+\item 
+void \mbox{\hyperlink{class_gameplay_a03ccb9d7fd6c0f8688aaf802acc3e5c8}{export\+Score}} ()
+\item 
+void \mbox{\hyperlink{class_gameplay_a1ed8289b9b36b072fe7ddf7d33c0dd0a}{handle\+End\+Game}} ()
+\item 
+int \mbox{\hyperlink{class_gameplay_ab7fa80eb4d7979f3f7150ed7f37ff8ce}{get\+Score}} () const
+\item 
+std\+::string \& \mbox{\hyperlink{class_gameplay_a4ec99839348bce6cceee2d086705abf5}{get\+User\+Name}} ()
+\item 
+bool \mbox{\hyperlink{class_gameplay_aab019209d3fe0450da75a2484cd45a1e}{get\+Is\+New\+Game}} () const
+\item 
+bool \mbox{\hyperlink{class_gameplay_a42770d96a41bfbf76ca32b27d5ec2533}{get\+Ended}} () const
+\item 
+bool \mbox{\hyperlink{class_gameplay_ae457df0b874d14d59f64aa35080432fe}{vehicle\+Arrived}} ()
+\item 
+void \mbox{\hyperlink{class_gameplay_abed0dff1e5207861843748f152fa95bc}{save\+Game}} (std\+::string file\+Name) const
+\item 
+void \mbox{\hyperlink{class_gameplay_ac3ccef569eaf8b75f26f5b6f0ae5e728}{load\+Game}} (std\+::string file\+Name)
+\item 
+void \mbox{\hyperlink{class_gameplay_a7beaf5783d96ddfad21434fef87a9cdb}{set\+Is\+New\+Game}} (bool is\+\_\+new\+\_\+game)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_input_handler}{Input\+Handler}} \mbox{\hyperlink{class_gameplay_ace6035aee294ba3e7c628ade4456c0a7}{ih}} \{\}
+\item 
+\mbox{\hyperlink{class_command}{Command}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_gameplay_a259f99689a2a646b32cc8720ee06899f}{command}} \{ nullptr \}
+\item 
+\mbox{\hyperlink{class_character}{Character}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_gameplay_a2edcc8340b0795e07d6f16c732f2bb2e}{character}} \{nullptr\}
+\item 
+\mbox{\hyperlink{class_lane_factory}{Lane\+Factory}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_gameplay_a141defacf09e6d76a0ad6dc015e6df13}{fact}}
+\item 
+\mbox{\hyperlink{class_map}{Map}} \mbox{\hyperlink{class_gameplay_ab9fa69bb6eead5efd74513896fc147b7}{m}} \{\}
+\item 
+bool \mbox{\hyperlink{class_gameplay_a0d18c787f5ad3a4fd1bf2e14c1ae8770}{have\+Started}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_gameplay_a04898da34fb7c6a290a193f9e7ec1219}\label{class_gameplay_a04898da34fb7c6a290a193f9e7ec1219} 
+\index{Gameplay@{Gameplay}!Gameplay@{Gameplay}}
+\index{Gameplay@{Gameplay}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{Gameplay()}{Gameplay()}}
+{\footnotesize\ttfamily Gameplay\+::\+Gameplay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_gameplay_aa18a2cc09f9c30d9a6bd7c8f1bc55980}\label{class_gameplay_aa18a2cc09f9c30d9a6bd7c8f1bc55980} 
+\index{Gameplay@{Gameplay}!````~Gameplay@{\texorpdfstring{$\sim$}{\string~}Gameplay}}
+\index{````~Gameplay@{\texorpdfstring{$\sim$}{\string~}Gameplay}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Gameplay()}{\string~Gameplay()}}
+{\footnotesize\ttfamily Gameplay\+::\texorpdfstring{$\sim$}{\string~}\+Gameplay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_gameplay_a03ccb9d7fd6c0f8688aaf802acc3e5c8}\label{class_gameplay_a03ccb9d7fd6c0f8688aaf802acc3e5c8} 
+\index{Gameplay@{Gameplay}!exportScore@{exportScore}}
+\index{exportScore@{exportScore}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{exportScore()}{exportScore()}}
+{\footnotesize\ttfamily void Gameplay\+::export\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_gameplay_a0f98f7a80d37a85948873478ffc09739}\label{class_gameplay_a0f98f7a80d37a85948873478ffc09739} 
+\index{Gameplay@{Gameplay}!gameLogic@{gameLogic}}
+\index{gameLogic@{gameLogic}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{gameLogic()}{gameLogic()}}
+{\footnotesize\ttfamily void Gameplay\+::game\+Logic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_gameplay_a42770d96a41bfbf76ca32b27d5ec2533}\label{class_gameplay_a42770d96a41bfbf76ca32b27d5ec2533} 
+\index{Gameplay@{Gameplay}!getEnded@{getEnded}}
+\index{getEnded@{getEnded}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{getEnded()}{getEnded()}}
+{\footnotesize\ttfamily bool Gameplay\+::get\+Ended (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_gameplay_aab019209d3fe0450da75a2484cd45a1e}\label{class_gameplay_aab019209d3fe0450da75a2484cd45a1e} 
+\index{Gameplay@{Gameplay}!getIsNewGame@{getIsNewGame}}
+\index{getIsNewGame@{getIsNewGame}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{getIsNewGame()}{getIsNewGame()}}
+{\footnotesize\ttfamily bool Gameplay\+::get\+Is\+New\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_gameplay_ab7fa80eb4d7979f3f7150ed7f37ff8ce}\label{class_gameplay_ab7fa80eb4d7979f3f7150ed7f37ff8ce} 
+\index{Gameplay@{Gameplay}!getScore@{getScore}}
+\index{getScore@{getScore}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily int Gameplay\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_gameplay_a4ec99839348bce6cceee2d086705abf5}\label{class_gameplay_a4ec99839348bce6cceee2d086705abf5} 
+\index{Gameplay@{Gameplay}!getUserName@{getUserName}}
+\index{getUserName@{getUserName}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{getUserName()}{getUserName()}}
+{\footnotesize\ttfamily std\+::string \& Gameplay\+::get\+User\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_gameplay_a1ed8289b9b36b072fe7ddf7d33c0dd0a}\label{class_gameplay_a1ed8289b9b36b072fe7ddf7d33c0dd0a} 
+\index{Gameplay@{Gameplay}!handleEndGame@{handleEndGame}}
+\index{handleEndGame@{handleEndGame}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{handleEndGame()}{handleEndGame()}}
+{\footnotesize\ttfamily void Gameplay\+::handle\+End\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_gameplay_afad53f33f3e3e3996ac4841c4b34b852}\label{class_gameplay_afad53f33f3e3e3996ac4841c4b34b852} 
+\index{Gameplay@{Gameplay}!isEnd@{isEnd}}
+\index{isEnd@{isEnd}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{isEnd()}{isEnd()}}
+{\footnotesize\ttfamily bool Gameplay\+::is\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_gameplay_a1057cca6e400cc799a8ab6146b235d34}\label{class_gameplay_a1057cca6e400cc799a8ab6146b235d34} 
+\index{Gameplay@{Gameplay}!isStart@{isStart}}
+\index{isStart@{isStart}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{isStart()}{isStart()}}
+{\footnotesize\ttfamily bool Gameplay\+::is\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_gameplay_ac3ccef569eaf8b75f26f5b6f0ae5e728}\label{class_gameplay_ac3ccef569eaf8b75f26f5b6f0ae5e728} 
+\index{Gameplay@{Gameplay}!loadGame@{loadGame}}
+\index{loadGame@{loadGame}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{loadGame()}{loadGame()}}
+{\footnotesize\ttfamily void Gameplay\+::load\+Game (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+\Hypertarget{class_gameplay_a910ee230f9f93d4094c0f99175b56f40}\label{class_gameplay_a910ee230f9f93d4094c0f99175b56f40} 
+\index{Gameplay@{Gameplay}!newGame@{newGame}}
+\index{newGame@{newGame}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{newGame()}{newGame()}}
+{\footnotesize\ttfamily void Gameplay\+::new\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_gameplay_aefdc429db262122a31f54717d315cf3e}\label{class_gameplay_aefdc429db262122a31f54717d315cf3e} 
+\index{Gameplay@{Gameplay}!render@{render}}
+\index{render@{render}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Gameplay\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_gameplay_abed0dff1e5207861843748f152fa95bc}\label{class_gameplay_abed0dff1e5207861843748f152fa95bc} 
+\index{Gameplay@{Gameplay}!saveGame@{saveGame}}
+\index{saveGame@{saveGame}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{saveGame()}{saveGame()}}
+{\footnotesize\ttfamily void Gameplay\+::save\+Game (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_gameplay_a7beaf5783d96ddfad21434fef87a9cdb}\label{class_gameplay_a7beaf5783d96ddfad21434fef87a9cdb} 
+\index{Gameplay@{Gameplay}!setIsNewGame@{setIsNewGame}}
+\index{setIsNewGame@{setIsNewGame}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{setIsNewGame()}{setIsNewGame()}}
+{\footnotesize\ttfamily void Gameplay\+::set\+Is\+New\+Game (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+new\+\_\+game }\end{DoxyParamCaption})}
+
+\Hypertarget{class_gameplay_ae1e62cf96572920813746b1769b9687f}\label{class_gameplay_ae1e62cf96572920813746b1769b9687f} 
+\index{Gameplay@{Gameplay}!setPause@{setPause}}
+\index{setPause@{setPause}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{setPause()}{setPause()}}
+{\footnotesize\ttfamily void Gameplay\+::set\+Pause (\begin{DoxyParamCaption}\item[{bool}]{pause }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_gameplay_ae457df0b874d14d59f64aa35080432fe}\label{class_gameplay_ae457df0b874d14d59f64aa35080432fe} 
+\index{Gameplay@{Gameplay}!vehicleArrived@{vehicleArrived}}
+\index{vehicleArrived@{vehicleArrived}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{vehicleArrived()}{vehicleArrived()}}
+{\footnotesize\ttfamily bool Gameplay\+::vehicle\+Arrived (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_gameplay_a2edcc8340b0795e07d6f16c732f2bb2e}\label{class_gameplay_a2edcc8340b0795e07d6f16c732f2bb2e} 
+\index{Gameplay@{Gameplay}!character@{character}}
+\index{character@{character}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{character}{character}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_character}{Character}}\texorpdfstring{$\ast$}{*} Gameplay\+::character \{nullptr\}}
+
+\Hypertarget{class_gameplay_a259f99689a2a646b32cc8720ee06899f}\label{class_gameplay_a259f99689a2a646b32cc8720ee06899f} 
+\index{Gameplay@{Gameplay}!command@{command}}
+\index{command@{command}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{command}{command}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_command}{Command}}\texorpdfstring{$\ast$}{*} Gameplay\+::command \{ nullptr \}}
+
+\Hypertarget{class_gameplay_a141defacf09e6d76a0ad6dc015e6df13}\label{class_gameplay_a141defacf09e6d76a0ad6dc015e6df13} 
+\index{Gameplay@{Gameplay}!fact@{fact}}
+\index{fact@{fact}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{fact}{fact}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lane_factory}{Lane\+Factory}}\texorpdfstring{$\ast$}{*} Gameplay\+::fact}
+
+\Hypertarget{class_gameplay_a0d18c787f5ad3a4fd1bf2e14c1ae8770}\label{class_gameplay_a0d18c787f5ad3a4fd1bf2e14c1ae8770} 
+\index{Gameplay@{Gameplay}!haveStarted@{haveStarted}}
+\index{haveStarted@{haveStarted}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{haveStarted}{haveStarted}}
+{\footnotesize\ttfamily bool Gameplay\+::have\+Started = false}
+
+\Hypertarget{class_gameplay_ace6035aee294ba3e7c628ade4456c0a7}\label{class_gameplay_ace6035aee294ba3e7c628ade4456c0a7} 
+\index{Gameplay@{Gameplay}!ih@{ih}}
+\index{ih@{ih}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{ih}{ih}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_input_handler}{Input\+Handler}} Gameplay\+::ih \{\}}
+
+\Hypertarget{class_gameplay_ab9fa69bb6eead5efd74513896fc147b7}\label{class_gameplay_ab9fa69bb6eead5efd74513896fc147b7} 
+\index{Gameplay@{Gameplay}!m@{m}}
+\index{m@{m}!Gameplay@{Gameplay}}
+\doxysubsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_map}{Map}} Gameplay\+::m \{\}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gameplay_8h}{Gameplay.\+h}}\item 
+\mbox{\hyperlink{_gameplay_8cpp}{Gameplay.\+cpp}}\end{DoxyCompactItemize}

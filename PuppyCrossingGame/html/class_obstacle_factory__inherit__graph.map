@@ -1,0 +1,11 @@
+<map id="ObstacleFactory" name="ObstacleFactory">
+<area shape="rect" id="Node000001" title=" " alt="" coords="277,5,397,71"/>
+<area shape="rect" id="Node000002" href="$class_asphalt_obstacle_factory.html" title=" " alt="" coords="5,119,159,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,74,155,121,153,116,262,69"/>
+<area shape="rect" id="Node000003" href="$class_grass_obstacle_factory.html" title=" " alt="" coords="183,119,327,184"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="307,84,280,121,276,117,303,81"/>
+<area shape="rect" id="Node000004" href="$class_rail_obstacle_factory.html" title=" " alt="" coords="352,119,484,184"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="371,81,397,117,393,121,366,84"/>
+<area shape="rect" id="Node000005" href="$class_river_obstacle_factory.html" title=" " alt="" coords="508,119,648,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="411,71,511,116,509,121,409,75"/>
+</map>

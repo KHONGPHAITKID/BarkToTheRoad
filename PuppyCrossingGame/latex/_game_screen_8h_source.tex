@@ -1,0 +1,33 @@
+\doxysection{Game\+Screen.\+h}
+\hypertarget{_game_screen_8h_source}{}\label{_game_screen_8h_source}\mbox{\hyperlink{_game_screen_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_screen_8h}{Screen.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_gameplay_8h}{Gameplay.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_dialog_8h}{Dialog.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_screen}{GameScreen}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_screen}{Screen}}}
+\DoxyCodeLine{00006\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{class_game_screen_a87d9ae24ac55b62f13ae3bf0284fbe05}{GameScreen}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{class_game_screen_a87d9ae24ac55b62f13ae3bf0284fbe05}{GameScreen}}(\mbox{\hyperlink{class_gameplay}{Gameplay}}*\ gp);}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_screen_a825bfaea0d0749334aca935383ef80c0}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_screen_a2b27209909dc24288c4af49b4b1757e1}{renderText}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_screen_ab1b3c4bac5a319b4271f93b48b960e5d}{clean}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_screen_ade4e1674bcca7113728fd88a0e8fb587}{clickButton}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_screen_a59fc8c2160147b4b9eb79332ed216784}{initDialog}}();}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_screen_aebb6fd00747bb6dbc69bbd2b678790ed}{updateDialog}}();}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_screen_a7a825f322461e097ace893df425f8545}{handleKeyPressed}}(WPARAM\ key)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_gameplay}{Gameplay}}*\ m\_gameplay\{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_dialog}{Dialog}}*\ m\_menu\{\textcolor{keyword}{nullptr}\};}
+\DoxyCodeLine{00020\ \ \ \ \ HDC\ *m\_hdc\{\textcolor{keyword}{nullptr}\};}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_shape}{Shape}}*\ m\_score\_board\{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00022\ \ \ \ \ RECT\ m\_score\_pos\{\};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_input\_name\{\ \textcolor{keyword}{true}\ \};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_render\_dialog\{\ \textcolor{keyword}{false}\ \};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_init\_dialog\{\ \textcolor{keyword}{true}\ \};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_finish\{\ \textcolor{keyword}{false}\ \};}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+
+\end{DoxyCode}

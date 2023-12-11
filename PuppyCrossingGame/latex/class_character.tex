@@ -1,0 +1,250 @@
+\doxysection{Character Class Reference}
+\hypertarget{class_character}{}\label{class_character}\index{Character@{Character}}
+
+
+{\ttfamily \#include $<$Character.\+h$>$}
+
+
+
+Inheritance diagram for Character\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_character__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Character\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_character__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_character_afe2cc1186f50316e1df11e5ea17b72f4}{Character}} ()=default
+\item 
+\mbox{\hyperlink{class_character_a95ed341aa89cf55ec07e681f55edd4cb}{Character}} (const COORD \&pos, \mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}standing, \mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}moving, int total=1)
+\item 
+\mbox{\hyperlink{class_character_a9e9be564d05ded80962b2045aa70b3fc}{\texorpdfstring{$\sim$}{\string~}\+Character}} ()
+\item 
+void \mbox{\hyperlink{class_character_a143f770831043fd6fab562db0078bdbc}{Bark}} ()
+\item 
+bool \mbox{\hyperlink{class_character_ac0ffc90d53d36db354fa5193aaadcfd2}{is\+Finish}} ()
+\item 
+bool \mbox{\hyperlink{class_character_a28417841f41f6b36a6cc2d6c7cb4ac09}{is\+Standing}} () const
+\item 
+void \mbox{\hyperlink{class_character_aa2026e8ecdbb479eb7bf978575a3a745}{render}} ()
+\item 
+void \mbox{\hyperlink{class_character_a809dd9b9ce65d2f321cc42b701f7ff06}{set\+Shape}} (\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}shape)
+\item 
+void \mbox{\hyperlink{class_character_a246722104d15e077de1c6ea6fd3ed9d5}{move}} (const COORD \&pos)
+\item 
+void \mbox{\hyperlink{class_character_aebfe39abc2841b1f73cc1e3cead2f31e}{move\+In\+Raft}} (const COORD \&pos)
+\item 
+void \mbox{\hyperlink{class_character_a57ded50505121ac48609c669281269c9}{set\+Pos}} (const COORD \&pos)
+\item 
+void \mbox{\hyperlink{class_character_a7943594d955c66a06823783b3d213546}{set\+MaxY}} (int max\+\_\+y)
+\item 
+bool \mbox{\hyperlink{class_character_a88fd276ee2c7547c3b5c887271367811}{update}} ()
+\item 
+void \mbox{\hyperlink{class_character_adf463f567e6f7bc9f48ad8316eb82fbb}{update\+Offset}} (int speed)
+\item 
+COORD \mbox{\hyperlink{class_character_aff93b4214464095b7f4c4bf4a16f7308}{get\+Pos}} ()
+\item 
+int \mbox{\hyperlink{class_character_aa312da225279264e08ad90b29f351702}{get\+MaxY}} () const
+\item 
+void \mbox{\hyperlink{class_character_ab40b890f05f8d8c77230dc586324eefb}{set\+Left\+Direction}} ()
+\item 
+void \mbox{\hyperlink{class_character_ac585be79ac584198e82ca4a776485de5}{set\+Right\+Direction}} ()
+\item 
+void \mbox{\hyperlink{class_character_a2c5d34b4f74073ec372411d990cbefc1}{make\+Animation}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_entity}{Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_entity_aa28e3afd0766aae4d570ee9ee3c4ae3b}{Entity}} ()=default
+\item 
+\mbox{\hyperlink{class_entity_af534c6e4269ecc09a079005133915af9}{Entity}} (const COORD \&pos, \mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{_puppy_crossing_game_8cpp_a191482ef3e0e75c53cfe1c603c2dbcdf}{s}})
+\item 
+virtual void \mbox{\hyperlink{class_entity_aed9a4abb8956b3e3ec894bf8b66cedaf}{render}} (int offset=0)
+\item 
+void \mbox{\hyperlink{class_entity_a9b0585312b39ee193b8f30763d59dcaf}{move}} (const COORD \&pos)
+\item 
+void \mbox{\hyperlink{class_entity_a58f4a15ef400b5006ebf7fc28e6e8afe}{set\+Rate}} (int rate)
+\item 
+void \mbox{\hyperlink{class_entity_a68264600f7d111f88be5f7c960f8a6fc}{set\+Pos}} (COORD pos)
+\item 
+COORD \mbox{\hyperlink{class_entity_a15adb8c361741c457bb0ee5603c1ddec}{get\+Pos}} () const
+\item 
+COORD \mbox{\hyperlink{class_entity_ad3d7540a8d9e7c33d033562a08d722fc}{get\+New\+Pos}} () const
+\item 
+void \mbox{\hyperlink{class_entity_a7c921a26a91394a2cb6aca2aae78bbbe}{stop\+Moving}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_entity_ad2e9dd7fb32dc50bdb5cb2101bdc329a}{is\+Collison}} (const \mbox{\hyperlink{class_entity}{Entity}} \&e)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream \& \mbox{\hyperlink{class_character_a7704ae3558f7b04bca652833cba51003}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_character}{Character}} \&c)
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_character_a96af3ccf71a101a4a93df6b459308ad2}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_character}{Character}} \&c)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_entity}{Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_entity_a48d6a1f6876a9f891663ba52a40915ec}{m\+\_\+rate}} \{ 30 \}
+\item 
+COORD \mbox{\hyperlink{class_entity_a5e6962418009eb0b31147f876dbda42d}{m\+\_\+position}}
+\item 
+COORD \mbox{\hyperlink{class_entity_a4821d9224aaa22bb015c6441966e7daf}{m\+\_\+new\+\_\+position}}
+\item 
+\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_entity_a3c031e4c84dc6b14769528d28f3a52ca}{m\+\_\+shape}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_character_afe2cc1186f50316e1df11e5ea17b72f4}\label{class_character_afe2cc1186f50316e1df11e5ea17b72f4} 
+\index{Character@{Character}!Character@{Character}}
+\index{Character@{Character}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Character()}{Character()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Character\+::\+Character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_character_a95ed341aa89cf55ec07e681f55edd4cb}\label{class_character_a95ed341aa89cf55ec07e681f55edd4cb} 
+\index{Character@{Character}!Character@{Character}}
+\index{Character@{Character}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Character()}{Character()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Character\+::\+Character (\begin{DoxyParamCaption}\item[{const COORD \&}]{pos,  }\item[{\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}}]{standing,  }\item[{\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}}]{moving,  }\item[{int}]{total = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_character_a9e9be564d05ded80962b2045aa70b3fc}\label{class_character_a9e9be564d05ded80962b2045aa70b3fc} 
+\index{Character@{Character}!````~Character@{\texorpdfstring{$\sim$}{\string~}Character}}
+\index{````~Character@{\texorpdfstring{$\sim$}{\string~}Character}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Character()}{\string~Character()}}
+{\footnotesize\ttfamily Character\+::\texorpdfstring{$\sim$}{\string~}\+Character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_character_a143f770831043fd6fab562db0078bdbc}\label{class_character_a143f770831043fd6fab562db0078bdbc} 
+\index{Character@{Character}!Bark@{Bark}}
+\index{Bark@{Bark}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Bark()}{Bark()}}
+{\footnotesize\ttfamily void Character\+::\+Bark (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_aa312da225279264e08ad90b29f351702}\label{class_character_aa312da225279264e08ad90b29f351702} 
+\index{Character@{Character}!getMaxY@{getMaxY}}
+\index{getMaxY@{getMaxY}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{getMaxY()}{getMaxY()}}
+{\footnotesize\ttfamily int Character\+::get\+MaxY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_character_aff93b4214464095b7f4c4bf4a16f7308}\label{class_character_aff93b4214464095b7f4c4bf4a16f7308} 
+\index{Character@{Character}!getPos@{getPos}}
+\index{getPos@{getPos}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily COORD Character\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_ac0ffc90d53d36db354fa5193aaadcfd2}\label{class_character_ac0ffc90d53d36db354fa5193aaadcfd2} 
+\index{Character@{Character}!isFinish@{isFinish}}
+\index{isFinish@{isFinish}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{isFinish()}{isFinish()}}
+{\footnotesize\ttfamily bool Character\+::is\+Finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_a28417841f41f6b36a6cc2d6c7cb4ac09}\label{class_character_a28417841f41f6b36a6cc2d6c7cb4ac09} 
+\index{Character@{Character}!isStanding@{isStanding}}
+\index{isStanding@{isStanding}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{isStanding()}{isStanding()}}
+{\footnotesize\ttfamily bool Character\+::is\+Standing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_character_a2c5d34b4f74073ec372411d990cbefc1}\label{class_character_a2c5d34b4f74073ec372411d990cbefc1} 
+\index{Character@{Character}!makeAnimation@{makeAnimation}}
+\index{makeAnimation@{makeAnimation}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{makeAnimation()}{makeAnimation()}}
+{\footnotesize\ttfamily void Character\+::make\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_a246722104d15e077de1c6ea6fd3ed9d5}\label{class_character_a246722104d15e077de1c6ea6fd3ed9d5} 
+\index{Character@{Character}!move@{move}}
+\index{move@{move}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Character\+::move (\begin{DoxyParamCaption}\item[{const COORD \&}]{pos }\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_aebfe39abc2841b1f73cc1e3cead2f31e}\label{class_character_aebfe39abc2841b1f73cc1e3cead2f31e} 
+\index{Character@{Character}!moveInRaft@{moveInRaft}}
+\index{moveInRaft@{moveInRaft}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{moveInRaft()}{moveInRaft()}}
+{\footnotesize\ttfamily void Character\+::move\+In\+Raft (\begin{DoxyParamCaption}\item[{const COORD \&}]{pos }\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_aa2026e8ecdbb479eb7bf978575a3a745}\label{class_character_aa2026e8ecdbb479eb7bf978575a3a745} 
+\index{Character@{Character}!render@{render}}
+\index{render@{render}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Character\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_ab40b890f05f8d8c77230dc586324eefb}\label{class_character_ab40b890f05f8d8c77230dc586324eefb} 
+\index{Character@{Character}!setLeftDirection@{setLeftDirection}}
+\index{setLeftDirection@{setLeftDirection}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{setLeftDirection()}{setLeftDirection()}}
+{\footnotesize\ttfamily void Character\+::set\+Left\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_a7943594d955c66a06823783b3d213546}\label{class_character_a7943594d955c66a06823783b3d213546} 
+\index{Character@{Character}!setMaxY@{setMaxY}}
+\index{setMaxY@{setMaxY}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{setMaxY()}{setMaxY()}}
+{\footnotesize\ttfamily void Character\+::set\+MaxY (\begin{DoxyParamCaption}\item[{int}]{max\+\_\+y }\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_a57ded50505121ac48609c669281269c9}\label{class_character_a57ded50505121ac48609c669281269c9} 
+\index{Character@{Character}!setPos@{setPos}}
+\index{setPos@{setPos}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{setPos()}{setPos()}}
+{\footnotesize\ttfamily void Character\+::set\+Pos (\begin{DoxyParamCaption}\item[{const COORD \&}]{pos }\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_ac585be79ac584198e82ca4a776485de5}\label{class_character_ac585be79ac584198e82ca4a776485de5} 
+\index{Character@{Character}!setRightDirection@{setRightDirection}}
+\index{setRightDirection@{setRightDirection}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{setRightDirection()}{setRightDirection()}}
+{\footnotesize\ttfamily void Character\+::set\+Right\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_a809dd9b9ce65d2f321cc42b701f7ff06}\label{class_character_a809dd9b9ce65d2f321cc42b701f7ff06} 
+\index{Character@{Character}!setShape@{setShape}}
+\index{setShape@{setShape}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{setShape()}{setShape()}}
+{\footnotesize\ttfamily void Character\+::set\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}}]{shape }\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_a88fd276ee2c7547c3b5c887271367811}\label{class_character_a88fd276ee2c7547c3b5c887271367811} 
+\index{Character@{Character}!update@{update}}
+\index{update@{update}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool Character\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_adf463f567e6f7bc9f48ad8316eb82fbb}\label{class_character_adf463f567e6f7bc9f48ad8316eb82fbb} 
+\index{Character@{Character}!updateOffset@{updateOffset}}
+\index{updateOffset@{updateOffset}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{updateOffset()}{updateOffset()}}
+{\footnotesize\ttfamily void Character\+::update\+Offset (\begin{DoxyParamCaption}\item[{int}]{speed }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_character_a96af3ccf71a101a4a93df6b459308ad2}\label{class_character_a96af3ccf71a101a4a93df6b459308ad2} 
+\index{Character@{Character}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_character}{Character}} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\Hypertarget{class_character_a7704ae3558f7b04bca652833cba51003}\label{class_character_a7704ae3558f7b04bca652833cba51003} 
+\index{Character@{Character}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_character_8h}{Character.\+h}}\item 
+\mbox{\hyperlink{_character_8cpp}{Character.\+cpp}}\end{DoxyCompactItemize}

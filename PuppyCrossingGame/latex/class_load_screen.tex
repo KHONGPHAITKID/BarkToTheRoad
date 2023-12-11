@@ -1,0 +1,108 @@
+\doxysection{Load\+Screen Class Reference}
+\hypertarget{class_load_screen}{}\label{class_load_screen}\index{LoadScreen@{LoadScreen}}
+
+
+{\ttfamily \#include $<$Load\+Screen.\+h$>$}
+
+
+
+Inheritance diagram for Load\+Screen\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{class_load_screen__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Load\+Screen\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_load_screen__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_load_screen_a4b4d53d0ed7d7f85ff9ebf9d86287e57}{Load\+Screen}} (\mbox{\hyperlink{class_gameplay}{Gameplay}} \texorpdfstring{$\ast$}{*}gp)
+\item 
+void \mbox{\hyperlink{class_load_screen_a7b472bb042387d8509bca89e8d3516c1}{update\+Content}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_screen}{Screen}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_screen_a401e1e1331090c468487d1fd100a4b0b}{Screen}} ()=default
+\item 
+\mbox{\hyperlink{class_screen_a2dc6d4bcae29ef3c71dc3e9bb8630dbe}{Screen}} (\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}background)
+\item 
+\mbox{\hyperlink{class_screen_a4243bc17596af96415b09ac48205676d}{\texorpdfstring{$\sim$}{\string~}\+Screen}} ()
+\item 
+void \mbox{\hyperlink{class_screen_a4c5cfa80abfc7e67bbf5e8012b45c393}{add\+Button}} (\mbox{\hyperlink{class_button}{Button}} \texorpdfstring{$\ast$}{*}b)
+\item 
+void \mbox{\hyperlink{class_screen_a5ee24b2d33896fe680159ae8933e649c}{remove\+Button}} (int i)
+\item 
+void \mbox{\hyperlink{class_screen_abc00db4573de9dbe2262b3e299b529a8}{set\+Background}} (\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}background)
+\item 
+void \mbox{\hyperlink{class_screen_ae9058fa8b4ae8e3e2e07f003306946c1}{add\+Text}} (\mbox{\hyperlink{class_text}{Text}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{_puppy_crossing_game_8cpp_a191482ef3e0e75c53cfe1c603c2dbcdf}{s}})
+\item 
+void \mbox{\hyperlink{class_screen_a238d30be206a25432ab8c67e5eddfd89}{clear\+Texts}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_button}{Button}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_screen_a936b5c785c987b5902257eece2cb3baa}{get\+Buttons}} () const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_text}{Text}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_screen_a78b67ecbc0ee2424a65f3ac1c59bdea6}{get\+Texts}} () const
+\item 
+virtual void \mbox{\hyperlink{class_screen_a819aa32ece0c9bf2b173e747d8713c0b}{render}} ()
+\item 
+virtual void \mbox{\hyperlink{class_screen_a88e13da2faf283567bd8109057f42fe2}{clean}} ()
+\item 
+void \mbox{\hyperlink{class_screen_a876343cf972d15caba150cd253b1950e}{clear\+Text}} ()
+\item 
+virtual void \mbox{\hyperlink{class_screen_af81a85b23f6609432a836e84324a8656}{render\+Text}} () const
+\item 
+virtual void \mbox{\hyperlink{class_screen_a2739cc939c2ff7a825afbbe287f704c0}{click\+Button}} ()
+\item 
+virtual void \mbox{\hyperlink{class_screen_af6f9adc4ff2a4ae2eb524293a6dd975a}{handle\+Key\+Pressed}} (WPARAM key)
+\item 
+virtual int \mbox{\hyperlink{class_screen_adb58b1a292a1a0e6c3365ab0b608656f}{get\+Size}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_screen}{Screen}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_screen_a808d5f8e0be288fa33c75a2c3b546fce}{m\+\_\+background}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_button}{Button}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_screen_a97f9adeee51e5079696ceb25bf5deaa8}{m\+\_\+buttons}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_text}{Text}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_screen_a5d0548faa658956261259aa14cd7de5d}{m\+\_\+texts}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_load_screen_a4b4d53d0ed7d7f85ff9ebf9d86287e57}\label{class_load_screen_a4b4d53d0ed7d7f85ff9ebf9d86287e57} 
+\index{LoadScreen@{LoadScreen}!LoadScreen@{LoadScreen}}
+\index{LoadScreen@{LoadScreen}!LoadScreen@{LoadScreen}}
+\doxysubsubsection{\texorpdfstring{LoadScreen()}{LoadScreen()}}
+{\footnotesize\ttfamily Load\+Screen\+::\+Load\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gameplay}{Gameplay}} \texorpdfstring{$\ast$}{*}}]{gp }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_load_screen_a7b472bb042387d8509bca89e8d3516c1}\label{class_load_screen_a7b472bb042387d8509bca89e8d3516c1} 
+\index{LoadScreen@{LoadScreen}!updateContent@{updateContent}}
+\index{updateContent@{updateContent}!LoadScreen@{LoadScreen}}
+\doxysubsubsection{\texorpdfstring{updateContent()}{updateContent()}}
+{\footnotesize\ttfamily void Load\+Screen\+::update\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_screen_a05fdc4996e4856ac56b5bac6a7ee712f}{Screen}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_load_screen_8h}{Load\+Screen.\+h}}\item 
+\mbox{\hyperlink{_load_screen_8cpp}{Load\+Screen.\+cpp}}\end{DoxyCompactItemize}

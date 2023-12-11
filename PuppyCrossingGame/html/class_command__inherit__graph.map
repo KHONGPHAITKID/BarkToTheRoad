@@ -1,0 +1,13 @@
+<map id="Command" name="Command">
+<area shape="rect" id="Node000001" title=" " alt="" coords="325,5,426,111"/>
+<area shape="rect" id="Node000002" href="$class_bark_command.html" title=" " alt="" coords="5,159,124,284"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,83,227,116,138,161,125,170,122,165,135,156,225,111,310,78"/>
+<area shape="rect" id="Node000003" href="$class_move_down_command.html" title=" " alt="" coords="149,179,287,264"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="317,123,260,181,256,177,313,119"/>
+<area shape="rect" id="Node000004" href="$class_move_left_command.html" title=" " alt="" coords="312,179,439,264"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="378,125,378,179,373,179,373,125"/>
+<area shape="rect" id="Node000005" href="$class_move_right_command.html" title=" " alt="" coords="463,179,599,264"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="437,119,493,177,489,181,433,123"/>
+<area shape="rect" id="Node000006" href="$class_move_up_command.html" title=" " alt="" coords="624,179,745,264"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="441,78,524,111,613,156,641,177,638,181,610,161,522,116,439,83"/>
+</map>

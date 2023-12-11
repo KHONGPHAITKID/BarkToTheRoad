@@ -1,0 +1,207 @@
+\doxysection{Button.\+h}
+\hypertarget{_button_8h_source}{}\label{_button_8h_source}\mbox{\hyperlink{_button_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <windows.h>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_global_8h}{Global.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_screen_id_8h}{ScreenId.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_gameplay_8h}{Gameplay.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{_button_8h_aa46074d34fe2d6631c6bd9dc74633657}{ButtonState}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{_button_8h_aa46074d34fe2d6631c6bd9dc74633657a50d1448013c6f17125caee18aa418af7}{NORMAL}},\ \mbox{\hyperlink{_button_8h_aa46074d34fe2d6631c6bd9dc74633657a73ed127a679816b5f99c07df94c4f04d}{FOCUSED}},\ \mbox{\hyperlink{_button_8h_aa46074d34fe2d6631c6bd9dc74633657ad37324c719e7d564128110e054a550e4}{CLICKED}}}
+\DoxyCodeLine{00009\ \};}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_button}{Button}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_button_a29d67b81d803e588ebf4c4c2075262bf}{Button}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_button_aaa5eebdd2f5dfbbc1544d9a30afe170e}{Button}}(\mbox{\hyperlink{class_shape}{Shape}}*\ shape)\ :\ m\_shape\{\ shape\ \}\ \{\}}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_button_a8f0172660006297a9db4390ee18aa411}{Button}}(COORD\ pos,\ \mbox{\hyperlink{class_shape}{Shape}}*\ shape,\ \mbox{\hyperlink{_button_8h_aa46074d34fe2d6631c6bd9dc74633657}{ButtonState}}\ state\ =\ \mbox{\hyperlink{_button_8h_aa46074d34fe2d6631c6bd9dc74633657a50d1448013c6f17125caee18aa418af7}{NORMAL}})\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ :\ m\_pos\{\ pos\ \},\ m\_shape\{\ shape\ \},\ m\_state\{\ state\ \}\ \{\}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_button_add4daea65a908027aa5a1593305b9656}{render}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_button_a97837894f6168bb63f1f6710da061249}{setState}}(\mbox{\hyperlink{_button_8h_aa46074d34fe2d6631c6bd9dc74633657}{ButtonState}}\ \mbox{\hyperlink{_puppy_crossing_game_8cpp_a191482ef3e0e75c53cfe1c603c2dbcdf}{s}})\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ m\_state\ =\ \mbox{\hyperlink{_puppy_crossing_game_8cpp_a191482ef3e0e75c53cfe1c603c2dbcdf}{s}};}
+\DoxyCodeLine{00021\ \ \ \ \ \}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_button_a25657b7fc0f7d230ec717bf8b460c16c}{setPos}}(COORD\ pos);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_button_a27416a62e34e65f08d0a5f9b436d9249}{isInside}}(POINT\ p)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_button_aff38e4d822b7b8b13e6bdcea59dcedde}{isHovering}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_button_a8f67bda4763669cb74d7978b43c749e7}{onClick}}()\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ OutputDebugStringA(\textcolor{stringliteral}{"{}Clicked"{}});}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ m\_state\ =\ \mbox{\hyperlink{_button_8h_aa46074d34fe2d6631c6bd9dc74633657ad37324c719e7d564128110e054a550e4}{CLICKED}};}
+\DoxyCodeLine{00028\ \ \ \ \ \}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_button_af1bf716ae8bbcac355b3a427030d07f2}{setShowDialog}}(\textcolor{keywordtype}{bool}\&\ show)\ \{\}}
+\DoxyCodeLine{00030\ \ \ \ \ COORD\ \mbox{\hyperlink{class_button_ac7f0c06bb61cd420f3b0a2942c8cd59e}{getPos}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_button_ab98c63de2fa53242f37851f7d848f375}{setFileName}}(std::string\ filename)\ \{\}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_button_a651b02395a2e3d2a6ac4105f3b3504af}{setLine}}(\textcolor{keywordtype}{int}\ line)\ \{\};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_button_ae9e9798867abe439459be9bc2c5aa5f6}{getSize}}(\textcolor{keywordtype}{int}\&\ w,\ \textcolor{keywordtype}{int}\&\ h)\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ m\_shape-\/>\mbox{\hyperlink{class_shape_abda87818e8601e12475ed778bebb7b75}{getSize}}(w,\ h);}
+\DoxyCodeLine{00035\ \ \ \ \ \}}
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00037\ \ \ \ \ COORD\ m\_pos\{\};}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{_button_8h_aa46074d34fe2d6631c6bd9dc74633657}{ButtonState}}\ m\_state\{\mbox{\hyperlink{_button_8h_aa46074d34fe2d6631c6bd9dc74633657a50d1448013c6f17125caee18aa418af7}{NORMAL}}\};}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_shape}{Shape}}*\ m\_shape;}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_change_screen_button}{ChangeScreenButton}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_button}{Button}}\ \{}
+\DoxyCodeLine{00043\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_change_screen_button_a51162a5d92978b25abb361231cad9831}{ChangeScreenButton}}(\mbox{\hyperlink{class_shape}{Shape}}*\ shape,\ \mbox{\hyperlink{_screen_id_8h_a05b9f4765673ff70162811baf2cac7ce}{ScreenId}}\ next\_screen)\ :\ \mbox{\hyperlink{class_button}{Button}}(shape),\ m\_next\_screen\{\ next\_screen\ \}\ \{\}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_change_screen_button_ad26f33427d122d5ba8115051bfcf750e}{setShowDialog}}(\textcolor{keywordtype}{bool}\&\ show)\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ m\_show\_dialog\ =\ \&show;}
+\DoxyCodeLine{00047\ \ \ \ \ \}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_change_screen_button_ae11943f833a643982e3660265fcb5661}{onClick}}();}
+\DoxyCodeLine{00049\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{bool}*\ m\_show\_dialog\{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{_screen_id_8h_a05b9f4765673ff70162811baf2cac7ce}{ScreenId}}\ m\_next\_screen\{\};}
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_new_game_button}{NewGameButton}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_button}{Button}}\ \{}
+\DoxyCodeLine{00055\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_new_game_button_a0181212c8dce1e13cd83694155cb2755}{NewGameButton}}(\mbox{\hyperlink{class_shape}{Shape}}*\ shape,\ \mbox{\hyperlink{class_gameplay}{Gameplay}}*\ gp)\ :\ \mbox{\hyperlink{class_button}{Button}}(shape),\ m\_gp\{\ gp\ \}\ \{\}}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_new_game_button_a531bbbbf7c22888400899f9e7eeb134a}{onClick}}()\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ *m\_gp\ =\ \mbox{\hyperlink{class_gameplay}{Gameplay}}();}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_global_a9223d14649fbef01d4098d2ee06a24b4}{Global::current\_screen}}\ =\ \mbox{\hyperlink{_screen_id_8h_a05b9f4765673ff70162811baf2cac7cea9873e16bc1530dedb416060abbeea6d0}{GAME\_SCREEN}};}
+\DoxyCodeLine{00060\ \ \ \ \ \}}
+\DoxyCodeLine{00061\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{class_gameplay}{Gameplay}}*\ m\_gp\{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pause_button}{PauseButton}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_button}{Button}}\ \{}
+\DoxyCodeLine{00066\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pause_button_ad01190f1076e5d91af9e814e7bcb15b8}{onClick}}();}
+\DoxyCodeLine{00068\ \};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_quit_button}{QuitButton}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_button}{Button}}\ \{}
+\DoxyCodeLine{00071\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{class_quit_button_a02c60c83f94359dfd436796791c90e3c}{QuitButton}}(\mbox{\hyperlink{class_shape}{Shape}}*\ shape)\ :\ \mbox{\hyperlink{class_button}{Button}}(shape)\ \{\}}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_quit_button_a90cf35e2b206b146adeec48e28ce2955}{onClick}}()\ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_global_a9d881be77dcb01fab6c1e0bf52810291}{Global::window\_should\_close}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00075\ \ \ \ \ \}}
+\DoxyCodeLine{00076\ \};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_save_game_button}{SaveGameButton}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_button}{Button}}\ \{}
+\DoxyCodeLine{00079\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{class_save_game_button_a3aadae5ad22ad3c1be5a52094545e88d}{SaveGameButton}}(\mbox{\hyperlink{class_shape}{Shape}}*\ shape,\ \mbox{\hyperlink{class_gameplay}{Gameplay}}*\&\ gp,\ \textcolor{keywordtype}{bool}\&\ render\_dialog,\ std::string\ filename)\ :\ \mbox{\hyperlink{class_button}{Button}}(shape),\ m\_gp\{\ gp\ \},\ m\_show\{\ \&render\_dialog\ \},\ m\_file\_name(filename)\ \{\}}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_save_game_button_ae0d9ce5d0301f5409e5344dc359e4536}{onClick}}()\ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ std::string\ saveName\ =\ m\_gp-\/>\mbox{\hyperlink{class_gameplay_a4ec99839348bce6cceee2d086705abf5}{getUserName}}();}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ std::vector<std::string>\ saveFiles;}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ std::ifstream\ saveFile(\textcolor{stringliteral}{"{}game\_save/name.txt"{}});}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (std::string\ line;\ getline(saveFile,\ line);)}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ saveFiles.push\_back(line);}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (saveFiles.size()\ <\ 3)\ saveFiles.push\_back(\textcolor{stringliteral}{"{}empty"{}});}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ saveFile.close();}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ saveFiles[m\_line]\ =\ saveName;}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ std::ofstream\ out(\textcolor{stringliteral}{"{}game\_save/name.txt"{}});}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 3;\ ++i)}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ out\ <<\ saveFiles[i]\ <<\ std::endl;}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ out.close();}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ m\_file\_name\ =\ \textcolor{stringliteral}{"{}game\_save/"{}}\ +\ saveName\ +\ \textcolor{stringliteral}{"{}.txt"{}};}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{comment}{//*m\_gp\ =\ Gameplay();}}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ m\_gp-\/>\mbox{\hyperlink{class_gameplay_abed0dff1e5207861843748f152fa95bc}{saveGame}}(m\_file\_name);}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{comment}{//OutputDebugString(L"{}Clicked\(\backslash\)n"{});}}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ *m\_show\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_global_a9223d14649fbef01d4098d2ee06a24b4}{Global::current\_screen}}\ =\ \mbox{\hyperlink{_screen_id_8h_a05b9f4765673ff70162811baf2cac7cea7339ce0f17e3e199ae485834a305c098}{MENU\_SCREEN}};}
+\DoxyCodeLine{00109\ \ \ \ \ \}}
+\DoxyCodeLine{00110\ \ \ \ \ }
+\DoxyCodeLine{00111\ \ \ \ \ std::string\ \mbox{\hyperlink{class_save_game_button_a0ca7c3b66d745dba159d03de60402781}{getFileName}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_file\_name;}
+\DoxyCodeLine{00113\ \ \ \ \ \}}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_save_game_button_a7e144e9256ed5ccb72f1212f8b392a5e}{setLine}}(\textcolor{keywordtype}{int}\ line)\ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ m\_line\ =\ line;}
+\DoxyCodeLine{00117\ \ \ \ \ \}}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00120\ \ \ \ \ \mbox{\hyperlink{class_gameplay}{Gameplay}}*\ m\_gp\{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{bool}*\ m\_show\{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00122\ \ \ \ \ std::string\ m\_file\_name\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_line\ =\ 0;}
+\DoxyCodeLine{00124\ \};}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_load_game_button}{LoadGameButton}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_button}{Button}}\ \{}
+\DoxyCodeLine{00127\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00128\ \ \ \ \ \mbox{\hyperlink{class_load_game_button_a1cc0bdc6ece5a665e5a73d8cf335dd1e}{LoadGameButton}}(\mbox{\hyperlink{class_shape}{Shape}}*\ shape,\ \mbox{\hyperlink{class_gameplay}{Gameplay}}*\&\ gp,\ std::string\ filename):\ }
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_button}{Button}}(shape),\ m\_gp\{\ gp\ \},\ m\_file\_name(filename)\{\}}
+\DoxyCodeLine{00130\ \ \ \ \ }
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_load_game_button_a0331850b1b5b8b3ee19283e2f35e542b}{onClick}}()\ \{}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*WCHAR\ Filestring[1000]\{0\};}}
+\DoxyCodeLine{00133\ \textcolor{comment}{\ \ \ \ \ \ \ \ OPENFILENAME\ opf\ =\ \{\ 0\ \};}}
+\DoxyCodeLine{00134\ \textcolor{comment}{\ \ \ \ \ \ \ \ opf.lStructSize\ =\ sizeof(OPENFILENAME);}}
+\DoxyCodeLine{00135\ \textcolor{comment}{\ \ \ \ \ \ \ \ opf.lpstrFile\ =\ Filestring;}}
+\DoxyCodeLine{00136\ \textcolor{comment}{\ \ \ \ \ \ \ \ opf.nMaxFile\ =\ MAX\_PATH;}}
+\DoxyCodeLine{00137\ \textcolor{comment}{\ \ \ \ \ \ \ \ opf.lpstrInitialDir\ =\ NULL;}}
+\DoxyCodeLine{00138\ \textcolor{comment}{\ \ \ \ \ \ \ \ if\ (GetOpenFileName(\&opf)\ !=\ 0)\ \{}}
+\DoxyCodeLine{00139\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ std::string\ delimiter\ =\ "{}\(\backslash\)\(\backslash\)"{};}}
+\DoxyCodeLine{00140\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ std::wstring\ ws(Filestring);}}
+\DoxyCodeLine{00141\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ std::string\ s(ws.begin(),\ ws.end());}}
+\DoxyCodeLine{00142\ \textcolor{comment}{}}
+\DoxyCodeLine{00143\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ size\_t\ pos\ =\ 0;}}
+\DoxyCodeLine{00144\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ std::string\ token;}}
+\DoxyCodeLine{00145\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ while\ ((pos\ =\ s.find(delimiter))\ !=\ std::string::npos)\ \{}}
+\DoxyCodeLine{00146\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ token\ =\ s.substr(0,\ pos);}}
+\DoxyCodeLine{00147\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ s.erase(0,\ pos\ +\ delimiter.length());}}
+\DoxyCodeLine{00148\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00149\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00150\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ m\_gp-\/>loadGame(s);}}
+\DoxyCodeLine{00151\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ Global::current\_screen\ =\ GAME\_SCREEN;}}
+\DoxyCodeLine{00152\ \textcolor{comment}{\ \ \ \ \ \ \ \ \}*/}}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (m\_file\_name\ !=\ \textcolor{stringliteral}{"{}empty"{}})\ \{}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ *m\_gp\ =\ \mbox{\hyperlink{class_gameplay}{Gameplay}}();}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ m\_gp-\/>\mbox{\hyperlink{class_gameplay_ac3ccef569eaf8b75f26f5b6f0ae5e728}{loadGame}}(\textcolor{stringliteral}{"{}game\_save/"{}}\ +\ m\_file\_name\ +\ \textcolor{stringliteral}{"{}.txt"{}});}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_global_a9223d14649fbef01d4098d2ee06a24b4}{Global::current\_screen}}\ =\ \mbox{\hyperlink{_screen_id_8h_a05b9f4765673ff70162811baf2cac7cea9873e16bc1530dedb416060abbeea6d0}{GAME\_SCREEN}};}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00158\ \ \ \ \ \}}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \ \ \ \ std::string\ \mbox{\hyperlink{class_load_game_button_a46212ffc72154fe8d633784a53875b90}{getFileName}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_file\_name;}
+\DoxyCodeLine{00162\ \ \ \ \ \}}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_load_game_button_aafcc8d0ea27b94f18498074435669528}{setFileName}}(std::string\ filename)\ \{}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ m\_file\_name\ =\ filename;}
+\DoxyCodeLine{00166\ \ \ \ \ \}}
+\DoxyCodeLine{00167\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00168\ \ \ \ \ std::string\ m\_file\_name\ =\ \textcolor{stringliteral}{"{}empty"{}};}
+\DoxyCodeLine{00169\ \ \ \ \ \mbox{\hyperlink{class_gameplay}{Gameplay}}*\ m\_gp\{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00170\ \};}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_open_dialog_button}{OpenDialogButton}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_button}{Button}}\ \{}
+\DoxyCodeLine{00173\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00174\ \ \ \ \ \mbox{\hyperlink{class_open_dialog_button_a35bead201977d0cd760ad6bdd4063fed}{OpenDialogButton}}(\mbox{\hyperlink{class_shape}{Shape}}*\ shape,\ \textcolor{keywordtype}{bool}\&\ show)\ :\ \mbox{\hyperlink{class_button}{Button}}(shape),\ m\_show\{\ \&show\ \}\ \{\}}
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_open_dialog_button_a3ffcb66c3f450fc87cecf0009758ae83}{onClick}}()\ \{}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ *m\_show\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00177\ \ \ \ \ \}}
+\DoxyCodeLine{00178\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordtype}{bool}\ *m\_show;}
+\DoxyCodeLine{00180\ \};}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00182\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_close_dialog_button}{CloseDialogButton}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_button}{Button}}\ \{}
+\DoxyCodeLine{00183\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00184\ \ \ \ \ \mbox{\hyperlink{class_close_dialog_button_aa05db53fa440ac65d46c0a257deaf197}{CloseDialogButton}}(\mbox{\hyperlink{class_shape}{Shape}}*\ shape,\ \textcolor{keywordtype}{bool}\&\ show,\ \mbox{\hyperlink{class_gameplay}{Gameplay}}*\&\ gp)\ :\ \mbox{\hyperlink{class_button}{Button}}(shape),\ m\_show\{\ \&show\ \},\ m\_gp\{\ gp\ \}\ \{\}}
+\DoxyCodeLine{00185\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_close_dialog_button_a44b06544152d855355560bdabf0c0997}{onClick}}()\ \{}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ *m\_show\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!m\_gp-\/>\mbox{\hyperlink{class_gameplay_aab019209d3fe0450da75a2484cd45a1e}{getIsNewGame}}())\ m\_gp-\/>\mbox{\hyperlink{class_gameplay_ae1e62cf96572920813746b1769b9687f}{setPause}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{00188\ \ \ \ \ \}}
+\DoxyCodeLine{00189\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00190\ \ \ \ \ \mbox{\hyperlink{class_gameplay}{Gameplay}}*\ m\_gp;}
+\DoxyCodeLine{00191\ \ \ \ \ \textcolor{keywordtype}{bool}*\ m\_show;}
+\DoxyCodeLine{00192\ \};}
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00194\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_change_sound_button}{ChangeSoundButton}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_button}{Button}}\ \{}
+\DoxyCodeLine{00195\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00196\ \ \ \ \ \mbox{\hyperlink{class_change_sound_button_a82f1cfa5f428d3cebd5d93f0019de7a5}{ChangeSoundButton}}(\mbox{\hyperlink{class_shape}{Shape}}*\ shape,\ \textcolor{keywordtype}{bool}\&\ sound)\ :\ \mbox{\hyperlink{class_button}{Button}}(shape),\ m\_sound\{\ \&sound\ \}\ \{\}}
+\DoxyCodeLine{00197\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_change_sound_button_a17e6c9981843b0b3d61f2b6ad23cb331}{onClick}}()\ \{}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ *m\_sound\ =\ !*m\_sound;}
+\DoxyCodeLine{00199\ \ \ \ \ \}}
+\DoxyCodeLine{00200\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00201\ \ \ \ \ \textcolor{keywordtype}{bool}*\ m\_sound;}
+\DoxyCodeLine{00202\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,34 @@
+\doxysection{Grass\+Lane.\+h}
+\hypertarget{_grass_lane_8h_source}{}\label{_grass_lane_8h_source}\mbox{\hyperlink{_grass_lane_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_lane_8h}{Lane.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_grass_lane}{GrassLane}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_lane}{Lane}}}
+\DoxyCodeLine{00004\ \{}
+\DoxyCodeLine{00005\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00006\ \ \ \ \ \mbox{\hyperlink{class_grass_lane_ac06eee7bad323263fe1adc65b9111c23}{GrassLane}}();}
+\DoxyCodeLine{00007\ \ \ \ \ \mbox{\hyperlink{class_grass_lane_ac06eee7bad323263fe1adc65b9111c23}{GrassLane}}(\textcolor{keyword}{const}\ COORD\ \&pos);}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_grass_lane_aac698d98ea0823ffd8ccd2be72adcccb}{addObstacle}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_grass_lane_a3a27140e297ce7ec9fc30d136a8ee3b3}{moveObstacle}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_grass_lane_a32038762726f81222a69e28187b8ccb8}{spawnObstacle}}();}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_grass_lane_acfddc7b87e070537d59e0335af73a0d2}{render}}(\textcolor{keywordtype}{int}\ offset\ =\ 0)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_grass_lane_ae91bd2995205e8721c577ced8ffe3f47}{isStaticLane}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00014\ \ \ \ \ \}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_grass_lane_ae3c39e3760211388b5f0e3ce8f7cd5f1}{checkCollision}}(\mbox{\hyperlink{class_character}{Character}}\&\ e)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!e.\mbox{\hyperlink{class_character_a28417841f41f6b36a6cc2d6c7cb4ac09}{isStanding}}())\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ obstacle\ :\ \mbox{\hyperlink{class_lane_af4e206d281c2a33cd0a104dc390306eb}{m\_obs}})}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obstacle-\/>isCollison(e))}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00023\ \ \ \ \ \}}
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_shape}{Shape}}\ m\_lanes[14];}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ }
+
+\end{DoxyCode}

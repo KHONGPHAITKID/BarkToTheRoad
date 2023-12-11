@@ -1,0 +1,28 @@
+\doxysection{Render\+State.\+h}
+\hypertarget{_render_state_8h_source}{}\label{_render_state_8h_source}\mbox{\hyperlink{_render_state_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <windows.h>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_render_state_8h_a1a4ea27f9b84f4c2a6577f80d51ea998}{WINDOW\_WIDTH}}\ =\ 1280;}
+\DoxyCodeLine{00006\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_render_state_8h_a4653f29f655121ae7b57bc95ef27ad72}{WINDOW\_HEIGHT}}\ =\ 720;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_render_state}{RenderState}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_height,\ m\_width;}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{void}*\ m\_memory;\ \textcolor{comment}{//\ pointer\ to\ the\ memory\ adress\ of\ the\ color\ info;}}
+\DoxyCodeLine{00012\ \ \ \ \ BITMAPINFO\ m\_bitmapinfo;\ \textcolor{comment}{//\ color}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_render_state}{RenderState}}(\textcolor{keywordtype}{int}\ \_h\ =\ 0,\ \textcolor{keywordtype}{int}\ \_w\ =\ 0);}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_render_state_ad6b1f19c42de824752214fc4cd06c54d}{\string~RenderState}}();}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_render_state}{RenderState}}\&\ \mbox{\hyperlink{class_render_state_ab21ca2b10173c92dab06fc265b402b7e}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_render_state}{RenderState}}\&\ \_other);}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}*\ \mbox{\hyperlink{class_render_state_a6833a3c3de4c6505f2991dc34bf54351}{getMemoryPointer}}();\ \textcolor{comment}{//\ get\ m\_memory}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_render_state_ace008bd581a595a77b71d74812fc8bc3}{getWidth}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_render_state_adf02522d024ae0742d6f73efc913a255}{getHeight}}();}
+\DoxyCodeLine{00021\ \ \ \ \ BITMAPINFO*\ \mbox{\hyperlink{class_render_state_a0ccb24ec9832acba61e740bfac1facde}{getBitmapPointer}}();}
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+
+\end{DoxyCode}

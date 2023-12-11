@@ -1,0 +1,84 @@
+\doxysection{Puppy\+Crossing\+Game.\+cpp File Reference}
+\hypertarget{_puppy_crossing_game_8cpp}{}\label{_puppy_crossing_game_8cpp}\index{PuppyCrossingGame.cpp@{PuppyCrossingGame.cpp}}
+{\ttfamily \#include "{}Asphalt\+Lane.\+h"{}}\newline
+{\ttfamily \#include "{}Character.\+h"{}}\newline
+{\ttfamily \#include "{}Entity.\+h"{}}\newline
+{\ttfamily \#include "{}Global.\+h"{}}\newline
+{\ttfamily \#include "{}Grass\+Lane.\+h"{}}\newline
+{\ttfamily \#include "{}Input\+Handler.\+h"{}}\newline
+{\ttfamily \#include "{}Map.\+h"{}}\newline
+{\ttfamily \#include "{}Move\+Up\+Command.\+h"{}}\newline
+{\ttfamily \#include "{}Rail\+Lane.\+h"{}}\newline
+{\ttfamily \#include "{}Render\+State.\+h"{}}\newline
+{\ttfamily \#include "{}Shape.\+h"{}}\newline
+{\ttfamily \#include "{}renderer.\+h"{}}\newline
+{\ttfamily \#include "{}Button.\+h"{}}\newline
+{\ttfamily \#include "{}Screen\+Registry.\+h"{}}\newline
+{\ttfamily \#include "{}Gameplay.\+h"{}}\newline
+{\ttfamily \#include "{}Game\+Screen.\+h"{}}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$mfapi.\+h$>$}\newline
+{\ttfamily \#include $<$mfidl.\+h$>$}\newline
+{\ttfamily \#include $<$Mfreadwrite.\+h$>$}\newline
+{\ttfamily \#include $<$audioclient.\+h$>$}\newline
+{\ttfamily \#include "{}Sound.\+h"{}}\newline
+Include dependency graph for Puppy\+Crossing\+Game.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_puppy_crossing_game_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+LRESULT \mbox{\hyperlink{_puppy_crossing_game_8cpp_a9a96fd8d02986b007e2091be770965d5}{Wndproc}} (HWND h\+Wnd, UINT u\+Msg, WPARAM w\+Param, LPARAM l\+Param)
+\item 
+int \mbox{\hyperlink{_puppy_crossing_game_8cpp_a57bc07998d575cd5ba96fdf7aae53b3a}{Win\+Main}} (HINSTANCE h\+Instance, HINSTANCE h\+Prev\+Instance, LPSTR lp\+Cmd\+Line, int n\+Show\+Cmd)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gameplay}{Gameplay}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_puppy_crossing_game_8cpp_a6d48e4831b3b70bee44907ca749a5f30}{gameplay}} = nullptr
+\item 
+\mbox{\hyperlink{class_screen}{Screen}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_puppy_crossing_game_8cpp_a191482ef3e0e75c53cfe1c603c2dbcdf}{s}}
+\item 
+\mbox{\hyperlink{class_screen_registry}{Screen\+Registry}} \mbox{\hyperlink{_puppy_crossing_game_8cpp_a23f94a58badb16a5c2af40f586db5054}{sr}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_puppy_crossing_game_8cpp_a57bc07998d575cd5ba96fdf7aae53b3a}\label{_puppy_crossing_game_8cpp_a57bc07998d575cd5ba96fdf7aae53b3a} 
+\index{PuppyCrossingGame.cpp@{PuppyCrossingGame.cpp}!WinMain@{WinMain}}
+\index{WinMain@{WinMain}!PuppyCrossingGame.cpp@{PuppyCrossingGame.cpp}}
+\doxysubsubsection{\texorpdfstring{WinMain()}{WinMain()}}
+{\footnotesize\ttfamily int Win\+Main (\begin{DoxyParamCaption}\item[{HINSTANCE}]{h\+Instance,  }\item[{HINSTANCE}]{h\+Prev\+Instance,  }\item[{LPSTR}]{lp\+Cmd\+Line,  }\item[{int}]{n\+Show\+Cmd }\end{DoxyParamCaption})}
+
+\Hypertarget{_puppy_crossing_game_8cpp_a9a96fd8d02986b007e2091be770965d5}\label{_puppy_crossing_game_8cpp_a9a96fd8d02986b007e2091be770965d5} 
+\index{PuppyCrossingGame.cpp@{PuppyCrossingGame.cpp}!Wndproc@{Wndproc}}
+\index{Wndproc@{Wndproc}!PuppyCrossingGame.cpp@{PuppyCrossingGame.cpp}}
+\doxysubsubsection{\texorpdfstring{Wndproc()}{Wndproc()}}
+{\footnotesize\ttfamily LRESULT Wndproc (\begin{DoxyParamCaption}\item[{HWND}]{h\+Wnd,  }\item[{UINT}]{u\+Msg,  }\item[{WPARAM}]{w\+Param,  }\item[{LPARAM}]{l\+Param }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_puppy_crossing_game_8cpp_a6d48e4831b3b70bee44907ca749a5f30}\label{_puppy_crossing_game_8cpp_a6d48e4831b3b70bee44907ca749a5f30} 
+\index{PuppyCrossingGame.cpp@{PuppyCrossingGame.cpp}!gameplay@{gameplay}}
+\index{gameplay@{gameplay}!PuppyCrossingGame.cpp@{PuppyCrossingGame.cpp}}
+\doxysubsubsection{\texorpdfstring{gameplay}{gameplay}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gameplay}{Gameplay}}\texorpdfstring{$\ast$}{*} gameplay = nullptr}
+
+\Hypertarget{_puppy_crossing_game_8cpp_a191482ef3e0e75c53cfe1c603c2dbcdf}\label{_puppy_crossing_game_8cpp_a191482ef3e0e75c53cfe1c603c2dbcdf} 
+\index{PuppyCrossingGame.cpp@{PuppyCrossingGame.cpp}!s@{s}}
+\index{s@{s}!PuppyCrossingGame.cpp@{PuppyCrossingGame.cpp}}
+\doxysubsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_screen}{Screen}}\texorpdfstring{$\ast$}{*} s}
+
+\Hypertarget{_puppy_crossing_game_8cpp_a23f94a58badb16a5c2af40f586db5054}\label{_puppy_crossing_game_8cpp_a23f94a58badb16a5c2af40f586db5054} 
+\index{PuppyCrossingGame.cpp@{PuppyCrossingGame.cpp}!sr@{sr}}
+\index{sr@{sr}!PuppyCrossingGame.cpp@{PuppyCrossingGame.cpp}}
+\doxysubsubsection{\texorpdfstring{sr}{sr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_screen_registry}{Screen\+Registry}} sr \{\}}
+

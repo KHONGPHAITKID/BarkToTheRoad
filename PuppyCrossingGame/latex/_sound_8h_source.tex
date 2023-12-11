@@ -1,0 +1,46 @@
+\doxysection{Sound.\+h}
+\hypertarget{_sound_8h_source}{}\label{_sound_8h_source}\mbox{\hyperlink{_sound_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <Windows.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <thread>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}mmsystem.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_global_8h}{Global.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sound_track}{SoundTrack}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ std::wstring\ m\_file;}
+\DoxyCodeLine{00012\ \ \ \ \ std::wstring\ m\_alias;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_sound_track_aa40c4a733924ee7cb426cd1220e13d84}{SoundTrack}}(std::wstring\ file,\ std::wstring\ alias)\ :\ m\_file(file),\ m\_alias(alias)\ \{\}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sound_track_a130ba68d8cb8a8c56585af06ae9e4061}{playSound}}()\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{namespace_global_a22e0a4db44cb513c22ca3e1850afcc6a}{Global::is\_sound\_muted}})\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ std::wstring\ command\ =\ L\textcolor{stringliteral}{"{}open\ "{}}\ +\ m\_file\ +\ L\textcolor{stringliteral}{"{}\ type\ waveaudio\ alias\ "{}}\ +\ m\_alias;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ mciSendStringW(command.c\_str(),\ NULL,\ 0,\ NULL);}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ command\ =\ L\textcolor{stringliteral}{"{}seek\ "{}}\ +\ m\_alias\ +\ L\textcolor{stringliteral}{"{}\ to\ start"{}};}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ mciSendStringW(command.c\_str(),\ NULL,\ 0,\ NULL);}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ command\ =\ L\textcolor{stringliteral}{"{}play\ "{}}\ +\ m\_alias;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ mciSendStringW(command.c\_str(),\ NULL,\ 0,\ NULL);}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sound_track_aeb5de063f85fe7f847643f8c190783e5}{playSoundWorker}}(std::wstring\ file,\ std::wstring\ alias)\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{namespace_global_a22e0a4db44cb513c22ca3e1850afcc6a}{Global::is\_sound\_muted}})\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ std::wstring\ command\ =\ L\textcolor{stringliteral}{"{}open\ "{}}\ +\ file\ +\ L\textcolor{stringliteral}{"{}\ type\ waveaudio\ alias\ "{}}\ +\ alias;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ mciSendStringW(command.c\_str(),\ NULL,\ 0,\ NULL);}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ command\ =\ L\textcolor{stringliteral}{"{}seek\ "{}}\ +\ alias\ +\ L\textcolor{stringliteral}{"{}\ to\ start"{}};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ mciSendStringW(command.c\_str(),\ NULL,\ 0,\ NULL);}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ command\ =\ L\textcolor{stringliteral}{"{}play\ "{}}\ +\ alias;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ mciSendStringW(command.c\_str(),\ NULL,\ 0,\ NULL);}
+\DoxyCodeLine{00035\ \ \ \ \ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sound_track_ab0995d71d348fb5cb8d33e0e348fee73}{playSound}}(std::wstring\ file,\ std::wstring\ alias)\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ std::thread\ myThread(\&\mbox{\hyperlink{class_sound_track_aeb5de063f85fe7f847643f8c190783e5}{SoundTrack::playSoundWorker}},\ file,\ alias);}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ myThread.detach();}
+\DoxyCodeLine{00040\ \ \ \ \ \}}
+\DoxyCodeLine{00041\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,16 @@
+<map id="Dialog.h" name="Dialog.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="72,5,142,31"/>
+<area shape="rect" id="Node000002" href="$_dialog_8cpp.html" title=" " alt="" coords="5,79,89,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,44,59,80,55,77,85,41"/>
+<area shape="rect" id="Node000003" href="$_game_screen_8h.html" title=" " alt="" coords="113,79,221,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,41,159,77,155,80,125,44"/>
+<area shape="rect" id="Node000004" href="$_game_screen_8cpp.html" title=" " alt="" coords="7,153,130,178"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="140,116,86,154,83,150,136,112"/>
+<area shape="rect" id="Node000005" href="$_puppy_crossing_game_8cpp.html" title=" " alt="" coords="82,226,252,252"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="170,120,170,226,164,226,164,120"/>
+<area shape="rect" id="Node000006" href="$_screen_registry_8h.html" title=" " alt="" coords="204,153,325,178"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="197,112,250,150,246,154,194,116"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="237,190,185,228,182,224,234,186"/>
+<area shape="rect" id="Node000007" href="$_screen_registry_8cpp.html" title=" " alt="" coords="276,226,410,252"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="290,187,332,224,328,228,287,191"/>
+</map>

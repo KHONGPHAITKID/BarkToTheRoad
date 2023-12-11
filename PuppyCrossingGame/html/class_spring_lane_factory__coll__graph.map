@@ -1,0 +1,5 @@
+<map id="SpringLaneFactory" name="SpringLaneFactory">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,139,127,224"/>
+<area shape="rect" id="Node000002" href="$class_lane_factory.html" title=" " alt="" coords="18,5,114,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,106,69,139,63,139,63,106"/>
+</map>

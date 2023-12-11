@@ -1,0 +1,19 @@
+<map id="Screen" name="Screen">
+<area shape="rect" id="Node000001" title=" " alt="" coords="477,5,617,451"/>
+<area shape="rect" id="Node000002" href="$class_credit_screen.html" title=" " alt="" coords="5,569,113,654"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="465,270,388,311,300,364,210,428,128,500,101,534,80,570,76,567,97,531,124,497,206,424,297,360,385,306,462,266"/>
+<area shape="rect" id="Node000003" href="$class_end_screen.html" title=" " alt="" coords="138,569,234,654"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="467,291,357,384,300,441,248,500,225,535,206,570,202,568,220,532,244,497,296,437,354,381,464,287"/>
+<area shape="rect" id="Node000004" href="$class_game_screen.html" title=" " alt="" coords="259,499,399,724"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="472,365,395,500,390,497,468,362"/>
+<area shape="rect" id="Node000005" href="$class_load_screen.html" title=" " alt="" coords="423,569,539,654"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="509,466,490,569,485,568,503,465"/>
+<area shape="rect" id="Node000006" href="$class_menu_screen.html" title=" " alt="" coords="563,579,667,644"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="592,465,612,578,607,579,587,465"/>
+<area shape="rect" id="Node000007" href="$class_rank_screen.html" title=" " alt="" coords="691,539,795,684"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="627,377,709,538,704,540,622,380"/>
+<area shape="rect" id="Node000008" href="$class_save_screen.html" title=" " alt="" coords="820,569,936,654"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="630,303,719,393,809,497,857,568,852,570,805,500,715,397,626,306"/>
+<area shape="rect" id="Node000009" href="$class_setting_screen.html" title=" " alt="" coords="960,569,1073,654"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="632,269,705,310,788,363,873,426,951,497,978,532,999,568,995,570,974,535,947,500,870,430,785,368,702,315,629,274"/>
+</map>

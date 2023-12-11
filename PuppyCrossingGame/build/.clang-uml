@@ -1,0 +1,12 @@
+compilation_database_dir: .
+output_directory: diagrams
+generate_method_arguments: none
+diagrams:
+  config_class:
+    type: class
+    # Do not include rendered relations in the class box
+    include_relations_also_as_members: false
+    # Limiting the number of files to include can significantly
+    glob:
+      - ./*.h
+      - ./*.cpp

@@ -1,0 +1,117 @@
+\doxysection{Summer\+Lane Class Reference}
+\hypertarget{class_summer_lane}{}\label{class_summer_lane}\index{SummerLane@{SummerLane}}
+
+
+{\ttfamily \#include $<$Summer\+Lane.\+h$>$}
+
+
+
+Inheritance diagram for Summer\+Lane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_summer_lane__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Summer\+Lane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_summer_lane__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_summer_lane_a48d58c567b9e0c71b768b49e9dcd57d1}{Summer\+Lane}} ()=default
+\item 
+\mbox{\hyperlink{class_summer_lane_a7b68711bb869bd02d14aec34dcff4dbe}{Summer\+Lane}} (const COORD \&pos, std\+::string file\+\_\+name, \mbox{\hyperlink{class_obstacle_factory}{Obstacle\+Factory}} \texorpdfstring{$\ast$}{*}fact)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_lane}{Lane}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lane_a654d27784d6b4206507cc1eaaf302fd1}{Lane}} ()=default
+\item 
+\mbox{\hyperlink{class_lane_a1c023c4eca02fb9a52365b7f6c04d7d4}{\texorpdfstring{$\sim$}{\string~}\+Lane}} ()
+\item 
+\mbox{\hyperlink{class_lane}{Lane}} \& \mbox{\hyperlink{class_lane_a2c135b985e56386402244062be677264}{operator=}} (const \mbox{\hyperlink{class_lane}{Lane}} \&lane)
+\item 
+\mbox{\hyperlink{class_lane_a61dea1fe03c70e22e663a7acb8d76487}{Lane}} (const COORD \&pos)
+\item 
+\mbox{\hyperlink{class_lane_a098288b771b281e0adac903360744246}{Lane}} (const \mbox{\hyperlink{class_lane}{Lane}} \&lane)
+\item 
+virtual void \mbox{\hyperlink{class_lane_a14b94d940ffa7c30684cb0bd2a67db4b}{render}} (int offset=0)
+\item 
+virtual bool \mbox{\hyperlink{class_lane_a6656c02f13516ce7665b220c6a84adf3}{spawn\+Rate}} ()
+\item 
+virtual void \mbox{\hyperlink{class_lane_ad2c17f9e736875d074004fe2e06d916c}{add\+Obstacle}} ()
+\item 
+virtual void \mbox{\hyperlink{class_lane_a704e5f5bbaccd93576f3f6be8c61593f}{remove\+Obstacle}} ()
+\item 
+virtual void \mbox{\hyperlink{class_lane_acabeb6e12977c1e3c82284c06d8f1794}{move\+Obstacle}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_lane_aca63c5e636175c1e27e274819005a2d2}{check\+Collision}} (\mbox{\hyperlink{class_character}{Character}} \&e)
+\item 
+virtual void \mbox{\hyperlink{class_lane_af76fda81389894e5d1d6d3a07f1b6df1}{set\+Pos}} (const COORD \&pos)
+\item 
+COORD \mbox{\hyperlink{class_lane_aec751060d9aaa7ea5ac696f894d3c009}{get\+Collision}} (\mbox{\hyperlink{class_character}{Character}} \&c)
+\item 
+virtual void \mbox{\hyperlink{class_lane_a1e26cd57b24664b136bcd5675305eecf}{move\+Obstacle}} (\mbox{\hyperlink{class_character}{Character}} \&c)
+\item 
+virtual bool \mbox{\hyperlink{class_lane_a192c304102dbfad108ca42526cfb1717}{is\+River\+Lane}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_lane_ab51137e3378ab3ddcee770e89ea835ad}{is\+Static\+Lane}} ()
+\item 
+void \mbox{\hyperlink{class_lane_af1ca534908e0a65b485498ae1fb41dfa}{reverse\+Direction}} ()
+\item 
+void \mbox{\hyperlink{class_lane_af15c012f4a9b59fa220b78c5d96404d5}{set\+Factory\+Index}} (int index)
+\item 
+int \mbox{\hyperlink{class_lane_ae32ae28ac8532d23c3905cfb14257b2a}{get\+Factory\+Index}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_lane}{Lane}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_obstacle_factory}{Obstacle\+Factory}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_lane_a86129fe17c047648fc0d5af3a5ada633}{m\+\_\+fact}}
+\item 
+\mbox{\hyperlink{class_shape}{Shape}} \mbox{\hyperlink{class_lane_a22ec3e2576e7fa313fa2cc47162b3510}{m\+\_\+shape}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_lane}{Lane}}}
+\begin{DoxyCompactItemize}
+\item 
+COORD \mbox{\hyperlink{class_lane_a3e6afa2077f305c1698ee9a0c1d50d58}{m\+\_\+position}} \{\}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_obstacle}{Obstacle}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_lane_af4e206d281c2a33cd0a104dc390306eb}{m\+\_\+obs}}
+\item 
+\mbox{\hyperlink{class_traffic_light}{Traffic\+Light}} \mbox{\hyperlink{class_lane_a01d845dc63e378f35e598cb178fc58d3}{m\+\_\+light}}
+\item 
+short \mbox{\hyperlink{class_lane_ae7c9ebee139b397a24fa2cd426f56e81}{direction}} \{1\}
+\item 
+int \mbox{\hyperlink{class_lane_a807e37b022f66c920a702c8383c82ba8}{m\+\_\+shape\+Index}}
+\item 
+int \mbox{\hyperlink{class_lane_a8a8f034305993711570abc79bd45490e}{m\+\_\+factory\+Index}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_summer_lane_a48d58c567b9e0c71b768b49e9dcd57d1}\label{class_summer_lane_a48d58c567b9e0c71b768b49e9dcd57d1} 
+\index{SummerLane@{SummerLane}!SummerLane@{SummerLane}}
+\index{SummerLane@{SummerLane}!SummerLane@{SummerLane}}
+\doxysubsubsection{\texorpdfstring{SummerLane()}{SummerLane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Summer\+Lane\+::\+Summer\+Lane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_summer_lane_a7b68711bb869bd02d14aec34dcff4dbe}\label{class_summer_lane_a7b68711bb869bd02d14aec34dcff4dbe} 
+\index{SummerLane@{SummerLane}!SummerLane@{SummerLane}}
+\index{SummerLane@{SummerLane}!SummerLane@{SummerLane}}
+\doxysubsubsection{\texorpdfstring{SummerLane()}{SummerLane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Summer\+Lane\+::\+Summer\+Lane (\begin{DoxyParamCaption}\item[{const COORD \&}]{pos,  }\item[{std\+::string}]{file\+\_\+name,  }\item[{\mbox{\hyperlink{class_obstacle_factory}{Obstacle\+Factory}} \texorpdfstring{$\ast$}{*}}]{fact }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_summer_lane_8h}{Summer\+Lane.\+h}}\end{DoxyCompactItemize}

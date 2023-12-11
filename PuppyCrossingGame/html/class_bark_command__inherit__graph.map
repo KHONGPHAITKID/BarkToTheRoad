@@ -1,0 +1,5 @@
+<map id="BarkCommand" name="BarkCommand">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,159,124,284"/>
+<area shape="rect" id="Node000002" href="$class_command.html" title=" " alt="" coords="14,5,115,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,126,67,159,62,159,62,126"/>
+</map>

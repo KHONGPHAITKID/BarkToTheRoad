@@ -1,0 +1,5 @@
+<map id="SaveGameButton" name="SaveGameButton">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,379,140,504"/>
+<area shape="rect" id="Node000002" href="$class_button.html" title=" " alt="" coords="13,5,133,331"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,345,75,379,70,379,70,345"/>
+</map>

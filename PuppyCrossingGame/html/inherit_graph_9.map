@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_obstacle_factory.html" title=" " alt="" coords="5,80,123,106"/>
+<area shape="rect" id="Node000001" href="$class_asphalt_obstacle_factory.html" title=" " alt="" coords="171,5,332,31"/>
+<area shape="poly" id="edge30_Node000000_Node000001" title=" " alt="" coords="103,70,170,40,200,29,202,34,172,45,105,75"/>
+<area shape="rect" id="Node000002" href="$class_grass_obstacle_factory.html" title=" " alt="" coords="175,55,328,80"/>
+<area shape="poly" id="edge31_Node000000_Node000002" title=" " alt="" coords="138,80,174,75,175,80,139,85"/>
+<area shape="rect" id="Node000003" href="$class_rail_obstacle_factory.html" title=" " alt="" coords="181,104,322,130"/>
+<area shape="poly" id="edge32_Node000000_Node000003" title=" " alt="" coords="138,100,181,105,180,110,138,105"/>
+<area shape="rect" id="Node000004" href="$class_river_obstacle_factory.html" title=" " alt="" coords="177,153,326,179"/>
+<area shape="poly" id="edge33_Node000000_Node000004" title=" " alt="" coords="106,110,172,140,202,150,201,155,170,145,104,115"/>
+</map>

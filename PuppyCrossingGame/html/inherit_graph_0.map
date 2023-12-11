@@ -1,0 +1,21 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_button.html" title=" " alt="" coords="5,203,65,228"/>
+<area shape="rect" id="Node000001" href="$class_change_screen_button.html" title=" " alt="" coords="113,5,258,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="39,187,47,153,62,114,82,75,111,40,127,29,130,34,114,44,87,77,66,116,53,155,44,188"/>
+<area shape="rect" id="Node000002" href="$class_change_sound_button.html" title=" " alt="" coords="115,55,256,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="44,187,70,137,88,112,111,89,129,79,132,83,114,94,93,115,74,140,49,189"/>
+<area shape="rect" id="Node000003" href="$class_close_dialog_button.html" title=" " alt="" coords="120,104,251,130"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="55,189,80,163,111,139,133,128,136,133,114,143,84,167,58,193"/>
+<area shape="rect" id="Node000004" href="$class_load_game_button.html" title=" " alt="" coords="124,153,247,179"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="78,199,143,177,145,182,80,204"/>
+<area shape="rect" id="Node000005" href="$class_new_game_button.html" title=" " alt="" coords="125,203,246,228"/>
+<area shape="poly" id="edge5_Node000000_Node000005" title=" " alt="" coords="80,213,124,213,124,218,80,218"/>
+<area shape="rect" id="Node000006" href="$class_open_dialog_button.html" title=" " alt="" coords="122,252,249,278"/>
+<area shape="poly" id="edge6_Node000000_Node000006" title=" " alt="" coords="80,227,145,249,143,254,78,232"/>
+<area shape="rect" id="Node000007" href="$class_pause_button.html" title=" " alt="" coords="137,301,234,327"/>
+<area shape="poly" id="edge7_Node000000_Node000007" title=" " alt="" coords="58,238,84,264,114,288,138,299,135,304,111,292,80,268,55,242"/>
+<area shape="rect" id="Node000008" href="$class_quit_button.html" title=" " alt="" coords="144,351,227,376"/>
+<area shape="poly" id="edge8_Node000000_Node000008" title=" " alt="" coords="49,242,74,291,93,316,114,337,144,353,142,357,111,342,88,319,70,294,44,244"/>
+<area shape="rect" id="Node000009" href="$class_save_game_button.html" title=" " alt="" coords="123,400,248,426"/>
+<area shape="poly" id="edge9_Node000000_Node000009" title=" " alt="" coords="44,243,53,276,66,315,87,354,114,387,130,397,127,402,111,391,82,356,62,317,47,278,39,244"/>
+</map>

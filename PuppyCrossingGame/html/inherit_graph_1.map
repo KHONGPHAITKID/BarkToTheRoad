@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_command.html" title=" " alt="" coords="5,104,87,130"/>
+<area shape="rect" id="Node000001" href="$class_bark_command.html" title=" " alt="" coords="154,5,263,31"/>
+<area shape="poly" id="edge10_Node000000_Node000001" title=" " alt="" coords="69,91,98,64,133,40,157,29,159,34,136,44,101,69,72,95"/>
+<area shape="rect" id="Node000002" href="$class_move_down_command.html" title=" " alt="" coords="135,55,282,80"/>
+<area shape="poly" id="edge11_Node000000_Node000002" title=" " alt="" coords="101,98,163,78,164,83,102,103"/>
+<area shape="rect" id="Node000003" href="$class_move_left_command.html" title=" " alt="" coords="141,104,276,130"/>
+<area shape="poly" id="edge12_Node000000_Node000003" title=" " alt="" coords="102,114,140,114,140,120,102,120"/>
+<area shape="rect" id="Node000004" href="$class_move_right_command.html" title=" " alt="" coords="136,153,281,179"/>
+<area shape="poly" id="edge13_Node000000_Node000004" title=" " alt="" coords="102,131,164,150,163,155,101,136"/>
+<area shape="rect" id="Node000005" href="$class_move_up_command.html" title=" " alt="" coords="143,203,274,228"/>
+<area shape="poly" id="edge14_Node000000_Node000005" title=" " alt="" coords="72,139,101,165,136,189,159,200,157,205,133,194,98,169,69,143"/>
+</map>

@@ -1,0 +1,22 @@
+\doxysection{renderer.\+h}
+\hypertarget{renderer_8h_source}{}\label{renderer_8h_source}\mbox{\hyperlink{renderer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_render_state_8h}{RenderState.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <wtypes.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_renderer}{Renderer}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{class_renderer_ada599dd4b1782bbf947ce7485a520815}{Renderer}}(\mbox{\hyperlink{class_render_state}{RenderState}}\&\ rs)\ :\ m\_rs(rs)\ \{\}}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_renderer_a3d4393f4ab2850f44d64158e5cb05490}{set\_render\_state}}(\mbox{\hyperlink{class_render_state}{RenderState}}\&\ rs)\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ m\_rs\ =\ rs;}
+\DoxyCodeLine{00011\ \ \ \ \ \}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_renderer_a092e341ccb5e8ff260e7ed020eaa6614}{clear\_screen}}();}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_renderer_aaf4958d7485488f5968b595448b2bd5a}{draw\_rect}}(RECT\ r,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ color);}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_render_state}{RenderState}}\&\ m\_rs;}
+\DoxyCodeLine{00017\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,320 @@
+\doxysection{Lane Class Reference}
+\hypertarget{class_lane}{}\label{class_lane}\index{Lane@{Lane}}
+
+
+{\ttfamily \#include $<$Lane.\+h$>$}
+
+
+
+Inheritance diagram for Lane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lane__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Lane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lane__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lane_a654d27784d6b4206507cc1eaaf302fd1}{Lane}} ()=default
+\item 
+\mbox{\hyperlink{class_lane_a1c023c4eca02fb9a52365b7f6c04d7d4}{\texorpdfstring{$\sim$}{\string~}\+Lane}} ()
+\item 
+\mbox{\hyperlink{class_lane}{Lane}} \& \mbox{\hyperlink{class_lane_a2c135b985e56386402244062be677264}{operator=}} (const \mbox{\hyperlink{class_lane}{Lane}} \&lane)
+\item 
+\mbox{\hyperlink{class_lane_a61dea1fe03c70e22e663a7acb8d76487}{Lane}} (const COORD \&pos)
+\item 
+\mbox{\hyperlink{class_lane_a098288b771b281e0adac903360744246}{Lane}} (const \mbox{\hyperlink{class_lane}{Lane}} \&lane)
+\item 
+virtual void \mbox{\hyperlink{class_lane_a14b94d940ffa7c30684cb0bd2a67db4b}{render}} (int offset=0)
+\item 
+virtual bool \mbox{\hyperlink{class_lane_a6656c02f13516ce7665b220c6a84adf3}{spawn\+Rate}} ()
+\item 
+virtual void \mbox{\hyperlink{class_lane_ad2c17f9e736875d074004fe2e06d916c}{add\+Obstacle}} ()
+\item 
+virtual void \mbox{\hyperlink{class_lane_a704e5f5bbaccd93576f3f6be8c61593f}{remove\+Obstacle}} ()
+\item 
+virtual void \mbox{\hyperlink{class_lane_acabeb6e12977c1e3c82284c06d8f1794}{move\+Obstacle}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_lane_aca63c5e636175c1e27e274819005a2d2}{check\+Collision}} (\mbox{\hyperlink{class_character}{Character}} \&e)
+\item 
+virtual void \mbox{\hyperlink{class_lane_af76fda81389894e5d1d6d3a07f1b6df1}{set\+Pos}} (const COORD \&pos)
+\item 
+COORD \mbox{\hyperlink{class_lane_aec751060d9aaa7ea5ac696f894d3c009}{get\+Collision}} (\mbox{\hyperlink{class_character}{Character}} \&c)
+\item 
+virtual void \mbox{\hyperlink{class_lane_a1e26cd57b24664b136bcd5675305eecf}{move\+Obstacle}} (\mbox{\hyperlink{class_character}{Character}} \&c)
+\item 
+virtual bool \mbox{\hyperlink{class_lane_a192c304102dbfad108ca42526cfb1717}{is\+River\+Lane}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_lane_ab51137e3378ab3ddcee770e89ea835ad}{is\+Static\+Lane}} ()
+\item 
+void \mbox{\hyperlink{class_lane_af1ca534908e0a65b485498ae1fb41dfa}{reverse\+Direction}} ()
+\item 
+void \mbox{\hyperlink{class_lane_af15c012f4a9b59fa220b78c5d96404d5}{set\+Factory\+Index}} (int index)
+\item 
+int \mbox{\hyperlink{class_lane_ae32ae28ac8532d23c3905cfb14257b2a}{get\+Factory\+Index}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_obstacle_factory}{Obstacle\+Factory}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_lane_a86129fe17c047648fc0d5af3a5ada633}{m\+\_\+fact}}
+\item 
+\mbox{\hyperlink{class_shape}{Shape}} \mbox{\hyperlink{class_lane_a22ec3e2576e7fa313fa2cc47162b3510}{m\+\_\+shape}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+COORD \mbox{\hyperlink{class_lane_a3e6afa2077f305c1698ee9a0c1d50d58}{m\+\_\+position}} \{\}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_obstacle}{Obstacle}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_lane_af4e206d281c2a33cd0a104dc390306eb}{m\+\_\+obs}}
+\item 
+\mbox{\hyperlink{class_traffic_light}{Traffic\+Light}} \mbox{\hyperlink{class_lane_a01d845dc63e378f35e598cb178fc58d3}{m\+\_\+light}}
+\item 
+short \mbox{\hyperlink{class_lane_ae7c9ebee139b397a24fa2cd426f56e81}{direction}} \{1\}
+\item 
+int \mbox{\hyperlink{class_lane_a807e37b022f66c920a702c8383c82ba8}{m\+\_\+shape\+Index}}
+\item 
+int \mbox{\hyperlink{class_lane_a8a8f034305993711570abc79bd45490e}{m\+\_\+factory\+Index}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream \& \mbox{\hyperlink{class_lane_a5be39a958b5c4d0b19b3415463d5025d}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_lane}{Lane}} \&lane)
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_lane_a48ffd98880e1c52e37800725bcd23c8d}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_lane}{Lane}} \&lane)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_lane_a654d27784d6b4206507cc1eaaf302fd1}\label{class_lane_a654d27784d6b4206507cc1eaaf302fd1} 
+\index{Lane@{Lane}!Lane@{Lane}}
+\index{Lane@{Lane}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{Lane()}{Lane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Lane\+::\+Lane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_lane_a1c023c4eca02fb9a52365b7f6c04d7d4}\label{class_lane_a1c023c4eca02fb9a52365b7f6c04d7d4} 
+\index{Lane@{Lane}!````~Lane@{\texorpdfstring{$\sim$}{\string~}Lane}}
+\index{````~Lane@{\texorpdfstring{$\sim$}{\string~}Lane}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Lane()}{\string~Lane()}}
+{\footnotesize\ttfamily Lane\+::\texorpdfstring{$\sim$}{\string~}\+Lane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_lane_a61dea1fe03c70e22e663a7acb8d76487}\label{class_lane_a61dea1fe03c70e22e663a7acb8d76487} 
+\index{Lane@{Lane}!Lane@{Lane}}
+\index{Lane@{Lane}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{Lane()}{Lane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Lane\+::\+Lane (\begin{DoxyParamCaption}\item[{const COORD \&}]{pos }\end{DoxyParamCaption})}
+
+\Hypertarget{class_lane_a098288b771b281e0adac903360744246}\label{class_lane_a098288b771b281e0adac903360744246} 
+\index{Lane@{Lane}!Lane@{Lane}}
+\index{Lane@{Lane}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{Lane()}{Lane()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Lane\+::\+Lane (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_lane}{Lane}} \&}]{lane }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_lane_ad2c17f9e736875d074004fe2e06d916c}\label{class_lane_ad2c17f9e736875d074004fe2e06d916c} 
+\index{Lane@{Lane}!addObstacle@{addObstacle}}
+\index{addObstacle@{addObstacle}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{addObstacle()}{addObstacle()}}
+{\footnotesize\ttfamily void Lane\+::add\+Obstacle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_grass_lane_aac698d98ea0823ffd8ccd2be72adcccb}{Grass\+Lane}}, \mbox{\hyperlink{class_rail_lane_af14a34ceaea43bcb8355f51692a96d1c}{Rail\+Lane}}, and \mbox{\hyperlink{class_river_lane_aecfda3843f57957c6896ad201ca25468}{River\+Lane}}.
+
+\Hypertarget{class_lane_aca63c5e636175c1e27e274819005a2d2}\label{class_lane_aca63c5e636175c1e27e274819005a2d2} 
+\index{Lane@{Lane}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
+{\footnotesize\ttfamily bool Lane\+::check\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_grass_lane_ae3c39e3760211388b5f0e3ce8f7cd5f1}{Grass\+Lane}}, and \mbox{\hyperlink{class_river_lane_a81a75a30eb6d7f979e43d919df11d9ce}{River\+Lane}}.
+
+\Hypertarget{class_lane_aec751060d9aaa7ea5ac696f894d3c009}\label{class_lane_aec751060d9aaa7ea5ac696f894d3c009} 
+\index{Lane@{Lane}!getCollision@{getCollision}}
+\index{getCollision@{getCollision}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{getCollision()}{getCollision()}}
+{\footnotesize\ttfamily COORD Lane\+::get\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{c }\end{DoxyParamCaption})}
+
+\Hypertarget{class_lane_ae32ae28ac8532d23c3905cfb14257b2a}\label{class_lane_ae32ae28ac8532d23c3905cfb14257b2a} 
+\index{Lane@{Lane}!getFactoryIndex@{getFactoryIndex}}
+\index{getFactoryIndex@{getFactoryIndex}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{getFactoryIndex()}{getFactoryIndex()}}
+{\footnotesize\ttfamily int Lane\+::get\+Factory\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_lane_a192c304102dbfad108ca42526cfb1717}\label{class_lane_a192c304102dbfad108ca42526cfb1717} 
+\index{Lane@{Lane}!isRiverLane@{isRiverLane}}
+\index{isRiverLane@{isRiverLane}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{isRiverLane()}{isRiverLane()}}
+{\footnotesize\ttfamily virtual bool Lane\+::is\+River\+Lane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_river_lane_ac2d18463792473fdd85015f626481b33}{River\+Lane}}.
+
+\Hypertarget{class_lane_ab51137e3378ab3ddcee770e89ea835ad}\label{class_lane_ab51137e3378ab3ddcee770e89ea835ad} 
+\index{Lane@{Lane}!isStaticLane@{isStaticLane}}
+\index{isStaticLane@{isStaticLane}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{isStaticLane()}{isStaticLane()}}
+{\footnotesize\ttfamily virtual bool Lane\+::is\+Static\+Lane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_grass_lane_ae91bd2995205e8721c577ced8ffe3f47}{Grass\+Lane}}.
+
+\Hypertarget{class_lane_acabeb6e12977c1e3c82284c06d8f1794}\label{class_lane_acabeb6e12977c1e3c82284c06d8f1794} 
+\index{Lane@{Lane}!moveObstacle@{moveObstacle}}
+\index{moveObstacle@{moveObstacle}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{moveObstacle()}{moveObstacle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Lane\+::move\+Obstacle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_grass_lane_a3a27140e297ce7ec9fc30d136a8ee3b3}{Grass\+Lane}}, and \mbox{\hyperlink{class_rail_lane_a66d4880fa49d73ec52e11149d208feb5}{Rail\+Lane}}.
+
+\Hypertarget{class_lane_a1e26cd57b24664b136bcd5675305eecf}\label{class_lane_a1e26cd57b24664b136bcd5675305eecf} 
+\index{Lane@{Lane}!moveObstacle@{moveObstacle}}
+\index{moveObstacle@{moveObstacle}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{moveObstacle()}{moveObstacle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Lane\+::move\+Obstacle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_river_lane_a6e716886c30bd71b8815e054b833b85f}{River\+Lane}}.
+
+\Hypertarget{class_lane_a2c135b985e56386402244062be677264}\label{class_lane_a2c135b985e56386402244062be677264} 
+\index{Lane@{Lane}!operator=@{operator=}}
+\index{operator=@{operator=}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lane}{Lane}} \& Lane\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_lane}{Lane}} \&}]{lane }\end{DoxyParamCaption})}
+
+\Hypertarget{class_lane_a704e5f5bbaccd93576f3f6be8c61593f}\label{class_lane_a704e5f5bbaccd93576f3f6be8c61593f} 
+\index{Lane@{Lane}!removeObstacle@{removeObstacle}}
+\index{removeObstacle@{removeObstacle}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{removeObstacle()}{removeObstacle()}}
+{\footnotesize\ttfamily void Lane\+::remove\+Obstacle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\Hypertarget{class_lane_a14b94d940ffa7c30684cb0bd2a67db4b}\label{class_lane_a14b94d940ffa7c30684cb0bd2a67db4b} 
+\index{Lane@{Lane}!render@{render}}
+\index{render@{render}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Lane\+::render (\begin{DoxyParamCaption}\item[{int}]{offset = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_asphalt_lane_a14b94d940ffa7c30684cb0bd2a67db4b}{Asphalt\+Lane}}, and \mbox{\hyperlink{class_grass_lane_acfddc7b87e070537d59e0335af73a0d2}{Grass\+Lane}}.
+
+\Hypertarget{class_lane_af1ca534908e0a65b485498ae1fb41dfa}\label{class_lane_af1ca534908e0a65b485498ae1fb41dfa} 
+\index{Lane@{Lane}!reverseDirection@{reverseDirection}}
+\index{reverseDirection@{reverseDirection}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{reverseDirection()}{reverseDirection()}}
+{\footnotesize\ttfamily void Lane\+::reverse\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_lane_af15c012f4a9b59fa220b78c5d96404d5}\label{class_lane_af15c012f4a9b59fa220b78c5d96404d5} 
+\index{Lane@{Lane}!setFactoryIndex@{setFactoryIndex}}
+\index{setFactoryIndex@{setFactoryIndex}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{setFactoryIndex()}{setFactoryIndex()}}
+{\footnotesize\ttfamily void Lane\+::set\+Factory\+Index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+\Hypertarget{class_lane_af76fda81389894e5d1d6d3a07f1b6df1}\label{class_lane_af76fda81389894e5d1d6d3a07f1b6df1} 
+\index{Lane@{Lane}!setPos@{setPos}}
+\index{setPos@{setPos}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{setPos()}{setPos()}}
+{\footnotesize\ttfamily void Lane\+::set\+Pos (\begin{DoxyParamCaption}\item[{const COORD \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\Hypertarget{class_lane_a6656c02f13516ce7665b220c6a84adf3}\label{class_lane_a6656c02f13516ce7665b220c6a84adf3} 
+\index{Lane@{Lane}!spawnRate@{spawnRate}}
+\index{spawnRate@{spawnRate}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{spawnRate()}{spawnRate()}}
+{\footnotesize\ttfamily bool Lane\+::spawn\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_river_lane_af8761e5db1afdaf172eae295fd595352}{River\+Lane}}.
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_lane_a48ffd98880e1c52e37800725bcd23c8d}\label{class_lane_a48ffd98880e1c52e37800725bcd23c8d} 
+\index{Lane@{Lane}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_lane}{Lane}} \&}]{lane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\Hypertarget{class_lane_a5be39a958b5c4d0b19b3415463d5025d}\label{class_lane_a5be39a958b5c4d0b19b3415463d5025d} 
+\index{Lane@{Lane}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{class_lane}{Lane}} \&}]{lane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_lane_ae7c9ebee139b397a24fa2cd426f56e81}\label{class_lane_ae7c9ebee139b397a24fa2cd426f56e81} 
+\index{Lane@{Lane}!direction@{direction}}
+\index{direction@{direction}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily short Lane\+::direction \{1\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_lane_a86129fe17c047648fc0d5af3a5ada633}\label{class_lane_a86129fe17c047648fc0d5af3a5ada633} 
+\index{Lane@{Lane}!m\_fact@{m\_fact}}
+\index{m\_fact@{m\_fact}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{m\_fact}{m\_fact}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obstacle_factory}{Obstacle\+Factory}}\texorpdfstring{$\ast$}{*} Lane\+::m\+\_\+fact}
+
+\Hypertarget{class_lane_a8a8f034305993711570abc79bd45490e}\label{class_lane_a8a8f034305993711570abc79bd45490e} 
+\index{Lane@{Lane}!m\_factoryIndex@{m\_factoryIndex}}
+\index{m\_factoryIndex@{m\_factoryIndex}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{m\_factoryIndex}{m\_factoryIndex}}
+{\footnotesize\ttfamily int Lane\+::m\+\_\+factory\+Index\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_lane_a01d845dc63e378f35e598cb178fc58d3}\label{class_lane_a01d845dc63e378f35e598cb178fc58d3} 
+\index{Lane@{Lane}!m\_light@{m\_light}}
+\index{m\_light@{m\_light}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{m\_light}{m\_light}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_traffic_light}{Traffic\+Light}} Lane\+::m\+\_\+light\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_lane_af4e206d281c2a33cd0a104dc390306eb}\label{class_lane_af4e206d281c2a33cd0a104dc390306eb} 
+\index{Lane@{Lane}!m\_obs@{m\_obs}}
+\index{m\_obs@{m\_obs}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{m\_obs}{m\_obs}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_obstacle}{Obstacle}}\texorpdfstring{$\ast$}{*}$>$ Lane\+::m\+\_\+obs\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_lane_a3e6afa2077f305c1698ee9a0c1d50d58}\label{class_lane_a3e6afa2077f305c1698ee9a0c1d50d58} 
+\index{Lane@{Lane}!m\_position@{m\_position}}
+\index{m\_position@{m\_position}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{m\_position}{m\_position}}
+{\footnotesize\ttfamily COORD Lane\+::m\+\_\+position \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_lane_a22ec3e2576e7fa313fa2cc47162b3510}\label{class_lane_a22ec3e2576e7fa313fa2cc47162b3510} 
+\index{Lane@{Lane}!m\_shape@{m\_shape}}
+\index{m\_shape@{m\_shape}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{m\_shape}{m\_shape}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shape}{Shape}} Lane\+::m\+\_\+shape}
+
+\Hypertarget{class_lane_a807e37b022f66c920a702c8383c82ba8}\label{class_lane_a807e37b022f66c920a702c8383c82ba8} 
+\index{Lane@{Lane}!m\_shapeIndex@{m\_shapeIndex}}
+\index{m\_shapeIndex@{m\_shapeIndex}!Lane@{Lane}}
+\doxysubsubsection{\texorpdfstring{m\_shapeIndex}{m\_shapeIndex}}
+{\footnotesize\ttfamily int Lane\+::m\+\_\+shape\+Index\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_lane_8h}{Lane.\+h}}\item 
+\mbox{\hyperlink{_lane_8cpp}{Lane.\+cpp}}\end{DoxyCompactItemize}

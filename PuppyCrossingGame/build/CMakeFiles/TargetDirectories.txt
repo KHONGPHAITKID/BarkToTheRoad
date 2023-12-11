@@ -1,0 +1,3 @@
+C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/build/CMakeFiles/Bark.dir
+C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/build/CMakeFiles/edit_cache.dir
+C:/Users/winprn/source/repos/BarkToTheRoad/PuppyCrossingGame/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,17 @@
+<map id="Entity" name="Entity">
+<area shape="rect" id="Node000001" title=" " alt="" coords="193,5,311,311"/>
+<area shape="rect" id="Node000002" href="$class_character.html" title=" " alt="" coords="114,359,246,784"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,326,220,359,214,358,220,325"/>
+<area shape="rect" id="Node000003" href="$class_obstacle.html" title=" " alt="" coords="270,499,378,644"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="284,325,314,499,309,499,278,326"/>
+<area shape="rect" id="Node000004" href="$class_bus_obstacle.html" title=" " alt="" coords="5,842,112,927"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="318,659,298,725,281,758,259,786,243,800,227,809,195,816,163,821,125,834,109,844,106,840,123,830,161,815,194,811,225,804,240,796,255,782,277,755,293,723,312,658"/>
+<area shape="rect" id="Node000005" href="$class_car_obstacle.html" title=" " alt="" coords="136,832,240,937"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="306,659,286,722,260,785,230,833,226,831,255,783,281,720,301,658"/>
+<area shape="rect" id="Node000006" href="$class_grass_obstacle.html" title=" " alt="" coords="265,832,383,937"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="327,659,327,832,321,832,321,659"/>
+<area shape="rect" id="Node000007" href="$class_raft_obstacle.html" title=" " alt="" coords="407,842,515,927"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="364,657,446,841,441,843,359,659"/>
+<area shape="rect" id="Node000008" href="$class_train_obstacle.html" title=" " alt="" coords="540,832,652,937"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="390,644,553,831,549,834,386,647"/>
+</map>

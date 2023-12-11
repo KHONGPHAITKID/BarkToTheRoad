@@ -1,0 +1,53 @@
+\doxysection{Character.\+h}
+\hypertarget{_character_8h_source}{}\label{_character_8h_source}\mbox{\hyperlink{_character_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_entity_8h}{Entity.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_character}{Character}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_entity}{Entity}}}
+\DoxyCodeLine{00005\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keywordtype}{bool}\ isDead\{\};}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_is\_standing\{\ \textcolor{keyword}{true}\ \};}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_total\_state\{\};}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_last\_state\{\};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_max\_y\{\ 0\ \};}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_shape}{Shape}}*\ m\_standing\_shape;}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_shape}{Shape}}*\ m\_initial\_shape;}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_shape}{Shape}}*\ m\_moving\_shape;}
+\DoxyCodeLine{00015\ \ \ \ \ COORD\ m\_delta\ =\ \{\ 0,\ 0\ \};}
+\DoxyCodeLine{00016\ \ \ \ \ COORD\ m\_old\_position\ =\ \{\ 0,\ 0\ \};}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_skinIndex\{\ 0\ \};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_offset\{\ 0\ \};}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_character_afe2cc1186f50316e1df11e5ea17b72f4}{Character}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_character_a95ed341aa89cf55ec07e681f55edd4cb}{Character}}(\textcolor{keyword}{const}\ COORD\&\ pos,\ \mbox{\hyperlink{class_shape}{Shape}}*\ standing,\ \mbox{\hyperlink{class_shape}{Shape}}*\ moving,\ \textcolor{keywordtype}{int}\ total\ =\ 1)\ :}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_entity}{Entity}}(pos,\ standing),\ m\_total\_state\{\ total\ \},\ m\_standing\_shape\{\ standing\ \},}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ m\_initial\_shape\{\ moving\ \},\ m\_moving\_shape\{\ moving\ \}}
+\DoxyCodeLine{00024\ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_entity_a4821d9224aaa22bb015c6441966e7daf}{m\_new\_position}}\ =\ \mbox{\hyperlink{class_entity_a5e6962418009eb0b31147f876dbda42d}{m\_position}};}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ m\_delta\ =\ \{\ 0,\ 0\ \};}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_character_a9e9be564d05ded80962b2045aa70b3fc}{\string~Character}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a143f770831043fd6fab562db0078bdbc}{Bark}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_character_ac0ffc90d53d36db354fa5193aaadcfd2}{isFinish}}();\ \textcolor{comment}{//\ isDead\ checking}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_character_a28417841f41f6b36a6cc2d6c7cb4ac09}{isStanding}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_aa2026e8ecdbb479eb7bf978575a3a745}{render}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a809dd9b9ce65d2f321cc42b701f7ff06}{setShape}}(\mbox{\hyperlink{class_shape}{Shape}}*\ shape);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a246722104d15e077de1c6ea6fd3ed9d5}{move}}(\textcolor{keyword}{const}\ COORD\ \&pos);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_aebfe39abc2841b1f73cc1e3cead2f31e}{moveInRaft}}(\textcolor{keyword}{const}\ COORD\ \&pos);}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a57ded50505121ac48609c669281269c9}{setPos}}(\textcolor{keyword}{const}\ COORD\ \&pos);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a7943594d955c66a06823783b3d213546}{setMaxY}}(\textcolor{keywordtype}{int}\ max\_y);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_character_a88fd276ee2c7547c3b5c887271367811}{update}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_adf463f567e6f7bc9f48ad8316eb82fbb}{updateOffset}}(\textcolor{keywordtype}{int}\ speed);}
+\DoxyCodeLine{00040\ \ \ \ \ COORD\ \mbox{\hyperlink{class_character_aff93b4214464095b7f4c4bf4a16f7308}{getPos}}();}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_character_aa312da225279264e08ad90b29f351702}{getMaxY}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_ab40b890f05f8d8c77230dc586324eefb}{setLeftDirection}}();}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_ac585be79ac584198e82ca4a776485de5}{setRightDirection}}();}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a2c5d34b4f74073ec372411d990cbefc1}{makeAnimation}}();}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{friend}\ std::istream\&\ \mbox{\hyperlink{class_character_a7704ae3558f7b04bca652833cba51003}{operator>>}}(std::istream\&\ in,\ \mbox{\hyperlink{class_character}{Character}}\ \&c);}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{class_character_a96af3ccf71a101a4a93df6b459308ad2}{operator<<}}(std::ostream\&\ out,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_character}{Character}}\ \&c);}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+
+\end{DoxyCode}

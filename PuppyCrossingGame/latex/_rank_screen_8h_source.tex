@@ -1,0 +1,40 @@
+\doxysection{Rank\+Screen.\+h}
+\hypertarget{_rank_screen_8h_source}{}\label{_rank_screen_8h_source}\mbox{\hyperlink{_rank_screen_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_screen_8h}{Screen.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <filesystem>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_user}{User}}\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_user_a085d8d69282b6298964eab8351584536}{name}};}
+\DoxyCodeLine{00008\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_user_a4725ac6113bf4e898fbe0c00ffcb452d}{score}};}
+\DoxyCodeLine{00009\ \};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_rank_screen_8h_a44de5e831669867da6e604850c643141}{cmp}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_user}{User}}\&\ a,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_user}{User}}\&\ b);}
+\DoxyCodeLine{00012\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ TP>}
+\DoxyCodeLine{00013\ std::time\_t\ \mbox{\hyperlink{_rank_screen_8h_aa0c7e6e475d4dd6b5f4dd0f04be4fbfa}{to\_time\_t}}(TP\ tp)}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{using\ namespace\ }std::chrono;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{auto}\ sctp\ =\ time\_point\_cast<system\_clock::duration>(tp\ -\/\ TP::clock::now()}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ +\ system\_clock::now());}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordflow}{return}\ system\_clock::to\_time\_t(sctp);}
+\DoxyCodeLine{00019\ \}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_rank_screen}{RankScreen}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_screen}{Screen}}}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_rank_screen_a07035bcfe2ad09a9fd0e37e0241a7a13}{RankScreen}}();}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_rank_screen_a159113dd3283eb9d7fd92b542134d160}{RankScreen}}(\mbox{\hyperlink{class_shape}{Shape}}*\ background)\ :\ \mbox{\hyperlink{class_screen}{Screen}}\{\ background\ \}\ \{\}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rank_screen_af275506d20666af55dd1873df1096a83}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rank_screen_a4be62e0f749da4cf5042dfe84e3c0a20}{readScore}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rank_screen_a586c56ca6bac54882c71e9983de8fc80}{loadTexts}}();}
+\DoxyCodeLine{00029\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ std::vector<User>\ m\_users\{\};}
+\DoxyCodeLine{00031\ \ \ \ \ std::string\ m\_key\{\ \textcolor{stringliteral}{"{}"{}}\ \};}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_shape}{Shape}}*\ m\_board\{\};}
+\DoxyCodeLine{00033\ \ \ \ \ time\_t\ ftime\{0\};}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+
+\end{DoxyCode}

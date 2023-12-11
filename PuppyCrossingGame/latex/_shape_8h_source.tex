@@ -1,0 +1,38 @@
+\doxysection{Shape.\+h}
+\hypertarget{_shape_8h_source}{}\label{_shape_8h_source}\mbox{\hyperlink{_shape_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Shape.h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_render_state_8h}{RenderState.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_global_8h}{Global.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}fstream"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_shape_8h_a7cb2813d64eb2182fdebc19ee973bafc}{operator\ ==\ }}(\textcolor{keyword}{const}\ COORD\&\ p1,\ \textcolor{keyword}{const}\ COORD\&\ p2);}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_shape_8h_a96fe5b33bcf490535cdc082d0daa60f8}{isInside}}(\textcolor{keyword}{const}\ COORD\ \&pos);}
+\DoxyCodeLine{00011\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_shape_8h_a1fcadd5f6ce2a1712babb2450537ac25}{isOutSideRight}}(\textcolor{keyword}{const}\ COORD\&\ pos);}
+\DoxyCodeLine{00012\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_shape_8h_a05e95f711c4badc3fed1939c63ffc6eb}{isOutSideLeft}}(\textcolor{keyword}{const}\ COORD\&\ pos);}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_shape}{Shape}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}**\ m\_shape;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_width;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_height;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//std::string\ m\_fileName;}}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_shape_adfc1f3a9555c8e8ef174f84909ec6a47}{Shape}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_shape_adfc1f3a9555c8e8ef174f84909ec6a47}{Shape}}(std::string\ fileName);}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_shape_adfc1f3a9555c8e8ef174f84909ec6a47}{Shape}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_shape}{Shape}}\&\ \mbox{\hyperlink{_puppy_crossing_game_8cpp_a191482ef3e0e75c53cfe1c603c2dbcdf}{s}});}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_shape}{Shape}}\&\ \mbox{\hyperlink{class_shape_a0eeea3a6460b55faf26d0a06c85d935b}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_shape}{Shape}}\&\ \mbox{\hyperlink{_puppy_crossing_game_8cpp_a191482ef3e0e75c53cfe1c603c2dbcdf}{s}});}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_shape_a935afc9e576015f967d90de56977167d}{\string~Shape}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_shape_a81b0ead6d3ad8ec395511a5320b1050b}{render}}(\textcolor{keywordtype}{int}\ offset\_x,\ \textcolor{keywordtype}{int}\ offset\_y);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_shape_a6e9dce5d661793fda8624881457c9b70}{set\_file\_name}}(std::string\ file\_name)\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{comment}{//m\_fileName\ =\ file\_name;}}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_shape_abda87818e8601e12475ed778bebb7b75}{getSize}}(\textcolor{keywordtype}{int}\&\ width,\ \textcolor{keywordtype}{int}\&\ height);}
+\DoxyCodeLine{00033\ \};}
+
+\end{DoxyCode}

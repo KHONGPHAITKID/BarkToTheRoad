@@ -1,0 +1,169 @@
+\doxysection{Button Class Reference}
+\hypertarget{class_button}{}\label{class_button}\index{Button@{Button}}
+
+
+{\ttfamily \#include $<$Button.\+h$>$}
+
+
+
+Inheritance diagram for Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_button__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{class_button__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_button_a29d67b81d803e588ebf4c4c2075262bf}{Button}} ()=default
+\item 
+\mbox{\hyperlink{class_button_aaa5eebdd2f5dfbbc1544d9a30afe170e}{Button}} (\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}shape)
+\item 
+\mbox{\hyperlink{class_button_a8f0172660006297a9db4390ee18aa411}{Button}} (COORD pos, \mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}shape, \mbox{\hyperlink{_button_8h_aa46074d34fe2d6631c6bd9dc74633657}{Button\+State}} state=\mbox{\hyperlink{_button_8h_aa46074d34fe2d6631c6bd9dc74633657a50d1448013c6f17125caee18aa418af7}{NORMAL}})
+\item 
+void \mbox{\hyperlink{class_button_add4daea65a908027aa5a1593305b9656}{render}} ()
+\item 
+void \mbox{\hyperlink{class_button_a97837894f6168bb63f1f6710da061249}{set\+State}} (\mbox{\hyperlink{_button_8h_aa46074d34fe2d6631c6bd9dc74633657}{Button\+State}} \mbox{\hyperlink{_puppy_crossing_game_8cpp_a191482ef3e0e75c53cfe1c603c2dbcdf}{s}})
+\item 
+void \mbox{\hyperlink{class_button_a25657b7fc0f7d230ec717bf8b460c16c}{set\+Pos}} (COORD pos)
+\item 
+bool \mbox{\hyperlink{class_button_a27416a62e34e65f08d0a5f9b436d9249}{is\+Inside}} (POINT p) const
+\item 
+bool \mbox{\hyperlink{class_button_aff38e4d822b7b8b13e6bdcea59dcedde}{is\+Hovering}} () const
+\item 
+virtual void \mbox{\hyperlink{class_button_a8f67bda4763669cb74d7978b43c749e7}{on\+Click}} ()
+\item 
+virtual void \mbox{\hyperlink{class_button_af1bf716ae8bbcac355b3a427030d07f2}{set\+Show\+Dialog}} (bool \&show)
+\item 
+COORD \mbox{\hyperlink{class_button_ac7f0c06bb61cd420f3b0a2942c8cd59e}{get\+Pos}} () const
+\item 
+virtual void \mbox{\hyperlink{class_button_ab98c63de2fa53242f37851f7d848f375}{set\+File\+Name}} (std\+::string filename)
+\item 
+virtual void \mbox{\hyperlink{class_button_a651b02395a2e3d2a6ac4105f3b3504af}{set\+Line}} (int line)
+\item 
+void \mbox{\hyperlink{class_button_ae9e9798867abe439459be9bc2c5aa5f6}{get\+Size}} (int \&w, int \&h)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_button_a29d67b81d803e588ebf4c4c2075262bf}\label{class_button_a29d67b81d803e588ebf4c4c2075262bf} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_button_aaa5eebdd2f5dfbbc1544d9a30afe170e}\label{class_button_aaa5eebdd2f5dfbbc1544d9a30afe170e} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_button_a8f0172660006297a9db4390ee18aa411}\label{class_button_a8f0172660006297a9db4390ee18aa411} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{COORD}]{pos,  }\item[{\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}}]{shape,  }\item[{\mbox{\hyperlink{_button_8h_aa46074d34fe2d6631c6bd9dc74633657}{Button\+State}}}]{state = {\ttfamily \mbox{\hyperlink{_button_8h_aa46074d34fe2d6631c6bd9dc74633657a50d1448013c6f17125caee18aa418af7}{NORMAL}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_button_ac7f0c06bb61cd420f3b0a2942c8cd59e}\label{class_button_ac7f0c06bb61cd420f3b0a2942c8cd59e} 
+\index{Button@{Button}!getPos@{getPos}}
+\index{getPos@{getPos}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily COORD Button\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_button_ae9e9798867abe439459be9bc2c5aa5f6}\label{class_button_ae9e9798867abe439459be9bc2c5aa5f6} 
+\index{Button@{Button}!getSize@{getSize}}
+\index{getSize@{getSize}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily void Button\+::get\+Size (\begin{DoxyParamCaption}\item[{int \&}]{w,  }\item[{int \&}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_button_aff38e4d822b7b8b13e6bdcea59dcedde}\label{class_button_aff38e4d822b7b8b13e6bdcea59dcedde} 
+\index{Button@{Button}!isHovering@{isHovering}}
+\index{isHovering@{isHovering}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{isHovering()}{isHovering()}}
+{\footnotesize\ttfamily bool Button\+::is\+Hovering (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_button_a27416a62e34e65f08d0a5f9b436d9249}\label{class_button_a27416a62e34e65f08d0a5f9b436d9249} 
+\index{Button@{Button}!isInside@{isInside}}
+\index{isInside@{isInside}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{isInside()}{isInside()}}
+{\footnotesize\ttfamily bool Button\+::is\+Inside (\begin{DoxyParamCaption}\item[{POINT}]{p }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_button_a8f67bda4763669cb74d7978b43c749e7}\label{class_button_a8f67bda4763669cb74d7978b43c749e7} 
+\index{Button@{Button}!onClick@{onClick}}
+\index{onClick@{onClick}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{onClick()}{onClick()}}
+{\footnotesize\ttfamily virtual void Button\+::on\+Click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_change_screen_button_ae11943f833a643982e3660265fcb5661}{Change\+Screen\+Button}}, \mbox{\hyperlink{class_new_game_button_a531bbbbf7c22888400899f9e7eeb134a}{New\+Game\+Button}}, \mbox{\hyperlink{class_pause_button_ad01190f1076e5d91af9e814e7bcb15b8}{Pause\+Button}}, \mbox{\hyperlink{class_quit_button_a90cf35e2b206b146adeec48e28ce2955}{Quit\+Button}}, \mbox{\hyperlink{class_save_game_button_ae0d9ce5d0301f5409e5344dc359e4536}{Save\+Game\+Button}}, \mbox{\hyperlink{class_load_game_button_a0331850b1b5b8b3ee19283e2f35e542b}{Load\+Game\+Button}}, \mbox{\hyperlink{class_open_dialog_button_a3ffcb66c3f450fc87cecf0009758ae83}{Open\+Dialog\+Button}}, \mbox{\hyperlink{class_close_dialog_button_a44b06544152d855355560bdabf0c0997}{Close\+Dialog\+Button}}, and \mbox{\hyperlink{class_change_sound_button_a17e6c9981843b0b3d61f2b6ad23cb331}{Change\+Sound\+Button}}.
+
+\Hypertarget{class_button_add4daea65a908027aa5a1593305b9656}\label{class_button_add4daea65a908027aa5a1593305b9656} 
+\index{Button@{Button}!render@{render}}
+\index{render@{render}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Button\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_button_ab98c63de2fa53242f37851f7d848f375}\label{class_button_ab98c63de2fa53242f37851f7d848f375} 
+\index{Button@{Button}!setFileName@{setFileName}}
+\index{setFileName@{setFileName}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{setFileName()}{setFileName()}}
+{\footnotesize\ttfamily virtual void Button\+::set\+File\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_load_game_button_aafcc8d0ea27b94f18498074435669528}{Load\+Game\+Button}}.
+
+\Hypertarget{class_button_a651b02395a2e3d2a6ac4105f3b3504af}\label{class_button_a651b02395a2e3d2a6ac4105f3b3504af} 
+\index{Button@{Button}!setLine@{setLine}}
+\index{setLine@{setLine}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{setLine()}{setLine()}}
+{\footnotesize\ttfamily virtual void Button\+::set\+Line (\begin{DoxyParamCaption}\item[{int}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_save_game_button_a7e144e9256ed5ccb72f1212f8b392a5e}{Save\+Game\+Button}}.
+
+\Hypertarget{class_button_a25657b7fc0f7d230ec717bf8b460c16c}\label{class_button_a25657b7fc0f7d230ec717bf8b460c16c} 
+\index{Button@{Button}!setPos@{setPos}}
+\index{setPos@{setPos}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{setPos()}{setPos()}}
+{\footnotesize\ttfamily void Button\+::set\+Pos (\begin{DoxyParamCaption}\item[{COORD}]{pos }\end{DoxyParamCaption})}
+
+\Hypertarget{class_button_af1bf716ae8bbcac355b3a427030d07f2}\label{class_button_af1bf716ae8bbcac355b3a427030d07f2} 
+\index{Button@{Button}!setShowDialog@{setShowDialog}}
+\index{setShowDialog@{setShowDialog}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{setShowDialog()}{setShowDialog()}}
+{\footnotesize\ttfamily virtual void Button\+::set\+Show\+Dialog (\begin{DoxyParamCaption}\item[{bool \&}]{show }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_change_screen_button_ad26f33427d122d5ba8115051bfcf750e}{Change\+Screen\+Button}}.
+
+\Hypertarget{class_button_a97837894f6168bb63f1f6710da061249}\label{class_button_a97837894f6168bb63f1f6710da061249} 
+\index{Button@{Button}!setState@{setState}}
+\index{setState@{setState}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Button\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_button_8h_aa46074d34fe2d6631c6bd9dc74633657}{Button\+State}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_button_8h}{Button.\+h}}\item 
+\mbox{\hyperlink{_button_8cpp}{Button.\+cpp}}\end{DoxyCompactItemize}

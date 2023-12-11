@@ -1,0 +1,19 @@
+<map id="RailLane" name="RailLane">
+<area shape="rect" id="Node000001" title=" " alt="" coords="343,843,459,969"/>
+<area shape="rect" id="Node000002" href="$class_lane.html" title=" " alt="" coords="337,369,464,794"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="403,809,403,843,398,843,398,809"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,115,68,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="44,180,58,233,69,262,83,289,137,361,201,426,266,482,325,527,322,531,263,486,197,430,133,364,78,292,64,264,52,235,39,181"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="93,115,226,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="179,179,240,289,331,452,327,454,236,292,174,182"/>
+<area shape="rect" id="Node000005" href="$class_traffic_light.html" title=" " alt="" coords="250,5,383,291"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="335,290,344,344,345,352,340,353,338,345,329,291"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="408,115,449,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="425,181,414,243,405,315,402,352,397,351,399,314,408,242,420,180"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="478,115,505,181"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="490,181,480,256,465,345,463,353,458,352,459,344,475,255,485,180"/>
+<area shape="rect" id="Node000008" href="$class_obstacle_factory.html" title=" " alt="" coords="563,115,683,181"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="622,181,606,257,592,302,575,346,529,426,477,497,472,494,525,423,570,344,587,301,601,256,616,180"/>
+<area shape="rect" id="Node000009" href="$class_shape.html" title=" " alt="" coords="707,45,819,251"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="722,252,698,292,646,357,589,419,479,520,475,516,585,415,642,354,693,289,718,249"/>
+</map>

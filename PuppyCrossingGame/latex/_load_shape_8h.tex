@@ -1,0 +1,536 @@
+\doxysection{Load\+Shape.\+h File Reference}
+\hypertarget{_load_shape_8h}{}\label{_load_shape_8h}\index{LoadShape.h@{LoadShape.h}}
+{\ttfamily \#include "{}Shape.\+h"{}}\newline
+Include dependency graph for Load\+Shape.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_load_shape_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_load_shape_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48}{Shape\+Index}} \{ \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a5f33c147483eb979a7043704000eb295}{HCTKCODECAINAY}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a372479e8c924fc62dca375213e4c9820}{CAR\+\_\+\+RIGHT}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ae5d065e1faaea8365d6e5e46e923d33b}{CAR\+\_\+\+LEFT}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ac0f0f3385724e255c22a2945bba3920b}{G63\+\_\+\+LEFT}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a6bd1debabbf1d0c8664672d52676cba9}{G63\+\_\+\+RIGHT}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0be35563d19c314bb663dfd242ec593b}{CAR\+\_\+\+WHITE\+\_\+\+LEFT}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a55973718820fb5b0c4ec5f6ac36feb0c}{CAR\+\_\+\+WHITE\+\_\+\+RIGHT}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a41dfd9295b0f350c1d22ca4999ad3658}{G63\+\_\+\+BLACK\+\_\+\+LEFT}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0e8941ed2fc5755116cc7721464c33b5}{G63\+\_\+\+BLACK\+\_\+\+RIGHT}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af6d7259759b8f08ce361c7c64358e174}{CAR\+\_\+\+YELLOW\+\_\+\+LEFT}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a32703f677843bb3b7ef6528f3355030b}{CAR\+\_\+\+YELLOW\+\_\+\+RIGHT}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a684d11d584b7dc178f6a962116421d14}{GRASS\+\_\+0}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a2e0e8ff96e78028ad75393fe850adf1d}{GRASS\+\_\+1}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0cd9143ad9501f293c619ba3e70e3257}{GRASS\+\_\+2}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a25daf74adb36390ccf8ab9685f59a3a4}{GRASS\+\_\+3}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a28e545a22105caf09596223a4e14819b}{GRASS\+\_\+4}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0fca859752b1db047acd56aca4021d2d}{STONE}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aea2a813368ce71c502657441388d18bc}{STONE\+\_\+1}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a25281978ac5fe0c460f8e91d61220d77}{BUSH\+\_\+2}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa57edeeb1dd2c77d5b8afca80b14e9aa}{ROAD}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a91fb7b796a6b7e9922aaf4f7eb391633}{TRAIN\+\_\+\+RIGHT}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a6beb36cf917fe8dcd3b1448f5fb8f554}{TRAIN\+\_\+\+LEFT}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ab640b12a86580fcb1a56f97b6d7f83e4}{BUS\+\_\+\+LEFT}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a3e4852de2ed2aebd4826984f50a81c7a}{BUS\+\_\+\+RIGHT}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a275dd0697698cb27b85f076dd71e0a5c}{DOG\+\_\+\+STAY\+\_\+1}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a72a601d72baced46d3547c1fd2028f36}{DOG\+\_\+\+STAY\+\_\+2}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a9b2f79db3716939020b50a2bf1819462}{DOG\+\_\+\+JUMP\+\_\+1}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aca317446f9c1806d2d51eba9e143ea85}{DOG\+\_\+\+JUMP\+\_\+2}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a39fe5ed539d61492cbbd732d5a3e871e}{DOG\+\_\+\+JUMP\+\_\+3}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a357c1533bbcc2df738814bff5e24d833}{DOG\+\_\+\+DIE}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ab71d24be3fd2b410032705eb30286549}{DOG\+\_\+\+STAY\+\_\+1\+\_\+\+LEFT}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48acf2f89ac2ea9683445867962c8e69f76}{DOG\+\_\+\+STAY\+\_\+2\+\_\+\+LEFT}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a3d3ebe8f035689b988ad3aacb719becf}{DOG\+\_\+\+JUMP\+\_\+1\+\_\+\+LEFT}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0b31b879ff39c64e613410fd8e61f6ef}{DOG\+\_\+\+JUMP\+\_\+2\+\_\+\+LEFT}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a2579c0c7a5753b016aba07b9cd75a765}{DOG\+\_\+\+JUMP\+\_\+3\+\_\+\+LEFT}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a4a4a22e70e144276de77028cab227c0c}{RAIL}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48acd7ffe737ad5fb21fbd7499886934910}{LOG}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a5f1a4df6ed0c2b7e1aa187f9eb43409f}{RIVER}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af13e3ae98afceb2c380f02df4ee52a28}{RED\+\_\+\+LIGHT}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a9c68fdc5ae89dabb941bfa6389c7a3e5}{GREEN\+\_\+\+LIGHT}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa44b734476c2f3d073ee7aca08660a0e}{BACKGROUND}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a49304d93c5e2fe902a3ac318b35e3138}{NEW\+\_\+\+GAME\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a3affb691e2e3fac0ffd1734510282b1e}{NEW\+\_\+\+GAME\+\_\+\+BUTTON\+\_\+\+HOVER}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a9e7c0e092fa429c0eafc8bc3ee0b39ca}{LOAD\+\_\+\+GAME\+\_\+\+BUTTON}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aca5687eeca4886508aa813b18732e273}{LOAD\+\_\+\+GAME\+\_\+\+BUTTON\+\_\+\+HOVER}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a552e36fa5d2a39753b88c48b2cda99c8}{RANK\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a32e3c7195aeb98f096198411296b3327}{RANK\+\_\+\+BUTTON\+\_\+\+HOVER}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa1dd8c0e9f53324fd5099dc0250ca6bf}{SETTING\+\_\+\+BUTTON}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a018209c17cc7d8b4f0e2e14fd3ca307b}{SETTING\+\_\+\+BUTTON\+\_\+\+HOVER}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af57444a2814db96222f09035ff269767}{SCORE}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a688de96d0ed9d324db1e4c8ed4ae6a20}{QUIT\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a9a5eb8c8a2980311193b59ccb8a311ee}{QUIT\+\_\+\+BUTTON\+\_\+\+HOVER}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a56b36d0d0bb01b339cf1041adc08e262}{PAUSE}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a4770475ee487b3a84bee554e1d443455}{PAUSE\+\_\+\+HOVER}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a44c71eaef3dbc95150541db1738d47da}{SAVE\+\_\+\+GAME\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af390ebbae3e0f264a0a44b6d2d5fa6cd}{SAVE\+\_\+\+GAME\+\_\+\+BUTTON\+\_\+\+HOVER}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a8f280224da64e98f2d52d50ec43bc197}{HOME}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a2ffc182e770265144e8fcd86154d3e87}{HOME\+\_\+\+HOVER}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ab4313a753f41e2ad2c3d9b995b77ce02}{PAUSE\+\_\+\+WINDOW}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ac7fa15cdc7bd4f83b240ed38dd9064bc}{RESUME\+\_\+\+BUTTON}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a3531457c0afb8d6b896f881814ec62a2}{RESUME\+\_\+\+BUTTON\+\_\+\+HOVER}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a13e9155e3eaafaa8617625d90907fdca}{CLOSE\+\_\+\+DIALOG}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a61fe741a013aba041eb9a4a3d55e46bc}{GHOST}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a5c31f2cb8411049f7fbb776e8d182b63}{BACKGROUND\+\_\+\+EMPTY}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a871723195985a4ae22d7e10d99bf8a00}{GAME\+\_\+\+OVER}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a3701bde33da0c1199a6ec9355bc5568e}{TROPHY\+\_\+\+SMALL}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ad30a89720fdfd29ceafca7c4669b5891}{TROPHY\+\_\+\+SMALL\+\_\+\+HOVER}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48accba5b31f181364f9d34bb6eb03a1e76}{TEXTBOX}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a8ac6a0bc60a7a5faad394dc988be36eb}{LEADERBOARD}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa0bdd5172811d65e2577af37e2387379}{AMBULANCE}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af836138766a1587219dbdee95fc204c9}{SETTING\+\_\+\+WINDOW}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ab95cb5de75aa6f4229d4ff036cd2db2f}{SPEAKER}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0a0b79a20ff80035ce3b8e15fa24caba}{SPEAKER\+\_\+\+HOVER}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a271edf5041b6e7d6307edccd670dc8dc}{MUTE}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa5448c87ca8f033e029752e6a007da4e}{MUTE\+\_\+\+HOVER}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa804f9cd8b414aff5caea3b41d745448}{CREDIT\+\_\+\+BUTTON}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a6496df294e4c09ac3706ea416e3db1ac}{CREDIT\+\_\+\+BUTTON\+\_\+\+HOVER}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0192607faa4aca21bd90b023091414c8}{CREDIT\+\_\+\+WINDOW}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a83f0ed4212e9c7d9ada2ce9b155c71c9}{INSTRUCTION\+\_\+\+WINDOW\+\_\+1}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af27515b270b33e84780fab19aee1b187}{INSTRUCTION\+\_\+\+WINDOW\+\_\+2}}
+, \newline
+\mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a4185168bfafcf1a1754eb356ddd20a6d}{PRE\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a5f21e9d8193689f6a3c34f00a46204ad}{PRE\+\_\+\+BUTTON\+\_\+\+HOVER}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a2dee3146fa1a07ee840315cd6129c4c7}{NEXT\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a213154a4a66c87aae1e547a12ee470dc}{NEXT\+\_\+\+BUTTON\+\_\+\+HOVER}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_load_shape_8h_a21ce8445aff8401eaadcf91fb0f70ff4}{init\+Shape}} ()
+\item 
+void \mbox{\hyperlink{_load_shape_8h_a1a5e2059f84135711badbafbd23e80a8}{delete\+Shape}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{_load_shape_8h_a0bf8f73b6f325e0234e5ae0d30a21e7e}{Dog\+Moving\+Shapes}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{_load_shape_8h_a1d63548d2ad48e747f3217d68abf1973}{Dog\+Staying\+Shapes}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{_load_shape_8h_a50a40f867d84fd8b5ba9405df9302850}{Dog\+Dying\+Shapes}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{_load_shape_8h_ab3097e70cc062d71c3f6d5a756159fcb}{My\+Shape}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48} 
+\index{LoadShape.h@{LoadShape.h}!ShapeIndex@{ShapeIndex}}
+\index{ShapeIndex@{ShapeIndex}!LoadShape.h@{LoadShape.h}}
+\doxysubsubsection{\texorpdfstring{ShapeIndex}{ShapeIndex}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48}{Shape\+Index}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HCTKCODECAINAY@{HCTKCODECAINAY}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!HCTKCODECAINAY@{HCTKCODECAINAY}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a5f33c147483eb979a7043704000eb295}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a5f33c147483eb979a7043704000eb295} 
+HCTKCODECAINAY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAR\_RIGHT@{CAR\_RIGHT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!CAR\_RIGHT@{CAR\_RIGHT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a372479e8c924fc62dca375213e4c9820}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a372479e8c924fc62dca375213e4c9820} 
+CAR\+\_\+\+RIGHT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAR\_LEFT@{CAR\_LEFT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!CAR\_LEFT@{CAR\_LEFT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ae5d065e1faaea8365d6e5e46e923d33b}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ae5d065e1faaea8365d6e5e46e923d33b} 
+CAR\+\_\+\+LEFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G63\_LEFT@{G63\_LEFT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!G63\_LEFT@{G63\_LEFT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ac0f0f3385724e255c22a2945bba3920b}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ac0f0f3385724e255c22a2945bba3920b} 
+G63\+\_\+\+LEFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G63\_RIGHT@{G63\_RIGHT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!G63\_RIGHT@{G63\_RIGHT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a6bd1debabbf1d0c8664672d52676cba9}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a6bd1debabbf1d0c8664672d52676cba9} 
+G63\+\_\+\+RIGHT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAR\_WHITE\_LEFT@{CAR\_WHITE\_LEFT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!CAR\_WHITE\_LEFT@{CAR\_WHITE\_LEFT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0be35563d19c314bb663dfd242ec593b}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0be35563d19c314bb663dfd242ec593b} 
+CAR\+\_\+\+WHITE\+\_\+\+LEFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAR\_WHITE\_RIGHT@{CAR\_WHITE\_RIGHT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!CAR\_WHITE\_RIGHT@{CAR\_WHITE\_RIGHT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a55973718820fb5b0c4ec5f6ac36feb0c}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a55973718820fb5b0c4ec5f6ac36feb0c} 
+CAR\+\_\+\+WHITE\+\_\+\+RIGHT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G63\_BLACK\_LEFT@{G63\_BLACK\_LEFT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!G63\_BLACK\_LEFT@{G63\_BLACK\_LEFT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a41dfd9295b0f350c1d22ca4999ad3658}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a41dfd9295b0f350c1d22ca4999ad3658} 
+G63\+\_\+\+BLACK\+\_\+\+LEFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G63\_BLACK\_RIGHT@{G63\_BLACK\_RIGHT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!G63\_BLACK\_RIGHT@{G63\_BLACK\_RIGHT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0e8941ed2fc5755116cc7721464c33b5}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0e8941ed2fc5755116cc7721464c33b5} 
+G63\+\_\+\+BLACK\+\_\+\+RIGHT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAR\_YELLOW\_LEFT@{CAR\_YELLOW\_LEFT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!CAR\_YELLOW\_LEFT@{CAR\_YELLOW\_LEFT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af6d7259759b8f08ce361c7c64358e174}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af6d7259759b8f08ce361c7c64358e174} 
+CAR\+\_\+\+YELLOW\+\_\+\+LEFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAR\_YELLOW\_RIGHT@{CAR\_YELLOW\_RIGHT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!CAR\_YELLOW\_RIGHT@{CAR\_YELLOW\_RIGHT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a32703f677843bb3b7ef6528f3355030b}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a32703f677843bb3b7ef6528f3355030b} 
+CAR\+\_\+\+YELLOW\+\_\+\+RIGHT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRASS\_0@{GRASS\_0}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!GRASS\_0@{GRASS\_0}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a684d11d584b7dc178f6a962116421d14}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a684d11d584b7dc178f6a962116421d14} 
+GRASS\+\_\+0&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRASS\_1@{GRASS\_1}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!GRASS\_1@{GRASS\_1}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a2e0e8ff96e78028ad75393fe850adf1d}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a2e0e8ff96e78028ad75393fe850adf1d} 
+GRASS\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRASS\_2@{GRASS\_2}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!GRASS\_2@{GRASS\_2}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0cd9143ad9501f293c619ba3e70e3257}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0cd9143ad9501f293c619ba3e70e3257} 
+GRASS\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRASS\_3@{GRASS\_3}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!GRASS\_3@{GRASS\_3}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a25daf74adb36390ccf8ab9685f59a3a4}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a25daf74adb36390ccf8ab9685f59a3a4} 
+GRASS\+\_\+3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRASS\_4@{GRASS\_4}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!GRASS\_4@{GRASS\_4}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a28e545a22105caf09596223a4e14819b}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a28e545a22105caf09596223a4e14819b} 
+GRASS\+\_\+4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STONE@{STONE}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!STONE@{STONE}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0fca859752b1db047acd56aca4021d2d}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0fca859752b1db047acd56aca4021d2d} 
+STONE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STONE\_1@{STONE\_1}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!STONE\_1@{STONE\_1}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aea2a813368ce71c502657441388d18bc}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aea2a813368ce71c502657441388d18bc} 
+STONE\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUSH\_2@{BUSH\_2}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!BUSH\_2@{BUSH\_2}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a25281978ac5fe0c460f8e91d61220d77}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a25281978ac5fe0c460f8e91d61220d77} 
+BUSH\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ROAD@{ROAD}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!ROAD@{ROAD}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa57edeeb1dd2c77d5b8afca80b14e9aa}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa57edeeb1dd2c77d5b8afca80b14e9aa} 
+ROAD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TRAIN\_RIGHT@{TRAIN\_RIGHT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!TRAIN\_RIGHT@{TRAIN\_RIGHT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a91fb7b796a6b7e9922aaf4f7eb391633}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a91fb7b796a6b7e9922aaf4f7eb391633} 
+TRAIN\+\_\+\+RIGHT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TRAIN\_LEFT@{TRAIN\_LEFT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!TRAIN\_LEFT@{TRAIN\_LEFT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a6beb36cf917fe8dcd3b1448f5fb8f554}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a6beb36cf917fe8dcd3b1448f5fb8f554} 
+TRAIN\+\_\+\+LEFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUS\_LEFT@{BUS\_LEFT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!BUS\_LEFT@{BUS\_LEFT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ab640b12a86580fcb1a56f97b6d7f83e4}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ab640b12a86580fcb1a56f97b6d7f83e4} 
+BUS\+\_\+\+LEFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUS\_RIGHT@{BUS\_RIGHT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!BUS\_RIGHT@{BUS\_RIGHT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a3e4852de2ed2aebd4826984f50a81c7a}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a3e4852de2ed2aebd4826984f50a81c7a} 
+BUS\+\_\+\+RIGHT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOG\_STAY\_1@{DOG\_STAY\_1}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!DOG\_STAY\_1@{DOG\_STAY\_1}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a275dd0697698cb27b85f076dd71e0a5c}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a275dd0697698cb27b85f076dd71e0a5c} 
+DOG\+\_\+\+STAY\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOG\_STAY\_2@{DOG\_STAY\_2}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!DOG\_STAY\_2@{DOG\_STAY\_2}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a72a601d72baced46d3547c1fd2028f36}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a72a601d72baced46d3547c1fd2028f36} 
+DOG\+\_\+\+STAY\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOG\_JUMP\_1@{DOG\_JUMP\_1}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!DOG\_JUMP\_1@{DOG\_JUMP\_1}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a9b2f79db3716939020b50a2bf1819462}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a9b2f79db3716939020b50a2bf1819462} 
+DOG\+\_\+\+JUMP\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOG\_JUMP\_2@{DOG\_JUMP\_2}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!DOG\_JUMP\_2@{DOG\_JUMP\_2}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aca317446f9c1806d2d51eba9e143ea85}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aca317446f9c1806d2d51eba9e143ea85} 
+DOG\+\_\+\+JUMP\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOG\_JUMP\_3@{DOG\_JUMP\_3}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!DOG\_JUMP\_3@{DOG\_JUMP\_3}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a39fe5ed539d61492cbbd732d5a3e871e}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a39fe5ed539d61492cbbd732d5a3e871e} 
+DOG\+\_\+\+JUMP\+\_\+3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOG\_DIE@{DOG\_DIE}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!DOG\_DIE@{DOG\_DIE}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a357c1533bbcc2df738814bff5e24d833}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a357c1533bbcc2df738814bff5e24d833} 
+DOG\+\_\+\+DIE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOG\_STAY\_1\_LEFT@{DOG\_STAY\_1\_LEFT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!DOG\_STAY\_1\_LEFT@{DOG\_STAY\_1\_LEFT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ab71d24be3fd2b410032705eb30286549}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ab71d24be3fd2b410032705eb30286549} 
+DOG\+\_\+\+STAY\+\_\+1\+\_\+\+LEFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOG\_STAY\_2\_LEFT@{DOG\_STAY\_2\_LEFT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!DOG\_STAY\_2\_LEFT@{DOG\_STAY\_2\_LEFT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48acf2f89ac2ea9683445867962c8e69f76}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48acf2f89ac2ea9683445867962c8e69f76} 
+DOG\+\_\+\+STAY\+\_\+2\+\_\+\+LEFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOG\_JUMP\_1\_LEFT@{DOG\_JUMP\_1\_LEFT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!DOG\_JUMP\_1\_LEFT@{DOG\_JUMP\_1\_LEFT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a3d3ebe8f035689b988ad3aacb719becf}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a3d3ebe8f035689b988ad3aacb719becf} 
+DOG\+\_\+\+JUMP\+\_\+1\+\_\+\+LEFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOG\_JUMP\_2\_LEFT@{DOG\_JUMP\_2\_LEFT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!DOG\_JUMP\_2\_LEFT@{DOG\_JUMP\_2\_LEFT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0b31b879ff39c64e613410fd8e61f6ef}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0b31b879ff39c64e613410fd8e61f6ef} 
+DOG\+\_\+\+JUMP\+\_\+2\+\_\+\+LEFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOG\_JUMP\_3\_LEFT@{DOG\_JUMP\_3\_LEFT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!DOG\_JUMP\_3\_LEFT@{DOG\_JUMP\_3\_LEFT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a2579c0c7a5753b016aba07b9cd75a765}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a2579c0c7a5753b016aba07b9cd75a765} 
+DOG\+\_\+\+JUMP\+\_\+3\+\_\+\+LEFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RAIL@{RAIL}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!RAIL@{RAIL}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a4a4a22e70e144276de77028cab227c0c}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a4a4a22e70e144276de77028cab227c0c} 
+RAIL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOG@{LOG}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!LOG@{LOG}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48acd7ffe737ad5fb21fbd7499886934910}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48acd7ffe737ad5fb21fbd7499886934910} 
+LOG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RIVER@{RIVER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!RIVER@{RIVER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a5f1a4df6ed0c2b7e1aa187f9eb43409f}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a5f1a4df6ed0c2b7e1aa187f9eb43409f} 
+RIVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RED\_LIGHT@{RED\_LIGHT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!RED\_LIGHT@{RED\_LIGHT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af13e3ae98afceb2c380f02df4ee52a28}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af13e3ae98afceb2c380f02df4ee52a28} 
+RED\+\_\+\+LIGHT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GREEN\_LIGHT@{GREEN\_LIGHT}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!GREEN\_LIGHT@{GREEN\_LIGHT}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a9c68fdc5ae89dabb941bfa6389c7a3e5}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a9c68fdc5ae89dabb941bfa6389c7a3e5} 
+GREEN\+\_\+\+LIGHT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BACKGROUND@{BACKGROUND}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!BACKGROUND@{BACKGROUND}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa44b734476c2f3d073ee7aca08660a0e}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa44b734476c2f3d073ee7aca08660a0e} 
+BACKGROUND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NEW\_GAME\_BUTTON@{NEW\_GAME\_BUTTON}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!NEW\_GAME\_BUTTON@{NEW\_GAME\_BUTTON}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a49304d93c5e2fe902a3ac318b35e3138}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a49304d93c5e2fe902a3ac318b35e3138} 
+NEW\+\_\+\+GAME\+\_\+\+BUTTON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NEW\_GAME\_BUTTON\_HOVER@{NEW\_GAME\_BUTTON\_HOVER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!NEW\_GAME\_BUTTON\_HOVER@{NEW\_GAME\_BUTTON\_HOVER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a3affb691e2e3fac0ffd1734510282b1e}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a3affb691e2e3fac0ffd1734510282b1e} 
+NEW\+\_\+\+GAME\+\_\+\+BUTTON\+\_\+\+HOVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOAD\_GAME\_BUTTON@{LOAD\_GAME\_BUTTON}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!LOAD\_GAME\_BUTTON@{LOAD\_GAME\_BUTTON}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a9e7c0e092fa429c0eafc8bc3ee0b39ca}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a9e7c0e092fa429c0eafc8bc3ee0b39ca} 
+LOAD\+\_\+\+GAME\+\_\+\+BUTTON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOAD\_GAME\_BUTTON\_HOVER@{LOAD\_GAME\_BUTTON\_HOVER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!LOAD\_GAME\_BUTTON\_HOVER@{LOAD\_GAME\_BUTTON\_HOVER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aca5687eeca4886508aa813b18732e273}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aca5687eeca4886508aa813b18732e273} 
+LOAD\+\_\+\+GAME\+\_\+\+BUTTON\+\_\+\+HOVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RANK\_BUTTON@{RANK\_BUTTON}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!RANK\_BUTTON@{RANK\_BUTTON}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a552e36fa5d2a39753b88c48b2cda99c8}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a552e36fa5d2a39753b88c48b2cda99c8} 
+RANK\+\_\+\+BUTTON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RANK\_BUTTON\_HOVER@{RANK\_BUTTON\_HOVER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!RANK\_BUTTON\_HOVER@{RANK\_BUTTON\_HOVER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a32e3c7195aeb98f096198411296b3327}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a32e3c7195aeb98f096198411296b3327} 
+RANK\+\_\+\+BUTTON\+\_\+\+HOVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SETTING\_BUTTON@{SETTING\_BUTTON}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!SETTING\_BUTTON@{SETTING\_BUTTON}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa1dd8c0e9f53324fd5099dc0250ca6bf}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa1dd8c0e9f53324fd5099dc0250ca6bf} 
+SETTING\+\_\+\+BUTTON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SETTING\_BUTTON\_HOVER@{SETTING\_BUTTON\_HOVER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!SETTING\_BUTTON\_HOVER@{SETTING\_BUTTON\_HOVER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a018209c17cc7d8b4f0e2e14fd3ca307b}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a018209c17cc7d8b4f0e2e14fd3ca307b} 
+SETTING\+\_\+\+BUTTON\+\_\+\+HOVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCORE@{SCORE}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!SCORE@{SCORE}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af57444a2814db96222f09035ff269767}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af57444a2814db96222f09035ff269767} 
+SCORE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{QUIT\_BUTTON@{QUIT\_BUTTON}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!QUIT\_BUTTON@{QUIT\_BUTTON}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a688de96d0ed9d324db1e4c8ed4ae6a20}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a688de96d0ed9d324db1e4c8ed4ae6a20} 
+QUIT\+\_\+\+BUTTON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{QUIT\_BUTTON\_HOVER@{QUIT\_BUTTON\_HOVER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!QUIT\_BUTTON\_HOVER@{QUIT\_BUTTON\_HOVER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a9a5eb8c8a2980311193b59ccb8a311ee}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a9a5eb8c8a2980311193b59ccb8a311ee} 
+QUIT\+\_\+\+BUTTON\+\_\+\+HOVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAUSE@{PAUSE}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!PAUSE@{PAUSE}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a56b36d0d0bb01b339cf1041adc08e262}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a56b36d0d0bb01b339cf1041adc08e262} 
+PAUSE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAUSE\_HOVER@{PAUSE\_HOVER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!PAUSE\_HOVER@{PAUSE\_HOVER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a4770475ee487b3a84bee554e1d443455}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a4770475ee487b3a84bee554e1d443455} 
+PAUSE\+\_\+\+HOVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SAVE\_GAME\_BUTTON@{SAVE\_GAME\_BUTTON}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!SAVE\_GAME\_BUTTON@{SAVE\_GAME\_BUTTON}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a44c71eaef3dbc95150541db1738d47da}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a44c71eaef3dbc95150541db1738d47da} 
+SAVE\+\_\+\+GAME\+\_\+\+BUTTON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SAVE\_GAME\_BUTTON\_HOVER@{SAVE\_GAME\_BUTTON\_HOVER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!SAVE\_GAME\_BUTTON\_HOVER@{SAVE\_GAME\_BUTTON\_HOVER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af390ebbae3e0f264a0a44b6d2d5fa6cd}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af390ebbae3e0f264a0a44b6d2d5fa6cd} 
+SAVE\+\_\+\+GAME\+\_\+\+BUTTON\+\_\+\+HOVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HOME@{HOME}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!HOME@{HOME}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a8f280224da64e98f2d52d50ec43bc197}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a8f280224da64e98f2d52d50ec43bc197} 
+HOME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HOME\_HOVER@{HOME\_HOVER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!HOME\_HOVER@{HOME\_HOVER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a2ffc182e770265144e8fcd86154d3e87}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a2ffc182e770265144e8fcd86154d3e87} 
+HOME\+\_\+\+HOVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAUSE\_WINDOW@{PAUSE\_WINDOW}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!PAUSE\_WINDOW@{PAUSE\_WINDOW}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ab4313a753f41e2ad2c3d9b995b77ce02}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ab4313a753f41e2ad2c3d9b995b77ce02} 
+PAUSE\+\_\+\+WINDOW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESUME\_BUTTON@{RESUME\_BUTTON}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!RESUME\_BUTTON@{RESUME\_BUTTON}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ac7fa15cdc7bd4f83b240ed38dd9064bc}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ac7fa15cdc7bd4f83b240ed38dd9064bc} 
+RESUME\+\_\+\+BUTTON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESUME\_BUTTON\_HOVER@{RESUME\_BUTTON\_HOVER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!RESUME\_BUTTON\_HOVER@{RESUME\_BUTTON\_HOVER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a3531457c0afb8d6b896f881814ec62a2}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a3531457c0afb8d6b896f881814ec62a2} 
+RESUME\+\_\+\+BUTTON\+\_\+\+HOVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CLOSE\_DIALOG@{CLOSE\_DIALOG}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!CLOSE\_DIALOG@{CLOSE\_DIALOG}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a13e9155e3eaafaa8617625d90907fdca}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a13e9155e3eaafaa8617625d90907fdca} 
+CLOSE\+\_\+\+DIALOG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GHOST@{GHOST}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!GHOST@{GHOST}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a61fe741a013aba041eb9a4a3d55e46bc}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a61fe741a013aba041eb9a4a3d55e46bc} 
+GHOST&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BACKGROUND\_EMPTY@{BACKGROUND\_EMPTY}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!BACKGROUND\_EMPTY@{BACKGROUND\_EMPTY}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a5c31f2cb8411049f7fbb776e8d182b63}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a5c31f2cb8411049f7fbb776e8d182b63} 
+BACKGROUND\+\_\+\+EMPTY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAME\_OVER@{GAME\_OVER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!GAME\_OVER@{GAME\_OVER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a871723195985a4ae22d7e10d99bf8a00}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a871723195985a4ae22d7e10d99bf8a00} 
+GAME\+\_\+\+OVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TROPHY\_SMALL@{TROPHY\_SMALL}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!TROPHY\_SMALL@{TROPHY\_SMALL}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a3701bde33da0c1199a6ec9355bc5568e}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a3701bde33da0c1199a6ec9355bc5568e} 
+TROPHY\+\_\+\+SMALL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TROPHY\_SMALL\_HOVER@{TROPHY\_SMALL\_HOVER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!TROPHY\_SMALL\_HOVER@{TROPHY\_SMALL\_HOVER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ad30a89720fdfd29ceafca7c4669b5891}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ad30a89720fdfd29ceafca7c4669b5891} 
+TROPHY\+\_\+\+SMALL\+\_\+\+HOVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TEXTBOX@{TEXTBOX}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!TEXTBOX@{TEXTBOX}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48accba5b31f181364f9d34bb6eb03a1e76}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48accba5b31f181364f9d34bb6eb03a1e76} 
+TEXTBOX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEADERBOARD@{LEADERBOARD}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!LEADERBOARD@{LEADERBOARD}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a8ac6a0bc60a7a5faad394dc988be36eb}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a8ac6a0bc60a7a5faad394dc988be36eb} 
+LEADERBOARD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMBULANCE@{AMBULANCE}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!AMBULANCE@{AMBULANCE}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa0bdd5172811d65e2577af37e2387379}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa0bdd5172811d65e2577af37e2387379} 
+AMBULANCE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SETTING\_WINDOW@{SETTING\_WINDOW}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!SETTING\_WINDOW@{SETTING\_WINDOW}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af836138766a1587219dbdee95fc204c9}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af836138766a1587219dbdee95fc204c9} 
+SETTING\+\_\+\+WINDOW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPEAKER@{SPEAKER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!SPEAKER@{SPEAKER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ab95cb5de75aa6f4229d4ff036cd2db2f}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48ab95cb5de75aa6f4229d4ff036cd2db2f} 
+SPEAKER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPEAKER\_HOVER@{SPEAKER\_HOVER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!SPEAKER\_HOVER@{SPEAKER\_HOVER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0a0b79a20ff80035ce3b8e15fa24caba}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0a0b79a20ff80035ce3b8e15fa24caba} 
+SPEAKER\+\_\+\+HOVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUTE@{MUTE}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!MUTE@{MUTE}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a271edf5041b6e7d6307edccd670dc8dc}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a271edf5041b6e7d6307edccd670dc8dc} 
+MUTE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUTE\_HOVER@{MUTE\_HOVER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!MUTE\_HOVER@{MUTE\_HOVER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa5448c87ca8f033e029752e6a007da4e}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa5448c87ca8f033e029752e6a007da4e} 
+MUTE\+\_\+\+HOVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CREDIT\_BUTTON@{CREDIT\_BUTTON}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!CREDIT\_BUTTON@{CREDIT\_BUTTON}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa804f9cd8b414aff5caea3b41d745448}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48aa804f9cd8b414aff5caea3b41d745448} 
+CREDIT\+\_\+\+BUTTON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CREDIT\_BUTTON\_HOVER@{CREDIT\_BUTTON\_HOVER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!CREDIT\_BUTTON\_HOVER@{CREDIT\_BUTTON\_HOVER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a6496df294e4c09ac3706ea416e3db1ac}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a6496df294e4c09ac3706ea416e3db1ac} 
+CREDIT\+\_\+\+BUTTON\+\_\+\+HOVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CREDIT\_WINDOW@{CREDIT\_WINDOW}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!CREDIT\_WINDOW@{CREDIT\_WINDOW}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0192607faa4aca21bd90b023091414c8}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a0192607faa4aca21bd90b023091414c8} 
+CREDIT\+\_\+\+WINDOW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INSTRUCTION\_WINDOW\_1@{INSTRUCTION\_WINDOW\_1}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!INSTRUCTION\_WINDOW\_1@{INSTRUCTION\_WINDOW\_1}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a83f0ed4212e9c7d9ada2ce9b155c71c9}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a83f0ed4212e9c7d9ada2ce9b155c71c9} 
+INSTRUCTION\+\_\+\+WINDOW\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INSTRUCTION\_WINDOW\_2@{INSTRUCTION\_WINDOW\_2}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!INSTRUCTION\_WINDOW\_2@{INSTRUCTION\_WINDOW\_2}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af27515b270b33e84780fab19aee1b187}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48af27515b270b33e84780fab19aee1b187} 
+INSTRUCTION\+\_\+\+WINDOW\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PRE\_BUTTON@{PRE\_BUTTON}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!PRE\_BUTTON@{PRE\_BUTTON}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a4185168bfafcf1a1754eb356ddd20a6d}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a4185168bfafcf1a1754eb356ddd20a6d} 
+PRE\+\_\+\+BUTTON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PRE\_BUTTON\_HOVER@{PRE\_BUTTON\_HOVER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!PRE\_BUTTON\_HOVER@{PRE\_BUTTON\_HOVER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a5f21e9d8193689f6a3c34f00a46204ad}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a5f21e9d8193689f6a3c34f00a46204ad} 
+PRE\+\_\+\+BUTTON\+\_\+\+HOVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NEXT\_BUTTON@{NEXT\_BUTTON}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!NEXT\_BUTTON@{NEXT\_BUTTON}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a2dee3146fa1a07ee840315cd6129c4c7}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a2dee3146fa1a07ee840315cd6129c4c7} 
+NEXT\+\_\+\+BUTTON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NEXT\_BUTTON\_HOVER@{NEXT\_BUTTON\_HOVER}!LoadShape.h@{LoadShape.h}}\index{LoadShape.h@{LoadShape.h}!NEXT\_BUTTON\_HOVER@{NEXT\_BUTTON\_HOVER}}}\Hypertarget{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a213154a4a66c87aae1e547a12ee470dc}\label{_load_shape_8h_ad0370a98702c718c8cc75998e122dd48a213154a4a66c87aae1e547a12ee470dc} 
+NEXT\+\_\+\+BUTTON\+\_\+\+HOVER&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_load_shape_8h_a1a5e2059f84135711badbafbd23e80a8}\label{_load_shape_8h_a1a5e2059f84135711badbafbd23e80a8} 
+\index{LoadShape.h@{LoadShape.h}!deleteShape@{deleteShape}}
+\index{deleteShape@{deleteShape}!LoadShape.h@{LoadShape.h}}
+\doxysubsubsection{\texorpdfstring{deleteShape()}{deleteShape()}}
+{\footnotesize\ttfamily void delete\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_load_shape_8h_a21ce8445aff8401eaadcf91fb0f70ff4}\label{_load_shape_8h_a21ce8445aff8401eaadcf91fb0f70ff4} 
+\index{LoadShape.h@{LoadShape.h}!initShape@{initShape}}
+\index{initShape@{initShape}!LoadShape.h@{LoadShape.h}}
+\doxysubsubsection{\texorpdfstring{initShape()}{initShape()}}
+{\footnotesize\ttfamily void init\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_load_shape_8h_a50a40f867d84fd8b5ba9405df9302850}\label{_load_shape_8h_a50a40f867d84fd8b5ba9405df9302850} 
+\index{LoadShape.h@{LoadShape.h}!DogDyingShapes@{DogDyingShapes}}
+\index{DogDyingShapes@{DogDyingShapes}!LoadShape.h@{LoadShape.h}}
+\doxysubsubsection{\texorpdfstring{DogDyingShapes}{DogDyingShapes}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_shape}{Shape}}\texorpdfstring{$\ast$}{*}$>$ Dog\+Dying\+Shapes\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{_load_shape_8h_a0bf8f73b6f325e0234e5ae0d30a21e7e}\label{_load_shape_8h_a0bf8f73b6f325e0234e5ae0d30a21e7e} 
+\index{LoadShape.h@{LoadShape.h}!DogMovingShapes@{DogMovingShapes}}
+\index{DogMovingShapes@{DogMovingShapes}!LoadShape.h@{LoadShape.h}}
+\doxysubsubsection{\texorpdfstring{DogMovingShapes}{DogMovingShapes}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_shape}{Shape}}\texorpdfstring{$\ast$}{*}$>$ Dog\+Moving\+Shapes\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{_load_shape_8h_a1d63548d2ad48e747f3217d68abf1973}\label{_load_shape_8h_a1d63548d2ad48e747f3217d68abf1973} 
+\index{LoadShape.h@{LoadShape.h}!DogStayingShapes@{DogStayingShapes}}
+\index{DogStayingShapes@{DogStayingShapes}!LoadShape.h@{LoadShape.h}}
+\doxysubsubsection{\texorpdfstring{DogStayingShapes}{DogStayingShapes}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_shape}{Shape}}\texorpdfstring{$\ast$}{*}$>$ Dog\+Staying\+Shapes\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{_load_shape_8h_ab3097e70cc062d71c3f6d5a756159fcb}\label{_load_shape_8h_ab3097e70cc062d71c3f6d5a756159fcb} 
+\index{LoadShape.h@{LoadShape.h}!MyShape@{MyShape}}
+\index{MyShape@{MyShape}!LoadShape.h@{LoadShape.h}}
+\doxysubsubsection{\texorpdfstring{MyShape}{MyShape}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_shape}{Shape}}\texorpdfstring{$\ast$}{*}$>$ My\+Shape\hspace{0.3cm}{\ttfamily [extern]}}
+

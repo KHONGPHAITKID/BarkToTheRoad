@@ -1,0 +1,175 @@
+\doxysection{Map Class Reference}
+\hypertarget{class_map}{}\label{class_map}\index{Map@{Map}}
+
+
+{\ttfamily \#include $<$Map.\+h$>$}
+
+
+
+Inheritance diagram for Map\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{class_map__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Map\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{class_map__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_map_a1197ab65e40dd20b891ba165471e3163}{Map}} ()=default
+\item 
+\mbox{\hyperlink{class_map_aa403fbe09394ccf39747588f5168e3b2}{\texorpdfstring{$\sim$}{\string~}\+Map}} ()
+\item 
+\mbox{\hyperlink{class_map_ad14c400e3280cb6e652c9089c58e1c45}{Map}} (\mbox{\hyperlink{class_lane_factory}{Lane\+Factory}} \texorpdfstring{$\ast$}{*}fact)
+\item 
+\mbox{\hyperlink{class_map}{Map}} \& \mbox{\hyperlink{class_map_ad1736115fa1c828435ff37df2bb58a0f}{operator=}} (const \mbox{\hyperlink{class_map}{Map}} \&m)
+\item 
+bool \mbox{\hyperlink{class_map_ab8c00b1a77c4d3241677a37997a76869}{check\+Collision}} (\mbox{\hyperlink{class_character}{Character}} \&e)
+\item 
+bool \mbox{\hyperlink{class_map_a19074e8b2e533ebeba73ee85eb921b57}{check\+Collision\+With\+Static\+Obstacle}} (\mbox{\hyperlink{class_character}{Character}} \&e)
+\item 
+void \mbox{\hyperlink{class_map_a2e5121b2b6a99516ab8f1bbabbc544b2}{move\+Obstacle}} (\mbox{\hyperlink{class_character}{Character}} \&c)
+\item 
+void \mbox{\hyperlink{class_map_abb89e0de66664eb2559e724a9ad7e4e5}{add\+Obstacle}} (int spawn\+Rate, int raft\+Rate)
+\item 
+void \mbox{\hyperlink{class_map_ad47e30009202569e13c0444cd6b54195}{remove\+Obstacle}} ()
+\item 
+void \mbox{\hyperlink{class_map_ab12643cc3a8d5e48f566c1abb571e9bf}{update}} ()
+\item 
+void \mbox{\hyperlink{class_map_a78b8be3711da4478d30881f1776e3e06}{update\+Offset}} (const int \&speed)
+\item 
+bool \mbox{\hyperlink{class_map_a20450087fe3dad7d46e76b574e236a4b}{is\+River\+Lane}} (COORD pos)
+\item 
+void \mbox{\hyperlink{class_map_a3be698445324a0d0e18b49d0730b9bea}{render}} ()
+\item 
+void \mbox{\hyperlink{class_map_a88a8d95f97b4ffc507db10da02cca889}{add\+Lane}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream \& \mbox{\hyperlink{class_map_a8e6249d0d3d4651cdb3055d81983bca6}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_map}{Map}} \&m)
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_map_a0f7ad8b8011ddb0f7ab5fc819d0f2efd}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_map}{Map}} \&m)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_map_a1197ab65e40dd20b891ba165471e3163}\label{class_map_a1197ab65e40dd20b891ba165471e3163} 
+\index{Map@{Map}!Map@{Map}}
+\index{Map@{Map}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Map()}{Map()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Map\+::\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_map_aa403fbe09394ccf39747588f5168e3b2}\label{class_map_aa403fbe09394ccf39747588f5168e3b2} 
+\index{Map@{Map}!````~Map@{\texorpdfstring{$\sim$}{\string~}Map}}
+\index{````~Map@{\texorpdfstring{$\sim$}{\string~}Map}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Map()}{\string~Map()}}
+{\footnotesize\ttfamily Map\+::\texorpdfstring{$\sim$}{\string~}\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_map_ad14c400e3280cb6e652c9089c58e1c45}\label{class_map_ad14c400e3280cb6e652c9089c58e1c45} 
+\index{Map@{Map}!Map@{Map}}
+\index{Map@{Map}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Map()}{Map()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Map\+::\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lane_factory}{Lane\+Factory}} \texorpdfstring{$\ast$}{*}}]{fact }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_map_a88a8d95f97b4ffc507db10da02cca889}\label{class_map_a88a8d95f97b4ffc507db10da02cca889} 
+\index{Map@{Map}!addLane@{addLane}}
+\index{addLane@{addLane}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{addLane()}{addLane()}}
+{\footnotesize\ttfamily void Map\+::add\+Lane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_map_abb89e0de66664eb2559e724a9ad7e4e5}\label{class_map_abb89e0de66664eb2559e724a9ad7e4e5} 
+\index{Map@{Map}!addObstacle@{addObstacle}}
+\index{addObstacle@{addObstacle}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{addObstacle()}{addObstacle()}}
+{\footnotesize\ttfamily void Map\+::add\+Obstacle (\begin{DoxyParamCaption}\item[{int}]{spawn\+Rate,  }\item[{int}]{raft\+Rate }\end{DoxyParamCaption})}
+
+\Hypertarget{class_map_ab8c00b1a77c4d3241677a37997a76869}\label{class_map_ab8c00b1a77c4d3241677a37997a76869} 
+\index{Map@{Map}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
+{\footnotesize\ttfamily bool Map\+::check\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{e }\end{DoxyParamCaption})}
+
+\Hypertarget{class_map_a19074e8b2e533ebeba73ee85eb921b57}\label{class_map_a19074e8b2e533ebeba73ee85eb921b57} 
+\index{Map@{Map}!checkCollisionWithStaticObstacle@{checkCollisionWithStaticObstacle}}
+\index{checkCollisionWithStaticObstacle@{checkCollisionWithStaticObstacle}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{checkCollisionWithStaticObstacle()}{checkCollisionWithStaticObstacle()}}
+{\footnotesize\ttfamily bool Map\+::check\+Collision\+With\+Static\+Obstacle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{e }\end{DoxyParamCaption})}
+
+\Hypertarget{class_map_a20450087fe3dad7d46e76b574e236a4b}\label{class_map_a20450087fe3dad7d46e76b574e236a4b} 
+\index{Map@{Map}!isRiverLane@{isRiverLane}}
+\index{isRiverLane@{isRiverLane}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{isRiverLane()}{isRiverLane()}}
+{\footnotesize\ttfamily bool Map\+::is\+River\+Lane (\begin{DoxyParamCaption}\item[{COORD}]{pos }\end{DoxyParamCaption})}
+
+\Hypertarget{class_map_a2e5121b2b6a99516ab8f1bbabbc544b2}\label{class_map_a2e5121b2b6a99516ab8f1bbabbc544b2} 
+\index{Map@{Map}!moveObstacle@{moveObstacle}}
+\index{moveObstacle@{moveObstacle}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{moveObstacle()}{moveObstacle()}}
+{\footnotesize\ttfamily void Map\+::move\+Obstacle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{c }\end{DoxyParamCaption})}
+
+\Hypertarget{class_map_ad1736115fa1c828435ff37df2bb58a0f}\label{class_map_ad1736115fa1c828435ff37df2bb58a0f} 
+\index{Map@{Map}!operator=@{operator=}}
+\index{operator=@{operator=}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_map}{Map}} \& Map\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_map}{Map}} \&}]{m }\end{DoxyParamCaption})}
+
+\Hypertarget{class_map_ad47e30009202569e13c0444cd6b54195}\label{class_map_ad47e30009202569e13c0444cd6b54195} 
+\index{Map@{Map}!removeObstacle@{removeObstacle}}
+\index{removeObstacle@{removeObstacle}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{removeObstacle()}{removeObstacle()}}
+{\footnotesize\ttfamily void Map\+::remove\+Obstacle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_map_a3be698445324a0d0e18b49d0730b9bea}\label{class_map_a3be698445324a0d0e18b49d0730b9bea} 
+\index{Map@{Map}!render@{render}}
+\index{render@{render}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Map\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_map_ab12643cc3a8d5e48f566c1abb571e9bf}\label{class_map_ab12643cc3a8d5e48f566c1abb571e9bf} 
+\index{Map@{Map}!update@{update}}
+\index{update@{update}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Map\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_map_a78b8be3711da4478d30881f1776e3e06}\label{class_map_a78b8be3711da4478d30881f1776e3e06} 
+\index{Map@{Map}!updateOffset@{updateOffset}}
+\index{updateOffset@{updateOffset}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{updateOffset()}{updateOffset()}}
+{\footnotesize\ttfamily void Map\+::update\+Offset (\begin{DoxyParamCaption}\item[{const int \&}]{speed }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_map_a0f7ad8b8011ddb0f7ab5fc819d0f2efd}\label{class_map_a0f7ad8b8011ddb0f7ab5fc819d0f2efd} 
+\index{Map@{Map}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_map}{Map}} \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\Hypertarget{class_map_a8e6249d0d3d4651cdb3055d81983bca6}\label{class_map_a8e6249d0d3d4651cdb3055d81983bca6} 
+\index{Map@{Map}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{class_map}{Map}} \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_map_8h}{Map.\+h}}\item 
+\mbox{\hyperlink{_map_8cpp}{Map.\+cpp}}\end{DoxyCompactItemize}

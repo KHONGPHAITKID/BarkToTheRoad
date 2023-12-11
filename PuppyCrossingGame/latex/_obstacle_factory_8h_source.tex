@@ -1,0 +1,41 @@
+\doxysection{Obstacle\+Factory.\+h}
+\hypertarget{_obstacle_factory_8h_source}{}\label{_obstacle_factory_8h_source}\mbox{\hyperlink{_obstacle_factory_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_obstacle_8h}{Obstacle.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <time.h>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_obstacle_factory_8h_a6deaef31e68c84b7d898767f37907f49}{randomInt}}(\textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ r);}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_obstacle_factory}{ObstacleFactory}}}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_obstacle}{Obstacle}}*\ \mbox{\hyperlink{class_obstacle_factory_a057d91e66aff66422e625d63cf023803}{createObstacle}}(\textcolor{keyword}{const}\ COORD\ \&pos)\ =\ 0;}
+\DoxyCodeLine{00011\ \};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_asphalt_obstacle_factory}{AsphaltObstacleFactory}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_obstacle_factory}{ObstacleFactory}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_obstacle}{Obstacle}}*\ \mbox{\hyperlink{class_asphalt_obstacle_factory_a368c252d4e15b3f6a4e36e50a7058b03}{createObstacle}}(\textcolor{keyword}{const}\ COORD\ \&pos)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00017\ \};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_grass_obstacle_factory}{GrassObstacleFactory}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_obstacle_factory}{ObstacleFactory}}\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_obstacle}{Obstacle}}*\ \mbox{\hyperlink{class_grass_obstacle_factory_a3fc249207f7579f28b2f126fae7bc37a}{createObstacle}}(\textcolor{keyword}{const}\ COORD\ \&pos)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_rail_obstacle_factory}{RailObstacleFactory}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_obstacle_factory}{ObstacleFactory}}\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_obstacle}{Obstacle}}*\ \mbox{\hyperlink{class_rail_obstacle_factory_a9b713ecb9c53f55f6da765a63d30fded}{createObstacle}}(\textcolor{keyword}{const}\ COORD\ \&pos)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_river_obstacle_factory}{RiverObstacleFactory}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_obstacle_factory}{ObstacleFactory}}\ \{}
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_obstacle}{Obstacle}}*\ \mbox{\hyperlink{class_river_obstacle_factory_ad4b51d67f17d72e036a75b49204d3558}{createObstacle}}(\textcolor{keyword}{const}\ COORD\ \&pos)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ }
+
+\end{DoxyCode}

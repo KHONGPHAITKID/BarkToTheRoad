@@ -17,21 +17,21 @@ public:
     void playSound() {
         if (Global::is_sound_muted) return;
         std::wstring command = L"open " + m_file + L" type waveaudio alias " + m_alias;
-        mciSendString(command.c_str(), NULL, 0, NULL);
+        mciSendStringW(command.c_str(), NULL, 0, NULL);
         command = L"seek " + m_alias + L" to start";
-        mciSendString(command.c_str(), NULL, 0, NULL);
+        mciSendStringW(command.c_str(), NULL, 0, NULL);
         command = L"play " + m_alias;
-        mciSendString(command.c_str(), NULL, 0, NULL);
+        mciSendStringW(command.c_str(), NULL, 0, NULL);
     }
 
     static void playSoundWorker(std::wstring file, std::wstring alias) {
         if (Global::is_sound_muted) return;
         std::wstring command = L"open " + file + L" type waveaudio alias " + alias;
-        mciSendString(command.c_str(), NULL, 0, NULL);
+        mciSendStringW(command.c_str(), NULL, 0, NULL);
         command = L"seek " + alias + L" to start";
-        mciSendString(command.c_str(), NULL, 0, NULL);
+        mciSendStringW(command.c_str(), NULL, 0, NULL);
         command = L"play " + alias;
-        mciSendString(command.c_str(), NULL, 0, NULL);
+        mciSendStringW(command.c_str(), NULL, 0, NULL);
     }
 
     static void playSound(std::wstring file, std::wstring alias) {

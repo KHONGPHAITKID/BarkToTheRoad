@@ -1,0 +1,49 @@
+\doxysection{Screen.\+h}
+\hypertarget{_screen_8h_source}{}\label{_screen_8h_source}\mbox{\hyperlink{_screen_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_button_8h}{Button.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_load_shape_8h}{LoadShape.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_text_8h}{Text.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_screen}{Screen}}}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{class_screen_a401e1e1331090c468487d1fd100a4b0b}{Screen}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_screen_a2dc6d4bcae29ef3c71dc3e9bb8630dbe}{Screen}}(\mbox{\hyperlink{class_shape}{Shape}}*\ background)\ :\ \mbox{\hyperlink{class_screen_a808d5f8e0be288fa33c75a2c3b546fce}{m\_background}}\{\ background\ \}\ \{\}}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_screen_a4243bc17596af96415b09ac48205676d}{\string~Screen}}();}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_screen_a4c5cfa80abfc7e67bbf5e8012b45c393}{addButton}}(\mbox{\hyperlink{class_button}{Button}}*\ b);}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_screen_a5ee24b2d33896fe680159ae8933e649c}{removeButton}}(\textcolor{keywordtype}{int}\ i);}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_screen_abc00db4573de9dbe2262b3e299b529a8}{setBackground}}(\mbox{\hyperlink{class_shape}{Shape}}*\ background);}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_screen_ae9058fa8b4ae8e3e2e07f003306946c1}{addText}}(\mbox{\hyperlink{class_text}{Text}}*\ \mbox{\hyperlink{_puppy_crossing_game_8cpp_a191482ef3e0e75c53cfe1c603c2dbcdf}{s}})\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_screen_a5d0548faa658956261259aa14cd7de5d}{m\_texts}}.push\_back(\mbox{\hyperlink{_puppy_crossing_game_8cpp_a191482ef3e0e75c53cfe1c603c2dbcdf}{s}});}
+\DoxyCodeLine{00017\ \ \ \ \ \}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_screen_a238d30be206a25432ab8c67e5eddfd89}{clearTexts}}()\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ text\ :\ \mbox{\hyperlink{class_screen_a5d0548faa658956261259aa14cd7de5d}{m\_texts}})\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ text;}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_screen_a5d0548faa658956261259aa14cd7de5d}{m\_texts}}.clear();}
+\DoxyCodeLine{00023\ \ \ \ \ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ std::vector<Button*>\ \mbox{\hyperlink{class_screen_a936b5c785c987b5902257eece2cb3baa}{getButtons}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00026\ \ \ \ \ std::vector<Text*>\ \mbox{\hyperlink{class_screen_a78b67ecbc0ee2424a65f3ac1c59bdea6}{getTexts}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_screen_a819aa32ece0c9bf2b173e747d8713c0b}{render}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_screen_a88e13da2faf283567bd8109057f42fe2}{clean}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_screen_a876343cf972d15caba150cd253b1950e}{clearText}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_screen_af81a85b23f6609432a836e84324a8656}{renderText}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_screen_a2739cc939c2ff7a825afbbe287f704c0}{clickButton}}();}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_screen_af6f9adc4ff2a4ae2eb524293a6dd975a}{handleKeyPressed}}(WPARAM\ key)\ \{}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_screen_a05fdc4996e4856ac56b5bac6a7ee712f}{updateContent}}()\ \{\}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_screen_adb58b1a292a1a0e6c3365ab0b608656f}{getSize}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_screen_a97f9adeee51e5079696ceb25bf5deaa8}{m\_buttons}}.size();}
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+\DoxyCodeLine{00039\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_shape}{Shape}}*\ \mbox{\hyperlink{class_screen_a808d5f8e0be288fa33c75a2c3b546fce}{m\_background}};}
+\DoxyCodeLine{00041\ \ \ \ \ std::vector<Button*>\ \mbox{\hyperlink{class_screen_a97f9adeee51e5079696ceb25bf5deaa8}{m\_buttons}};}
+\DoxyCodeLine{00042\ \ \ \ \ std::vector<Text*>\ \mbox{\hyperlink{class_screen_a5d0548faa658956261259aa14cd7de5d}{m\_texts}}\{\};}
+\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00044\ }
+
+\end{DoxyCode}
